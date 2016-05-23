@@ -1,6 +1,6 @@
 # STOKES
-Polarization Spectrometer(PSIM) Data Processing Software<br>
-偏振光谱调制型(PSIM)偏振光谱仪数据处理软件
+<center>Polarization Spectrometer(PSIM) Data Processing Software<br></center>
+<center>偏振光谱调制型(PSIM)偏振光谱仪数据处理软件</center>
 ##简介
 ###描述
 <p>&#160; &#160; &#160; &#160;该项目为使用PSIM技术光谱仪的数据处理程序。软件流程概括地来说可以包括光谱数据预处理、分通道解调、求Stokes矢量、计算偏振度这几个步骤。
