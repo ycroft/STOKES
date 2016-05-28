@@ -18,8 +18,16 @@
 <p>&#160; &#160; &#160; &#160; CS2 = CS2.rotate(α-β)
 <p>&#160; &#160; &#160; &#160; 然后使用矫正后的调制系数重新计算Stokes矢量用于后续步骤，需要说明的是，目前实验环境下的数据有限，而实验室环境一般比较严格所以得到的幅角非常小，矫正后的调制系数也没有多大区别，所以尚不能明确这样的纠正是否能胜任实际情况下（大偏差时）的纠正。
 ###图例
-####偏振度幅图像
-![0_dop](https://github.com/ycroft/STOKES/blob/master/resources/imgs/0_dop.jpg "0 度")
+####偏振度幅图像(测量角度0度)
+![0dop](https://github.com/ycroft/STOKES/blob/master/resources/imgs/0_dop.jpg "0 度")
+####偏振度幅图像(测量角度15度)
+![15dop](https://github.com/ycroft/STOKES/blob/master/resources/imgs/0_dop.jpg "15 度")
+####偏振度幅图像(测量角度30度)
+![30dop](https://github.com/ycroft/STOKES/blob/master/resources/imgs/0_dop.jpg "30 度")
+####偏振度幅图像(测量角度45度)
+![45dop](https://github.com/ycroft/STOKES/blob/master/resources/imgs/0_dop.jpg "45 度")
+####偏振度幅图像(测量角度60度)
+![60dop](https://github.com/ycroft/STOKES/blob/master/resources/imgs/0_dop.jpg "60 度")
 ###作者
 &#160; &#160; &#160; &#160;[Yuhao Yin](http://www.ycroft.net)
 
