@@ -21,13 +21,13 @@
 ####偏振度幅图像(测量角度0度)
 ![0dop](https://github.com/ycroft/STOKES/blob/master/resources/imgs/0_dop.jpg "0 度")
 ####偏振度幅图像(测量角度15度)
-![15dop](https://github.com/ycroft/STOKES/blob/master/resources/imgs/0_dop.jpg "15 度")
+![15dop](https://github.com/ycroft/STOKES/blob/master/resources/imgs/15_dop.jpg "15 度")
 ####偏振度幅图像(测量角度30度)
-![30dop](https://github.com/ycroft/STOKES/blob/master/resources/imgs/0_dop.jpg "30 度")
+![30dop](https://github.com/ycroft/STOKES/blob/master/resources/imgs/30_dop.jpg "30 度")
 ####偏振度幅图像(测量角度45度)
-![45dop](https://github.com/ycroft/STOKES/blob/master/resources/imgs/0_dop.jpg "45 度")
+![45dop](https://github.com/ycroft/STOKES/blob/master/resources/imgs/45_dop.jpg "45 度")
 ####偏振度幅图像(测量角度60度)
-![60dop](https://github.com/ycroft/STOKES/blob/master/resources/imgs/0_dop.jpg "60 度")
+![60dop](https://github.com/ycroft/STOKES/blob/master/resources/imgs/60_dop.jpg "60 度")
 ###作者
 &#160; &#160; &#160; &#160;[Yuhao Yin](http://www.ycroft.net)
 
