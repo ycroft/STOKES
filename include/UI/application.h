@@ -48,14 +48,22 @@ private:
     GraphicsPanel* m_graphics_panel;        /** 函数图像面板，用于显示正在绘制的函数图像列表 */
     ThreadsPanel* m_threads_panel;          /** 线程控制面板，用于控制各个线程的开闭以及输入流 */
     AnalysePanel* m_analyse_panel;          /** 分析信息面板，用于显示各种分析结果 */
+    /**
+     * 保存绘图状态
+     * 这个数组保存所有可以用于绘图的函数,
+     * 已经被绘图的记作true，未被绘图的记作false
+     * 这是由于绘图面板可以同时绘制多幅函数图像导致的
+     */
     bool m_curves[ResourceManager::DATA_NUM]；
-    
+    /**
+     * 初始化UI
+     */
     void __SetupUI();
 private slots:
-    void __AddCurve(ResourceManager::DataName);
-    void __DelCurve(ResourceManager::DataName);
-    void __ClearCurves();
-    void __ChangeWorkplace();
+    void __AddCurve(ResourceManager::DataName); /** 私有槽： 添加曲线到绘图面板 */
+    void __DelCurve(ResourceManager::DataName); /** 私有槽： 从绘图面板删除曲线 */
+    void __ClearCurves();                       /** 私有槽： 清除所有绘图面板上的曲线 */
+    void __ChangeWorkplace();                   /** 私有槽： 更改工作路径 */
 };
 
 #endif // APPLICATION_H
