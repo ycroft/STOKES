@@ -12,19 +12,12 @@ Plot::~Plot()
     }
     for(int i = 0; i < dataNum; ++ i)
     {
-        // if(NULL != m_seriesData[i])
-        // {
-        //     delete m_seriesData[i];
-        //     m_seriesData[i] = NULL;
-        // }
         if(NULL != m_curves[i])
         {
             delete m_curves[i];
             m_curves[i] = NULL;
         }
     }
-    // if(NULL != m_mainLegend) delete m_mainLegend;
-    // if(NULL != m_zoomer) delete m_zoomer;
 }
 
 void Plot::AddCurve(ResourceManager::DataName dname, CurveAttribute attr)
