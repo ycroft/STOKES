@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
       <li><a href="annotated.html"><span>类</span></a></li>
       <li class="current"><a href="files.html"><span>文件</span></a></li>
       <li>
@@ -61,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -68,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,14 +89,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="title">mainwindow.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MAINWINDOW_H</span></div>
+<a href="mainwindow_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MAINWINDOW_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAINWINDOW_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include&lt;UI/plot.h&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include&lt;UI/infopanel.h&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include&lt;UI/graphicspanel.h&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include&lt;UI/threadspanel.h&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include&lt;UI/analysepanel.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="plot_8h.html">UI/plot.h</a>&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="infopanel_8h.html">UI/infopanel.h</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="graphicspanel_8h.html">UI/graphicspanel.h</a>&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="threadspanel_8h.html">UI/threadspanel.h</a>&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="analysepanel_8h.html">UI/analysepanel.h</a>&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include&lt;QtCore/QList&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include&lt;QtCore/QDebug&gt;</span></div>
@@ -105,65 +107,100 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include&lt;QtGui/QFileDialog&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include&lt;QtGui/QDesktopWidget&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define MAIN_POS_X 0</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAIN_POS_Y 0</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAIN_WIDTH 1600</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAIN_HEIGHT 900</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="mainwindow_8h.html#a4fe7fb0dafe27f6f5dfd682b6b14cb6c">   19</a></span>&#160;<span class="preprocessor">#define MAIN_POS_X 0</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="mainwindow_8h.html#a700e8e9c1a88b5ee9bc5ebab1228f861">   20</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAIN_POS_Y 0</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="mainwindow_8h.html#aef349edcb2579e009c6a46970a40b981">   21</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAIN_WIDTH 1600</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="mainwindow_8h.html#ae7e1cad443e52ae4d880dc9b7e3245b7">   22</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAIN_HEIGHT 900</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* HOME_PATH = <span class="stringliteral">&quot;/home/ycroft/tmp/twd/valid&quot;</span>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* ICON_WORKPLACE = <span class="stringliteral">&quot;/home/ycroft/Pictures/stokes/set_workplace.gif&quot;</span>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* ICON_INFO = <span class="stringliteral">&quot;/home/ycroft/Pictures/stokes/info.gif&quot;</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* ICON_GRAPHICS = <span class="stringliteral">&quot;/home/ycroft/Pictures/stokes/graphics.gif&quot;</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* ICON_ANALYSE = <span class="stringliteral">&quot;/home/ycroft/Pictures/stokes/analyse.gif&quot;</span>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* ICON_THREADS = <span class="stringliteral">&quot;/home/ycroft/Pictures/stokes/threads.gif&quot;</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="mainwindow_8h.html#a7edf836965b5481cccc52f08f80a88f4">   24</a></span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="mainwindow_8h.html#a7edf836965b5481cccc52f08f80a88f4">HOME_PATH</a> = <span class="stringliteral">&quot;/home/ycroft/tmp/twd/valid&quot;</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="mainwindow_8h.html#a077e8feb0726f54f5f61f6c0b7f2539c">   25</a></span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="mainwindow_8h.html#a077e8feb0726f54f5f61f6c0b7f2539c">ICON_WORKPLACE</a> = <span class="stringliteral">&quot;/home/ycroft/Pictures/stokes/set_workplace.gif&quot;</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="mainwindow_8h.html#a2b0d82da87b40cb628c49789950a2c4c">   26</a></span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="mainwindow_8h.html#a2b0d82da87b40cb628c49789950a2c4c">ICON_INFO</a> = <span class="stringliteral">&quot;/home/ycroft/Pictures/stokes/info.gif&quot;</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="mainwindow_8h.html#aaddbc6277a1954dc66e748d5f063423d">   27</a></span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="mainwindow_8h.html#aaddbc6277a1954dc66e748d5f063423d">ICON_GRAPHICS</a> = <span class="stringliteral">&quot;/home/ycroft/Pictures/stokes/graphics.gif&quot;</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="mainwindow_8h.html#a09caa654f0985ba5e706b242a96eb579">   28</a></span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="mainwindow_8h.html#a09caa654f0985ba5e706b242a96eb579">ICON_ANALYSE</a> = <span class="stringliteral">&quot;/home/ycroft/Pictures/stokes/analyse.gif&quot;</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="mainwindow_8h.html#a625e172eca07fec90fb8a752b3298dde">   29</a></span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="mainwindow_8h.html#a625e172eca07fec90fb8a752b3298dde">ICON_THREADS</a> = <span class="stringliteral">&quot;/home/ycroft/Pictures/stokes/threads.gif&quot;</span>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classMainWindow.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="classMainWindow.html">MainWindow</a> : <span class="keyword">public</span> QMainWindow</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    QAction* m_action_file_workplace;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    QAction* m_action_windows_threads;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    QAction* m_action_windows_graphics;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    QAction* m_action_windows_info;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    QAction* m_action_windows_analyse;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classPlot.html">Plot</a>* m_plot;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classInfoPanel.html">InfoPanel</a>* m_info_panel;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="classGraphicsPanel.html">GraphicsPanel</a>* m_graphics_panel;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="classThreadsPanel.html">ThreadsPanel</a>* m_threads_panel;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classAnalysePanel.html">AnalysePanel</a>* m_analyse_panel;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classMainWindow.html#ae6aface721b478390574fbf1c5436b86">   35</a></span>&#160;    QAction* <a class="code" href="classMainWindow.html#ae6aface721b478390574fbf1c5436b86">m_action_file_workplace</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classMainWindow.html#a2467b4c7e596c61586707f026ccd86c9">   36</a></span>&#160;    QAction* <a class="code" href="classMainWindow.html#a2467b4c7e596c61586707f026ccd86c9">m_action_windows_threads</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classMainWindow.html#a65ed78f835171609773c25e3f6071412">   37</a></span>&#160;    QAction* <a class="code" href="classMainWindow.html#a65ed78f835171609773c25e3f6071412">m_action_windows_graphics</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classMainWindow.html#a03390cec3e480ca6e237e551423b7604">   38</a></span>&#160;    QAction* <a class="code" href="classMainWindow.html#a03390cec3e480ca6e237e551423b7604">m_action_windows_info</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classMainWindow.html#a4a5b98b732dc51f689f675496ccf4e48">   39</a></span>&#160;    QAction* <a class="code" href="classMainWindow.html#a4a5b98b732dc51f689f675496ccf4e48">m_action_windows_analyse</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classMainWindow.html#ab620e20a42da924bf8cf754d7e368d74">   40</a></span>&#160;    <a class="code" href="classPlot.html">Plot</a>* <a class="code" href="classMainWindow.html#ab620e20a42da924bf8cf754d7e368d74">m_plot</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classMainWindow.html#a01a166ddf3aedc906c914383bbbc2a10">   41</a></span>&#160;    <a class="code" href="classInfoPanel.html">InfoPanel</a>* <a class="code" href="classMainWindow.html#a01a166ddf3aedc906c914383bbbc2a10">m_info_panel</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classMainWindow.html#a719037915de04a13dd1eaf13c1dc78be">   42</a></span>&#160;    <a class="code" href="classGraphicsPanel.html">GraphicsPanel</a>* <a class="code" href="classMainWindow.html#a719037915de04a13dd1eaf13c1dc78be">m_graphics_panel</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classMainWindow.html#aacb558853a63461952e282b6ee941d7b">   43</a></span>&#160;    <a class="code" href="classThreadsPanel.html">ThreadsPanel</a>* <a class="code" href="classMainWindow.html#aacb558853a63461952e282b6ee941d7b">m_threads_panel</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classMainWindow.html#a732b3ede4806319132c618c22cc30861">   44</a></span>&#160;    <a class="code" href="classAnalysePanel.html">AnalysePanel</a>* <a class="code" href="classMainWindow.html#a732b3ede4806319132c618c22cc30861">m_analyse_panel</a>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classSpectrographDevice.html">SpectrographDevice</a>* m_device;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classResourceManager.html">ResourceManager</a>* m_manager;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classMainWindow.html#a8cb4a2221a262fe14bdd5df121d1a164">   46</a></span>&#160;    <a class="code" href="classSpectrographDevice.html">SpectrographDevice</a>* <a class="code" href="classMainWindow.html#a8cb4a2221a262fe14bdd5df121d1a164">m_device</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classMainWindow.html#a575c0b58003985487739aaa6f5e871c2">   47</a></span>&#160;    <a class="code" href="classResourceManager.html">ResourceManager</a>* <a class="code" href="classMainWindow.html#a575c0b58003985487739aaa6f5e871c2">m_manager</a>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classMainWindow.html">MainWindow</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classMainWindow.html">MainWindow</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classMainWindow.html#a34c4b4207b46d11a4100c9b19f0e81bb">MainWindow</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classMainWindow.html#a9a780b70b080b3e745298191099bba4d">~MainWindow</a>();</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> __SetupUI();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMainWindow.html#a8a621dc22745b1a4b889a29556ec55ca">__SetupUI</a>();</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> __ChangeWorkplace();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> __ToggleAction_INFO();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> __CloseAction_INFO();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> __ToggleAction_GRAPHICS();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> __CloseAction_GRAPHICS();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> __ToggleAction_THREADS();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> __CloseAction_THREADS();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> __ToggleAction_ANALYSE();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> __CloseAction_ANALYSE();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMainWindow.html#a95d489c04fda361173e4ceca5fe42a08">__ChangeWorkplace</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMainWindow.html#a370b70bc9783fd0bf86af4cf1d24394e">__ToggleAction_INFO</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMainWindow.html#a1ceb3527a82c7a600c1be5555a038519">__CloseAction_INFO</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMainWindow.html#ac4792762eb8228f2504006affa3755e8">__ToggleAction_GRAPHICS</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMainWindow.html#a5f1e7cdd691d39ccbd6180fe9d08c6ca">__CloseAction_GRAPHICS</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMainWindow.html#a2b7a7235304e3f6f4d470b102769df45">__ToggleAction_THREADS</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMainWindow.html#ab34250554982efb7713cce9aeadd4f90">__CloseAction_THREADS</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMainWindow.html#aba3fe187180e92f66cba4d2b3986d537">__ToggleAction_ANALYSE</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMainWindow.html#a6fe2f25404dcfcf15b5f84f482ff90b3">__CloseAction_ANALYSE</a>();</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif // MAINWINDOW_H</span></div>
+<div class="ttc" id="graphicspanel_8h_html"><div class="ttname"><a href="graphicspanel_8h.html">graphicspanel.h</a></div></div>
+<div class="ttc" id="mainwindow_8h_html_aaddbc6277a1954dc66e748d5f063423d"><div class="ttname"><a href="mainwindow_8h.html#aaddbc6277a1954dc66e748d5f063423d">ICON_GRAPHICS</a></div><div class="ttdeci">static const char * ICON_GRAPHICS</div><div class="ttdef"><b>Definition:</b> mainwindow.h:27</div></div>
+<div class="ttc" id="mainwindow_8h_html_a09caa654f0985ba5e706b242a96eb579"><div class="ttname"><a href="mainwindow_8h.html#a09caa654f0985ba5e706b242a96eb579">ICON_ANALYSE</a></div><div class="ttdeci">static const char * ICON_ANALYSE</div><div class="ttdef"><b>Definition:</b> mainwindow.h:28</div></div>
+<div class="ttc" id="classMainWindow_html_a2b7a7235304e3f6f4d470b102769df45"><div class="ttname"><a href="classMainWindow.html#a2b7a7235304e3f6f4d470b102769df45">MainWindow::__ToggleAction_THREADS</a></div><div class="ttdeci">void __ToggleAction_THREADS()</div></div>
+<div class="ttc" id="classMainWindow_html_a4a5b98b732dc51f689f675496ccf4e48"><div class="ttname"><a href="classMainWindow.html#a4a5b98b732dc51f689f675496ccf4e48">MainWindow::m_action_windows_analyse</a></div><div class="ttdeci">QAction * m_action_windows_analyse</div><div class="ttdef"><b>Definition:</b> mainwindow.h:39</div></div>
+<div class="ttc" id="classMainWindow_html_a95d489c04fda361173e4ceca5fe42a08"><div class="ttname"><a href="classMainWindow.html#a95d489c04fda361173e4ceca5fe42a08">MainWindow::__ChangeWorkplace</a></div><div class="ttdeci">void __ChangeWorkplace()</div></div>
+<div class="ttc" id="classMainWindow_html_a8cb4a2221a262fe14bdd5df121d1a164"><div class="ttname"><a href="classMainWindow.html#a8cb4a2221a262fe14bdd5df121d1a164">MainWindow::m_device</a></div><div class="ttdeci">SpectrographDevice * m_device</div><div class="ttdef"><b>Definition:</b> mainwindow.h:46</div></div>
 <div class="ttc" id="classPlot_html"><div class="ttname"><a href="classPlot.html">Plot</a></div><div class="ttdef"><b>Definition:</b> plot.h:58</div></div>
+<div class="ttc" id="classMainWindow_html_a65ed78f835171609773c25e3f6071412"><div class="ttname"><a href="classMainWindow.html#a65ed78f835171609773c25e3f6071412">MainWindow::m_action_windows_graphics</a></div><div class="ttdeci">QAction * m_action_windows_graphics</div><div class="ttdef"><b>Definition:</b> mainwindow.h:37</div></div>
+<div class="ttc" id="classMainWindow_html_ab620e20a42da924bf8cf754d7e368d74"><div class="ttname"><a href="classMainWindow.html#ab620e20a42da924bf8cf754d7e368d74">MainWindow::m_plot</a></div><div class="ttdeci">Plot * m_plot</div><div class="ttdef"><b>Definition:</b> mainwindow.h:40</div></div>
+<div class="ttc" id="analysepanel_8h_html"><div class="ttname"><a href="analysepanel_8h.html">analysepanel.h</a></div></div>
+<div class="ttc" id="mainwindow_8h_html_a2b0d82da87b40cb628c49789950a2c4c"><div class="ttname"><a href="mainwindow_8h.html#a2b0d82da87b40cb628c49789950a2c4c">ICON_INFO</a></div><div class="ttdeci">static const char * ICON_INFO</div><div class="ttdef"><b>Definition:</b> mainwindow.h:26</div></div>
+<div class="ttc" id="mainwindow_8h_html_a7edf836965b5481cccc52f08f80a88f4"><div class="ttname"><a href="mainwindow_8h.html#a7edf836965b5481cccc52f08f80a88f4">HOME_PATH</a></div><div class="ttdeci">static const char * HOME_PATH</div><div class="ttdef"><b>Definition:</b> mainwindow.h:24</div></div>
+<div class="ttc" id="classMainWindow_html_ac4792762eb8228f2504006affa3755e8"><div class="ttname"><a href="classMainWindow.html#ac4792762eb8228f2504006affa3755e8">MainWindow::__ToggleAction_GRAPHICS</a></div><div class="ttdeci">void __ToggleAction_GRAPHICS()</div></div>
+<div class="ttc" id="classMainWindow_html_ae6aface721b478390574fbf1c5436b86"><div class="ttname"><a href="classMainWindow.html#ae6aface721b478390574fbf1c5436b86">MainWindow::m_action_file_workplace</a></div><div class="ttdeci">QAction * m_action_file_workplace</div><div class="ttdef"><b>Definition:</b> mainwindow.h:35</div></div>
+<div class="ttc" id="classMainWindow_html_a9a780b70b080b3e745298191099bba4d"><div class="ttname"><a href="classMainWindow.html#a9a780b70b080b3e745298191099bba4d">MainWindow::~MainWindow</a></div><div class="ttdeci">virtual ~MainWindow()</div></div>
+<div class="ttc" id="mainwindow_8h_html_a625e172eca07fec90fb8a752b3298dde"><div class="ttname"><a href="mainwindow_8h.html#a625e172eca07fec90fb8a752b3298dde">ICON_THREADS</a></div><div class="ttdeci">static const char * ICON_THREADS</div><div class="ttdef"><b>Definition:</b> mainwindow.h:29</div></div>
+<div class="ttc" id="classMainWindow_html_a575c0b58003985487739aaa6f5e871c2"><div class="ttname"><a href="classMainWindow.html#a575c0b58003985487739aaa6f5e871c2">MainWindow::m_manager</a></div><div class="ttdeci">ResourceManager * m_manager</div><div class="ttdef"><b>Definition:</b> mainwindow.h:47</div></div>
+<div class="ttc" id="classMainWindow_html_a8a621dc22745b1a4b889a29556ec55ca"><div class="ttname"><a href="classMainWindow.html#a8a621dc22745b1a4b889a29556ec55ca">MainWindow::__SetupUI</a></div><div class="ttdeci">void __SetupUI()</div></div>
+<div class="ttc" id="classMainWindow_html_a370b70bc9783fd0bf86af4cf1d24394e"><div class="ttname"><a href="classMainWindow.html#a370b70bc9783fd0bf86af4cf1d24394e">MainWindow::__ToggleAction_INFO</a></div><div class="ttdeci">void __ToggleAction_INFO()</div></div>
+<div class="ttc" id="classMainWindow_html_a1ceb3527a82c7a600c1be5555a038519"><div class="ttname"><a href="classMainWindow.html#a1ceb3527a82c7a600c1be5555a038519">MainWindow::__CloseAction_INFO</a></div><div class="ttdeci">void __CloseAction_INFO()</div></div>
 <div class="ttc" id="classInfoPanel_html"><div class="ttname"><a href="classInfoPanel.html">InfoPanel</a></div><div class="ttdef"><b>Definition:</b> infopanel.h:8</div></div>
 <div class="ttc" id="classResourceManager_html"><div class="ttname"><a href="classResourceManager.html">ResourceManager</a></div><div class="ttdef"><b>Definition:</b> objmanager.h:77</div></div>
+<div class="ttc" id="plot_8h_html"><div class="ttname"><a href="plot_8h.html">plot.h</a></div></div>
+<div class="ttc" id="classMainWindow_html_a732b3ede4806319132c618c22cc30861"><div class="ttname"><a href="classMainWindow.html#a732b3ede4806319132c618c22cc30861">MainWindow::m_analyse_panel</a></div><div class="ttdeci">AnalysePanel * m_analyse_panel</div><div class="ttdef"><b>Definition:</b> mainwindow.h:44</div></div>
+<div class="ttc" id="threadspanel_8h_html"><div class="ttname"><a href="threadspanel_8h.html">threadspanel.h</a></div></div>
+<div class="ttc" id="classMainWindow_html_a5f1e7cdd691d39ccbd6180fe9d08c6ca"><div class="ttname"><a href="classMainWindow.html#a5f1e7cdd691d39ccbd6180fe9d08c6ca">MainWindow::__CloseAction_GRAPHICS</a></div><div class="ttdeci">void __CloseAction_GRAPHICS()</div></div>
+<div class="ttc" id="classMainWindow_html_ab34250554982efb7713cce9aeadd4f90"><div class="ttname"><a href="classMainWindow.html#ab34250554982efb7713cce9aeadd4f90">MainWindow::__CloseAction_THREADS</a></div><div class="ttdeci">void __CloseAction_THREADS()</div></div>
+<div class="ttc" id="mainwindow_8h_html_a077e8feb0726f54f5f61f6c0b7f2539c"><div class="ttname"><a href="mainwindow_8h.html#a077e8feb0726f54f5f61f6c0b7f2539c">ICON_WORKPLACE</a></div><div class="ttdeci">static const char * ICON_WORKPLACE</div><div class="ttdef"><b>Definition:</b> mainwindow.h:25</div></div>
+<div class="ttc" id="classMainWindow_html_a34c4b4207b46d11a4100c9b19f0e81bb"><div class="ttname"><a href="classMainWindow.html#a34c4b4207b46d11a4100c9b19f0e81bb">MainWindow::MainWindow</a></div><div class="ttdeci">MainWindow()</div></div>
+<div class="ttc" id="classMainWindow_html_aba3fe187180e92f66cba4d2b3986d537"><div class="ttname"><a href="classMainWindow.html#aba3fe187180e92f66cba4d2b3986d537">MainWindow::__ToggleAction_ANALYSE</a></div><div class="ttdeci">void __ToggleAction_ANALYSE()</div></div>
+<div class="ttc" id="classMainWindow_html_a2467b4c7e596c61586707f026ccd86c9"><div class="ttname"><a href="classMainWindow.html#a2467b4c7e596c61586707f026ccd86c9">MainWindow::m_action_windows_threads</a></div><div class="ttdeci">QAction * m_action_windows_threads</div><div class="ttdef"><b>Definition:</b> mainwindow.h:36</div></div>
+<div class="ttc" id="classMainWindow_html_a719037915de04a13dd1eaf13c1dc78be"><div class="ttname"><a href="classMainWindow.html#a719037915de04a13dd1eaf13c1dc78be">MainWindow::m_graphics_panel</a></div><div class="ttdeci">GraphicsPanel * m_graphics_panel</div><div class="ttdef"><b>Definition:</b> mainwindow.h:42</div></div>
+<div class="ttc" id="classMainWindow_html_aacb558853a63461952e282b6ee941d7b"><div class="ttname"><a href="classMainWindow.html#aacb558853a63461952e282b6ee941d7b">MainWindow::m_threads_panel</a></div><div class="ttdeci">ThreadsPanel * m_threads_panel</div><div class="ttdef"><b>Definition:</b> mainwindow.h:43</div></div>
 <div class="ttc" id="classThreadsPanel_html"><div class="ttname"><a href="classThreadsPanel.html">ThreadsPanel</a></div><div class="ttdef"><b>Definition:</b> threadspanel.h:6</div></div>
 <div class="ttc" id="classGraphicsPanel_html"><div class="ttname"><a href="classGraphicsPanel.html">GraphicsPanel</a></div><div class="ttdef"><b>Definition:</b> graphicspanel.h:6</div></div>
+<div class="ttc" id="classMainWindow_html_a03390cec3e480ca6e237e551423b7604"><div class="ttname"><a href="classMainWindow.html#a03390cec3e480ca6e237e551423b7604">MainWindow::m_action_windows_info</a></div><div class="ttdeci">QAction * m_action_windows_info</div><div class="ttdef"><b>Definition:</b> mainwindow.h:38</div></div>
 <div class="ttc" id="classSpectrographDevice_html"><div class="ttname"><a href="classSpectrographDevice.html">SpectrographDevice</a></div><div class="ttdef"><b>Definition:</b> spectrograph.h:34</div></div>
+<div class="ttc" id="classMainWindow_html_a6fe2f25404dcfcf15b5f84f482ff90b3"><div class="ttname"><a href="classMainWindow.html#a6fe2f25404dcfcf15b5f84f482ff90b3">MainWindow::__CloseAction_ANALYSE</a></div><div class="ttdeci">void __CloseAction_ANALYSE()</div></div>
 <div class="ttc" id="classAnalysePanel_html"><div class="ttname"><a href="classAnalysePanel.html">AnalysePanel</a></div><div class="ttdef"><b>Definition:</b> analysepanel.h:6</div></div>
+<div class="ttc" id="infopanel_8h_html"><div class="ttname"><a href="infopanel_8h.html">infopanel.h</a></div></div>
 <div class="ttc" id="classMainWindow_html"><div class="ttname"><a href="classMainWindow.html">MainWindow</a></div><div class="ttdef"><b>Definition:</b> mainwindow.h:31</div></div>
+<div class="ttc" id="classMainWindow_html_a01a166ddf3aedc906c914383bbbc2a10"><div class="ttname"><a href="classMainWindow.html#a01a166ddf3aedc906c914383bbbc2a10">MainWindow::m_info_panel</a></div><div class="ttdeci">InfoPanel * m_info_panel</div><div class="ttdef"><b>Definition:</b> mainwindow.h:41</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2016年 五月 30日 星期一 12:37:14 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2016年 五月 30日 星期一 12:41:48 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
       <li class="current"><a href="annotated.html"><span>类</span></a></li>
       <li><a href="files.html"><span>文件</span></a></li>
       <li>
@@ -63,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
       <li><a href="annotated.html"><span>类列表</span></a></li>
       <li><a href="classes.html"><span>类索引</span></a></li>
       <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -70,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,31 +90,41 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 
 <p>成员的完整列表，这些成员属于 <a class="el" href="classThreadsPanel.html">ThreadsPanel</a>,包括所有继承而来的类成员</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>__Select_MLS</b>(bool) (定义于 <a class="el" href="classThreadsPanel.html">ThreadsPanel</a>)</td><td class="entry"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>__Select_MRLS</b>(bool) (定义于 <a class="el" href="classThreadsPanel.html">ThreadsPanel</a>)</td><td class="entry"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>__Select_URLS</b>(bool) (定义于 <a class="el" href="classThreadsPanel.html">ThreadsPanel</a>)</td><td class="entry"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>__StartAll</b>() (定义于 <a class="el" href="classThreadsPanel.html">ThreadsPanel</a>)</td><td class="entry"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>__StopAll</b>() (定义于 <a class="el" href="classThreadsPanel.html">ThreadsPanel</a>)</td><td class="entry"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>__Toggle_MF</b>(bool) (定义于 <a class="el" href="classThreadsPanel.html">ThreadsPanel</a>)</td><td class="entry"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>__Toggle_Write</b>(bool) (定义于 <a class="el" href="classThreadsPanel.html">ThreadsPanel</a>)</td><td class="entry"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>ANALYSE</b> 枚举值 (定义于 <a class="el" href="classPanel.html">Panel</a>)</td><td class="entry"><a class="el" href="classPanel.html">Panel</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>closed</b>() (定义于 <a class="el" href="classPanel.html">Panel</a>)</td><td class="entry"><a class="el" href="classPanel.html">Panel</a></td><td class="entry"><span class="mlabel">signal</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>closeEvent</b>(QCloseEvent *event) (定义于 <a class="el" href="classPanel.html">Panel</a>)</td><td class="entry"><a class="el" href="classPanel.html">Panel</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>GRAPHICS</b> 枚举值 (定义于 <a class="el" href="classPanel.html">Panel</a>)</td><td class="entry"><a class="el" href="classPanel.html">Panel</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>INFO</b> 枚举值 (定义于 <a class="el" href="classPanel.html">Panel</a>)</td><td class="entry"><a class="el" href="classPanel.html">Panel</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>m_device</b> (定义于 <a class="el" href="classPanel.html">Panel</a>)</td><td class="entry"><a class="el" href="classPanel.html">Panel</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>m_manager</b> (定义于 <a class="el" href="classPanel.html">Panel</a>)</td><td class="entry"><a class="el" href="classPanel.html">Panel</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Panel</b>(QWidget *parent, SpectrographDevice &amp;device, ResourceManager &amp;manager) (定义于 <a class="el" href="classPanel.html">Panel</a>)</td><td class="entry"><a class="el" href="classPanel.html">Panel</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>PanelName</b> 枚举名称 (定义于 <a class="el" href="classPanel.html">Panel</a>)</td><td class="entry"><a class="el" href="classPanel.html">Panel</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>PANELNAME_NUM</b> 枚举值 (定义于 <a class="el" href="classPanel.html">Panel</a>)</td><td class="entry"><a class="el" href="classPanel.html">Panel</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>THREADS</b> 枚举值 (定义于 <a class="el" href="classPanel.html">Panel</a>)</td><td class="entry"><a class="el" href="classPanel.html">Panel</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>ThreadsPanel</b>(QWidget *parent, SpectrographDevice &amp;device, ResourceManager &amp;manager) (定义于 <a class="el" href="classThreadsPanel.html">ThreadsPanel</a>)</td><td class="entry"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>~Panel</b>()=0 (定义于 <a class="el" href="classPanel.html">Panel</a>)</td><td class="entry"><a class="el" href="classPanel.html">Panel</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~ThreadsPanel</b>() (定义于 <a class="el" href="classThreadsPanel.html">ThreadsPanel</a>)</td><td class="entry"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classThreadsPanel.html#acfbf6504d19a8f71e445a619516ecd0f">__Select_MLS</a>(bool)</td><td class="entry"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classThreadsPanel.html#addc3cd848e399aefbbb6fd3bd361a954">__Select_MRLS</a>(bool)</td><td class="entry"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classThreadsPanel.html#aa7f88a946795903286800dad290d33df">__Select_URLS</a>(bool)</td><td class="entry"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classThreadsPanel.html#a27e0ec5f03828ba6edb1403b28894c53">__StartAll</a>()</td><td class="entry"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classThreadsPanel.html#ac0eb2d2baf5ffc416ff94c306dafabd3">__StopAll</a>()</td><td class="entry"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classThreadsPanel.html#a65d85fb8aa517ad0d870e168e9c63d80">__Toggle_MF</a>(bool)</td><td class="entry"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classThreadsPanel.html#a8e82ec31bfe9f60cb5f428e8749b1d1f">__Toggle_Write</a>(bool)</td><td class="entry"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a></td><td class="entry"><span class="mlabel">slot</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84afe85cecdcb5be1215b874b6c16a6f938">ANALYSE</a> 枚举值</td><td class="entry"><a class="el" href="classPanel.html">Panel</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classThreadsPanel.html#a6635fac1759999c3961f8e15de4de6f2">button_start</a></td><td class="entry"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classThreadsPanel.html#a8a043906efef3326c29d417cc4cbdfaa">button_stop</a></td><td class="entry"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classPanel.html#a8de68235bf5a6ac3f849ca8a1322dcb9">closed</a>()</td><td class="entry"><a class="el" href="classPanel.html">Panel</a></td><td class="entry"><span class="mlabel">signal</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classPanel.html#a07b94c563d845ea7746ec0217a6c415d">closeEvent</a>(QCloseEvent *event)</td><td class="entry"><a class="el" href="classPanel.html">Panel</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84a5b575f9d2602eedda26f993d76cc4362">GRAPHICS</a> 枚举值</td><td class="entry"><a class="el" href="classPanel.html">Panel</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84a933c2e9581869cc7d99189e60172061b">INFO</a> 枚举值</td><td class="entry"><a class="el" href="classPanel.html">Panel</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classPanel.html#add4ae13edea2ab748adf425e71ccd39b">m_device</a></td><td class="entry"><a class="el" href="classPanel.html">Panel</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classThreadsPanel.html#a902e0dc4455bdfb545e8a196c1ab8d55">m_main_layout</a></td><td class="entry"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classPanel.html#a88bbc23847b6d3304150fcdd07005d9e">m_manager</a></td><td class="entry"><a class="el" href="classPanel.html">Panel</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classPanel.html#a6a52c614f74380ac66ea2932a2906427">Panel</a>(QWidget *parent, SpectrographDevice &amp;device, ResourceManager &amp;manager)</td><td class="entry"><a class="el" href="classPanel.html">Panel</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84">PanelName</a> 枚举名称</td><td class="entry"><a class="el" href="classPanel.html">Panel</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84ad51a96f960ab98c5856c15e46a126a4a">PANELNAME_NUM</a> 枚举值</td><td class="entry"><a class="el" href="classPanel.html">Panel</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classThreadsPanel.html#a457853cabac07e5737221e9ce71b617e">radio_calc_MF_disable</a></td><td class="entry"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classThreadsPanel.html#ae4d9ef0eefc684d04cb5e2f70394c7cc">radio_calc_MF_enable</a></td><td class="entry"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classThreadsPanel.html#a97d10fff50309b30dfaffeb776fb7439">radio_switcher_MLS</a></td><td class="entry"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classThreadsPanel.html#aa8a5040368b49b1fd7423774a31d76d2">radio_switcher_MRLS</a></td><td class="entry"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classThreadsPanel.html#a255b5d1c35082164c22c5b556caae949">radio_switcher_URLS</a></td><td class="entry"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classThreadsPanel.html#a26a9c5ff5f6bab7692d11e9f2be706e7">radio_write_disable</a></td><td class="entry"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classThreadsPanel.html#a9e7918aef81c36308b445a9870fdf512">radio_write_enable</a></td><td class="entry"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84a43c8b559b087b51e4191858d7eb1644e">THREADS</a> 枚举值</td><td class="entry"><a class="el" href="classPanel.html">Panel</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classThreadsPanel.html#a6995f449346c812074f1b5c465d834a9">ThreadsPanel</a>(QWidget *parent, SpectrographDevice &amp;device, ResourceManager &amp;manager)</td><td class="entry"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classPanel.html#ae8dfca2ecc97e4b31b10976226cfc806">~Panel</a>()=0</td><td class="entry"><a class="el" href="classPanel.html">Panel</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classThreadsPanel.html#a2ac43bc2c607ba1b703a417f893ea4c9">~ThreadsPanel</a>()</td><td class="entry"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2016年 五月 30日 星期一 12:37:14 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2016年 五月 30日 星期一 12:41:48 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

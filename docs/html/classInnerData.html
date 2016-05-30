@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
       <li class="current"><a href="annotated.html"><span>类</span></a></li>
       <li><a href="files.html"><span>文件</span></a></li>
       <li>
@@ -63,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
       <li><a href="annotated.html"><span>类列表</span></a></li>
       <li><a href="classes.html"><span>类索引</span></a></li>
       <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -70,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -83,55 +85,334 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
 <a href="classInnerData-members.html">所有成员列表</a>  </div>
   <div class="headertitle">
 <div class="title">InnerData类 参考</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="innerdata_8h_source.html">innerdata.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:af49f32c55c739ca5cf39e2c5dde9404a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af49f32c55c739ca5cf39e2c5dde9404a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>InnerData</b> (std::vector&lt; <a class="el" href="classComplex.html">Complex</a> &gt; x, std::vector&lt; <a class="el" href="classComplex.html">Complex</a> &gt; y)</td></tr>
+<tr class="memitem:aeddb2eba000e117e764d10b3bd619bd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInnerData.html#aeddb2eba000e117e764d10b3bd619bd7">InnerData</a> ()</td></tr>
+<tr class="separator:aeddb2eba000e117e764d10b3bd619bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af49f32c55c739ca5cf39e2c5dde9404a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInnerData.html#af49f32c55c739ca5cf39e2c5dde9404a">InnerData</a> (std::vector&lt; <a class="el" href="classComplex.html">Complex</a> &gt; <a class="el" href="classInnerData.html#af853122f6117e98ac9258327e1897c35">x</a>, std::vector&lt; <a class="el" href="classComplex.html">Complex</a> &gt; <a class="el" href="classInnerData.html#a42c6dfb32645fc239acc4d79af7c49eb">y</a>)</td></tr>
 <tr class="separator:af49f32c55c739ca5cf39e2c5dde9404a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a759244dc844e8e489295a80ce0a3ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a759244dc844e8e489295a80ce0a3ef"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetContent</b> (std::vector&lt; <a class="el" href="classComplex.html">Complex</a> &gt; &amp;lx, std::vector&lt; <a class="el" href="classComplex.html">Complex</a> &gt; &amp;ly)</td></tr>
+<tr class="memitem:a6a759244dc844e8e489295a80ce0a3ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInnerData.html#a6a759244dc844e8e489295a80ce0a3ef">SetContent</a> (std::vector&lt; <a class="el" href="classComplex.html">Complex</a> &gt; &amp;lx, std::vector&lt; <a class="el" href="classComplex.html">Complex</a> &gt; &amp;ly)</td></tr>
 <tr class="separator:a6a759244dc844e8e489295a80ce0a3ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a109f7a74753f78f552d0861ee32f1b4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a109f7a74753f78f552d0861ee32f1b4b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>peek</b> (int i)</td></tr>
+<tr class="memitem:a109f7a74753f78f552d0861ee32f1b4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInnerData.html#a109f7a74753f78f552d0861ee32f1b4b">peek</a> (int i)</td></tr>
 <tr class="separator:a109f7a74753f78f552d0861ee32f1b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2aedd61cc0a51fda0e35e5c0e389155d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2aedd61cc0a51fda0e35e5c0e389155d"></a>
-std::vector&lt; <a class="el" href="classComplex.html">Complex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getX</b> ()</td></tr>
+<tr class="memitem:a2aedd61cc0a51fda0e35e5c0e389155d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classComplex.html">Complex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInnerData.html#a2aedd61cc0a51fda0e35e5c0e389155d">getX</a> ()</td></tr>
 <tr class="separator:a2aedd61cc0a51fda0e35e5c0e389155d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a6b2ba6b341ba450b48873788f62ed1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a6b2ba6b341ba450b48873788f62ed1"></a>
-std::vector&lt; <a class="el" href="classComplex.html">Complex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getY</b> ()</td></tr>
+<tr class="memitem:a2a6b2ba6b341ba450b48873788f62ed1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classComplex.html">Complex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInnerData.html#a2a6b2ba6b341ba450b48873788f62ed1">getY</a> ()</td></tr>
 <tr class="separator:a2a6b2ba6b341ba450b48873788f62ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25ba68f488dd0ed170633dbe13101556"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a25ba68f488dd0ed170633dbe13101556"></a>
-std::vector&lt; <a class="el" href="classComplex.html">Complex</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetControlX</b> ()</td></tr>
+<tr class="memitem:a25ba68f488dd0ed170633dbe13101556"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classComplex.html">Complex</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInnerData.html#a25ba68f488dd0ed170633dbe13101556">GetControlX</a> ()</td></tr>
 <tr class="separator:a25ba68f488dd0ed170633dbe13101556"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63827b8cf00ee2949f206b1f3438d954"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63827b8cf00ee2949f206b1f3438d954"></a>
-std::vector&lt; <a class="el" href="classComplex.html">Complex</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetControlY</b> ()</td></tr>
+<tr class="memitem:a63827b8cf00ee2949f206b1f3438d954"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classComplex.html">Complex</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInnerData.html#a63827b8cf00ee2949f206b1f3438d954">GetControlY</a> ()</td></tr>
 <tr class="separator:a63827b8cf00ee2949f206b1f3438d954"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a003ebc5bb0391de3c6b89e299fd13115"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a003ebc5bb0391de3c6b89e299fd13115"></a>
-<a class="el" href="classComplex.html">Complex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetXMax</b> ()</td></tr>
+<tr class="memitem:a003ebc5bb0391de3c6b89e299fd13115"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classComplex.html">Complex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInnerData.html#a003ebc5bb0391de3c6b89e299fd13115">GetXMax</a> ()</td></tr>
 <tr class="separator:a003ebc5bb0391de3c6b89e299fd13115"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c902ad1d0a8c9d51d780f21dc37f661"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c902ad1d0a8c9d51d780f21dc37f661"></a>
-<a class="el" href="classComplex.html">Complex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetXMin</b> ()</td></tr>
+<tr class="memitem:a2c902ad1d0a8c9d51d780f21dc37f661"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classComplex.html">Complex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInnerData.html#a2c902ad1d0a8c9d51d780f21dc37f661">GetXMin</a> ()</td></tr>
 <tr class="separator:a2c902ad1d0a8c9d51d780f21dc37f661"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a029355117ddc0086ebb68d27596f0b58"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a029355117ddc0086ebb68d27596f0b58"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>empty</b> ()</td></tr>
+<tr class="memitem:a029355117ddc0086ebb68d27596f0b58"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInnerData.html#a029355117ddc0086ebb68d27596f0b58">empty</a> ()</td></tr>
 <tr class="separator:a029355117ddc0086ebb68d27596f0b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acff59f697d436516782f852a9e2010aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acff59f697d436516782f852a9e2010aa"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>length</b> ()</td></tr>
+<tr class="memitem:acff59f697d436516782f852a9e2010aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInnerData.html#acff59f697d436516782f852a9e2010aa">length</a> ()</td></tr>
 <tr class="separator:acff59f697d436516782f852a9e2010aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:af853122f6117e98ac9258327e1897c35"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classComplex.html">Complex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInnerData.html#af853122f6117e98ac9258327e1897c35">x</a></td></tr>
+<tr class="separator:af853122f6117e98ac9258327e1897c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42c6dfb32645fc239acc4d79af7c49eb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classComplex.html">Complex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInnerData.html#a42c6dfb32645fc239acc4d79af7c49eb">y</a></td></tr>
+<tr class="separator:a42c6dfb32645fc239acc4d79af7c49eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="aeddb2eba000e117e764d10b3bd619bd7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">InnerData::InnerData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af49f32c55c739ca5cf39e2c5dde9404a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">InnerData::InnerData </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classComplex.html">Complex</a> &gt;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classComplex.html">Complex</a> &gt;&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a029355117ddc0086ebb68d27596f0b58"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool InnerData::empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classInnerData.html#af853122f6117e98ac9258327e1897c35">x</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a25ba68f488dd0ed170633dbe13101556"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classComplex.html">Complex</a>&gt;&amp; InnerData::GetControlX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a63827b8cf00ee2949f206b1f3438d954"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classComplex.html">Complex</a>&gt;&amp; InnerData::GetControlY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2aedd61cc0a51fda0e35e5c0e389155d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classComplex.html">Complex</a>&gt; InnerData::getX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a003ebc5bb0391de3c6b89e299fd13115"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classComplex.html">Complex</a> InnerData::GetXMax </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classInnerData.html#af853122f6117e98ac9258327e1897c35">x</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2c902ad1d0a8c9d51d780f21dc37f661"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classComplex.html">Complex</a> InnerData::GetXMin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classInnerData.html#af853122f6117e98ac9258327e1897c35">x</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2a6b2ba6b341ba450b48873788f62ed1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classComplex.html">Complex</a>&gt; InnerData::getY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acff59f697d436516782f852a9e2010aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int InnerData::length </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a109f7a74753f78f552d0861ee32f1b4b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InnerData::peek </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6a759244dc844e8e489295a80ce0a3ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InnerData::SetContent </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classComplex.html">Complex</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>lx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classComplex.html">Complex</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ly</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="af853122f6117e98ac9258327e1897c35"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classComplex.html">Complex</a>&gt; InnerData::x</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classInnerData.html#a029355117ddc0086ebb68d27596f0b58">empty()</a>, <a class="el" href="classInnerData.html#a003ebc5bb0391de3c6b89e299fd13115">GetXMax()</a> , 以及 <a class="el" href="classInnerData.html#a2c902ad1d0a8c9d51d780f21dc37f661">GetXMin()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a42c6dfb32645fc239acc4d79af7c49eb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classComplex.html">Complex</a>&gt; InnerData::y</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>该类的文档由以下文件生成:<ul>
 <li>include/Universal/<a class="el" href="innerdata_8h_source.html">innerdata.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2016年 五月 30日 星期一 12:37:14 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2016年 五月 30日 星期一 12:41:48 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

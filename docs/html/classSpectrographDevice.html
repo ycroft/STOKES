@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
       <li class="current"><a href="annotated.html"><span>类</span></a></li>
       <li><a href="files.html"><span>文件</span></a></li>
       <li>
@@ -63,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
       <li><a href="annotated.html"><span>类列表</span></a></li>
       <li><a href="classes.html"><span>类索引</span></a></li>
       <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -70,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,6 +91,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="title">SpectrographDevice类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="spectrograph_8h_source.html">spectrograph.h</a>&gt;</code></p>
 <div class="dynheader">
 类 SpectrographDevice 继承关系图:</div>
 <div class="dyncontent">
@@ -101,38 +105,249 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:ab5528ab752a50c308239afa8c3134c09"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5528ab752a50c308239afa8c3134c09"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>Boot</b> ()=0</td></tr>
+<tr class="memitem:a0888055328209b8247e8b5221fbd733f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpectrographDevice.html#a0888055328209b8247e8b5221fbd733f">SpectrographDevice</a> ()</td></tr>
+<tr class="separator:a0888055328209b8247e8b5221fbd733f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad279904330e12da35ae6abfb149cbada"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpectrographDevice.html#ad279904330e12da35ae6abfb149cbada">~SpectrographDevice</a> ()</td></tr>
+<tr class="separator:ad279904330e12da35ae6abfb149cbada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5528ab752a50c308239afa8c3134c09"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpectrographDevice.html#ab5528ab752a50c308239afa8c3134c09">Boot</a> ()=0</td></tr>
 <tr class="separator:ab5528ab752a50c308239afa8c3134c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a386f42e70bc04c9c0c2877c3fe21afbb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a386f42e70bc04c9c0c2877c3fe21afbb"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>Shutdown</b> ()=0</td></tr>
+<tr class="memitem:a386f42e70bc04c9c0c2877c3fe21afbb"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpectrographDevice.html#a386f42e70bc04c9c0c2877c3fe21afbb">Shutdown</a> ()=0</td></tr>
 <tr class="separator:a386f42e70bc04c9c0c2877c3fe21afbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfd8284edb2d9714725ade8d2ca50abc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfd8284edb2d9714725ade8d2ca50abc"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>Reboot</b> ()=0</td></tr>
+<tr class="memitem:adfd8284edb2d9714725ade8d2ca50abc"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpectrographDevice.html#adfd8284edb2d9714725ade8d2ca50abc">Reboot</a> ()=0</td></tr>
 <tr class="separator:adfd8284edb2d9714725ade8d2ca50abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa0decb2038d66dfaec4af95976aec7f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa0decb2038d66dfaec4af95976aec7f"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetState</b> ()=0</td></tr>
+<tr class="memitem:afa0decb2038d66dfaec4af95976aec7f"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpectrographDevice.html#afa0decb2038d66dfaec4af95976aec7f">GetState</a> ()=0</td></tr>
 <tr class="separator:afa0decb2038d66dfaec4af95976aec7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af155d8cf375b7ace72f3f664a2c1c334"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af155d8cf375b7ace72f3f664a2c1c334"></a>
-virtual <a class="el" href="structdeviceinfo.html">DeviceInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetDeviceInfo</b> ()=0</td></tr>
+<tr class="memitem:af155d8cf375b7ace72f3f664a2c1c334"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="spectrograph_8h.html#a320dab1a47d01bab393d87f84bc4d35c">DeviceInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpectrographDevice.html#af155d8cf375b7ace72f3f664a2c1c334">GetDeviceInfo</a> ()=0</td></tr>
 <tr class="separator:af155d8cf375b7ace72f3f664a2c1c334"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14cc3abd9063d4ecd958926f52588f56"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14cc3abd9063d4ecd958926f52588f56"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>ReadDatagram</b> (<a class="el" href="classInnerData.html">InnerData</a> &amp;innerData, int type=STREAM_MLS)=0</td></tr>
+<tr class="memitem:a14cc3abd9063d4ecd958926f52588f56"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpectrographDevice.html#a14cc3abd9063d4ecd958926f52588f56">ReadDatagram</a> (<a class="el" href="classInnerData.html">InnerData</a> &amp;innerData, int type=<a class="el" href="spectrograph_8h.html#a0b4ccf00b035279e19200a1bceb91c18">STREAM_MLS</a>)=0</td></tr>
 <tr class="separator:a14cc3abd9063d4ecd958926f52588f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public 属性</h2></td></tr>
-<tr class="memitem:a248f634ce92f5170f12d6fb3192e4445"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a248f634ce92f5170f12d6fb3192e4445"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>device_type_id</b></td></tr>
+<tr class="memitem:a248f634ce92f5170f12d6fb3192e4445"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpectrographDevice.html#a248f634ce92f5170f12d6fb3192e4445">device_type_id</a></td></tr>
 <tr class="separator:a248f634ce92f5170f12d6fb3192e4445"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a0888055328209b8247e8b5221fbd733f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SpectrographDevice::SpectrographDevice </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad279904330e12da35ae6abfb149cbada"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual SpectrographDevice::~SpectrographDevice </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="ab5528ab752a50c308239afa8c3134c09"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool SpectrographDevice::Boot </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="classVisualMachine.html#aa8ad515fd4a1b5faec54c5ea31597df3">VisualMachine</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="af155d8cf375b7ace72f3f664a2c1c334"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="spectrograph_8h.html#a320dab1a47d01bab393d87f84bc4d35c">DeviceInfo</a> SpectrographDevice::GetDeviceInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="classVisualMachine.html#a7d679be75e5f2006a565700ae2e98ee3">VisualMachine</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="afa0decb2038d66dfaec4af95976aec7f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int SpectrographDevice::GetState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="classVisualMachine.html#a255fe9708a03723e6a2f8e65ccd6f88f">VisualMachine</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a14cc3abd9063d4ecd958926f52588f56"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool SpectrographDevice::ReadDatagram </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInnerData.html">InnerData</a> &amp;&#160;</td>
+          <td class="paramname"><em>innerData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>type</em> = <code><a class="el" href="spectrograph_8h.html#a0b4ccf00b035279e19200a1bceb91c18">STREAM_MLS</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="classVisualMachine.html#a196500cd88093dbc652aa0e32ff4bf5f">VisualMachine</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="adfd8284edb2d9714725ade8d2ca50abc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool SpectrographDevice::Reboot </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="classVisualMachine.html#a8ab8a009f58e36fe647710ab3b608990">VisualMachine</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a386f42e70bc04c9c0c2877c3fe21afbb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool SpectrographDevice::Shutdown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="classVisualMachine.html#afe57f3cc33a48a5ba490327bba1ec835">VisualMachine</a> 内被实现.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a248f634ce92f5170f12d6fb3192e4445"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SpectrographDevice::device_type_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>该类的文档由以下文件生成:<ul>
 <li>include/DataCollection/<a class="el" href="spectrograph_8h_source.html">spectrograph.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2016年 五月 30日 星期一 12:37:14 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2016年 五月 30日 星期一 12:41:48 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

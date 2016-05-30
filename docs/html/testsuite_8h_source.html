@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
       <li><a href="annotated.html"><span>类</span></a></li>
       <li class="current"><a href="files.html"><span>文件</span></a></li>
       <li>
@@ -61,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -69,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -83,24 +85,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="title">testsuite.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef TESTSUITE_H</span></div>
+<a href="testsuite_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef TESTSUITE_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TESTSUITE_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include&lt;iostream&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include&lt;ctime&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">static</span> clock_t start_time;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">static</span> clock_t end_time;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="testsuite_8h.html#affc511ee6672968dd4a00f341600ed36">    7</a></span>&#160;<span class="keyword">static</span> clock_t <a class="code" href="testsuite_8h.html#affc511ee6672968dd4a00f341600ed36">start_time</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="testsuite_8h.html#a934480aa64bad425ee115ea3d26fd0e5">    8</a></span>&#160;<span class="keyword">static</span> clock_t <a class="code" href="testsuite_8h.html#a934480aa64bad425ee115ea3d26fd0e5">end_time</a>;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define TIME_STARTS() \</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="testsuite_8h.html#a1764606186822dbb097c718a07e4c08a">   10</a></span>&#160;<span class="preprocessor">#define TIME_STARTS() \</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">    start_time = clock();</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TIME_UP() \</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="testsuite_8h.html#a59b6a10d6371d1f00fb2883764073cd3">   12</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TIME_UP() \</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">    end_time = clock();\</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">    std::cout &lt;&lt; &quot;TIME USED: &quot;;\</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">    std::cout &lt;&lt; (double)(end_time-start_time)/CLOCKS_PER_SEC*1000;\</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">    std::cout &lt;&lt; &quot; ms&quot; &lt;&lt; std::endl;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define ASSERT(x) \</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="testsuite_8h.html#aca68c0d4ac8df0838e209fb5300f7be3">   18</a></span>&#160;<span class="preprocessor">#define ASSERT(x) \</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">    std::cout &lt;&lt; &quot;ASSERTION: &quot; &lt;&lt; &quot;[&quot;#x &lt;&lt; &quot;]&quot; ; \</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">    if(x)\</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">    {\</span></div>
@@ -111,7 +113,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">        std::cout &lt;&lt; &quot; FAIL![*****]&quot; &lt;&lt; std::endl;\</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">    }</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span>    </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#define ASSERT_EQUAL(a,b) \</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="testsuite_8h.html#a4eb2dea94d13f305ce42ea82cec4114b">   29</a></span>&#160;<span class="preprocessor">#define ASSERT_EQUAL(a,b) \</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">    std::cout &lt;&lt; &quot;ASSERTION: &quot; &lt;&lt; &quot;[&quot;#a&lt;&lt;&quot; ==&quot;&lt;&lt;&quot; &quot;#b&lt;&lt;&quot;]&quot;;\</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">    if((a)==(b))\</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">    {\</span></div>
@@ -123,10 +125,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">    }</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span>    </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif // TESTSUITE_H</span></div>
+<div class="ttc" id="testsuite_8h_html_a934480aa64bad425ee115ea3d26fd0e5"><div class="ttname"><a href="testsuite_8h.html#a934480aa64bad425ee115ea3d26fd0e5">end_time</a></div><div class="ttdeci">static clock_t end_time</div><div class="ttdef"><b>Definition:</b> testsuite.h:8</div></div>
+<div class="ttc" id="testsuite_8h_html_affc511ee6672968dd4a00f341600ed36"><div class="ttname"><a href="testsuite_8h.html#affc511ee6672968dd4a00f341600ed36">start_time</a></div><div class="ttdeci">static clock_t start_time</div><div class="ttdef"><b>Definition:</b> testsuite.h:7</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2016年 五月 30日 星期一 12:37:14 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2016年 五月 30日 星期一 12:41:48 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

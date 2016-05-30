@@ -1,0 +1,463 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>STOKES: 类成员</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">STOKES
+   &#160;<span id="projectnumber">0.1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li class="current"><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow3" class="tabs2">
+    <ul class="tablist">
+      <li class="current"><a href="functions.html"><span>全部</span></a></li>
+      <li><a href="functions_func.html"><span>函数</span></a></li>
+      <li><a href="functions_vars.html"><span>变量</span></a></li>
+      <li><a href="functions_enum.html"><span>枚举</span></a></li>
+      <li><a href="functions_eval.html"><span>枚举值</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li><a href="functions.html#index__"><span>_</span></a></li>
+      <li><a href="functions_a.html#index_a"><span>a</span></a></li>
+      <li><a href="functions_b.html#index_b"><span>b</span></a></li>
+      <li><a href="functions_c.html#index_c"><span>c</span></a></li>
+      <li><a href="functions_d.html#index_d"><span>d</span></a></li>
+      <li><a href="functions_e.html#index_e"><span>e</span></a></li>
+      <li><a href="functions_g.html#index_g"><span>g</span></a></li>
+      <li><a href="functions_i.html#index_i"><span>i</span></a></li>
+      <li><a href="functions_l.html#index_l"><span>l</span></a></li>
+      <li class="current"><a href="functions_m.html#index_m"><span>m</span></a></li>
+      <li><a href="functions_n.html#index_n"><span>n</span></a></li>
+      <li><a href="functions_o.html#index_o"><span>o</span></a></li>
+      <li><a href="functions_p.html#index_p"><span>p</span></a></li>
+      <li><a href="functions_r.html#index_r"><span>r</span></a></li>
+      <li><a href="functions_s.html#index_s"><span>s</span></a></li>
+      <li><a href="functions_t.html#index_t"><span>t</span></a></li>
+      <li><a href="functions_u.html#index_u"><span>u</span></a></li>
+      <li><a href="functions_v.html#index_v"><span>v</span></a></li>
+      <li><a href="functions_w.html#index_w"><span>w</span></a></li>
+      <li><a href="functions_x.html#index_x"><span>x</span></a></li>
+      <li><a href="functions_y.html#index_y"><span>y</span></a></li>
+      <li><a href="functions_~.html#index_~"><span>~</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="contents">
+<div class="textblock">这里列出了所有类成员，并附带类的详细说明:</div>
+
+<h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>m_action_file_workplace
+: <a class="el" href="classMainWindow.html#ae6aface721b478390574fbf1c5436b86">MainWindow</a>
+</li>
+<li>m_action_windows_analyse
+: <a class="el" href="classMainWindow.html#a4a5b98b732dc51f689f675496ccf4e48">MainWindow</a>
+</li>
+<li>m_action_windows_graphics
+: <a class="el" href="classMainWindow.html#a65ed78f835171609773c25e3f6071412">MainWindow</a>
+</li>
+<li>m_action_windows_info
+: <a class="el" href="classMainWindow.html#a03390cec3e480ca6e237e551423b7604">MainWindow</a>
+</li>
+<li>m_action_windows_threads
+: <a class="el" href="classMainWindow.html#a2467b4c7e596c61586707f026ccd86c9">MainWindow</a>
+</li>
+<li>m_analyse_panel
+: <a class="el" href="classApplication.html#a9eea8b72670acb9f002178e0fd5f418c">Application</a>
+, <a class="el" href="classMainWindow.html#a732b3ede4806319132c618c22cc30861">MainWindow</a>
+</li>
+<li>m_config
+: <a class="el" href="classResourceManager.html#a81a6008306bbe7315e0d1f7b9f10a23a">ResourceManager</a>
+</li>
+<li>m_curves
+: <a class="el" href="classPlot.html#a0c8135a04711e5922cd2934d4a728efe">Plot</a>
+</li>
+<li>m_device
+: <a class="el" href="classApplication.html#a6d124eb3c0024913826003a9ea2bd87b">Application</a>
+, <a class="el" href="classMainWindow.html#a8cb4a2221a262fe14bdd5df121d1a164">MainWindow</a>
+, <a class="el" href="classPanel.html#add4ae13edea2ab748adf425e71ccd39b">Panel</a>
+, <a class="el" href="classResourceManager.html#aebc6c7acda687dd66bf9629406fb8135">ResourceManager</a>
+</li>
+<li>m_DOP
+: <a class="el" href="classResourceManager.html#a6fac2d75e670e5caa58598a88b9d5fed">ResourceManager</a>
+</li>
+<li>m_graphics_panel
+: <a class="el" href="classApplication.html#abce49f9c334a3ed4b96a005528f4edac">Application</a>
+, <a class="el" href="classMainWindow.html#a719037915de04a13dd1eaf13c1dc78be">MainWindow</a>
+</li>
+<li>m_imag
+: <a class="el" href="classComplex.html#aeb21dbc3ab3e3560c52083ab522e16ce">Complex</a>
+</li>
+<li>m_info_panel
+: <a class="el" href="classApplication.html#ae380d2c4c2ce9ec6866e14275a864911">Application</a>
+, <a class="el" href="classMainWindow.html#a01a166ddf3aedc906c914383bbbc2a10">MainWindow</a>
+</li>
+<li>m_instructor
+: <a class="el" href="classResourceManager.html#a2e2719c587574d58639add030d7bd130">ResourceManager</a>
+</li>
+<li>m_line
+: <a class="el" href="classInfoPanel.html#acb185d1b90ca24ca667d8757952162de">InfoPanel</a>
+</li>
+<li>m_main_layout
+: <a class="el" href="classAnalysePanel.html#ad3474b2940cb2c0f8d3c8b7b083105ae">AnalysePanel</a>
+, <a class="el" href="classGraphicsPanel.html#a33a2dd4024a169dc1a061c73e6e8c529">GraphicsPanel</a>
+, <a class="el" href="classInfoPanel.html#ae3be349c63b2422a44aaefb3a5d25e6a">InfoPanel</a>
+, <a class="el" href="classThreadsPanel.html#a902e0dc4455bdfb545e8a196c1ab8d55">ThreadsPanel</a>
+</li>
+<li>m_mainLegend
+: <a class="el" href="classPlot.html#ad88c46ce822a0e29772f71352a19aba9">Plot</a>
+</li>
+<li>m_manager
+: <a class="el" href="classApplication.html#a7229e54463f1fe60db1020c88d233dc5">Application</a>
+, <a class="el" href="classMainWindow.html#a575c0b58003985487739aaa6f5e871c2">MainWindow</a>
+, <a class="el" href="classPanel.html#a88bbc23847b6d3304150fcdd07005d9e">Panel</a>
+, <a class="el" href="classPlot.html#a30c250aea6df39accdbd655f7dd7650b">Plot</a>
+</li>
+<li>m_measured_LS
+: <a class="el" href="classResourceManager.html#a1cca3d58ac31bae227f8f0123d1b8452">ResourceManager</a>
+, <a class="el" href="classVisualMachine.html#a63a6c0f55917588964e2d1e9f8db8840">VisualMachine</a>
+</li>
+<li>m_MLS_AF_ch0
+: <a class="el" href="classResourceManager.html#af4ee205adfe3e710031f3114b686e578">ResourceManager</a>
+</li>
+<li>m_MLS_AF_ch1
+: <a class="el" href="classResourceManager.html#a18affacee74e2b91bea1ae98cbaa7b82">ResourceManager</a>
+</li>
+<li>m_MLS_AF_ch2
+: <a class="el" href="classResourceManager.html#af808b464de07f5d39ff1f0e2ca0f91d5">ResourceManager</a>
+</li>
+<li>m_MLS_AF_ch3
+: <a class="el" href="classResourceManager.html#ad1bfb8128699954e95cd14a389da835a">ResourceManager</a>
+</li>
+<li>m_MLS_AF_feature
+: <a class="el" href="classResourceManager.html#a54b28db7df29221b68d2bae66de94593">ResourceManager</a>
+</li>
+<li>m_MLS_autocorrelation_function
+: <a class="el" href="classResourceManager.html#a68e50d23f1f86d983158bda1b7e0023e">ResourceManager</a>
+</li>
+<li>m_MLS_ch0
+: <a class="el" href="classResourceManager.html#ac76c930ef9a8f43eb2b05de29f1a59d7">ResourceManager</a>
+</li>
+<li>m_MLS_ch1
+: <a class="el" href="classResourceManager.html#a5f97fce47241436e1b290628adbd303f">ResourceManager</a>
+</li>
+<li>m_MLS_ch2
+: <a class="el" href="classResourceManager.html#a54365d8918b281c069a47d1b9186362a">ResourceManager</a>
+</li>
+<li>m_MLS_ch3
+: <a class="el" href="classResourceManager.html#a7a5c913d2dbd826dea02a1ba7eb68fc3">ResourceManager</a>
+</li>
+<li>m_modification_factor_phi1
+: <a class="el" href="classResourceManager.html#a23d1fbce01a73a5a4bc427970f2676a9">ResourceManager</a>
+</li>
+<li>m_modification_factor_phi2
+: <a class="el" href="classResourceManager.html#a08e9f92c0dd2856fc793e1d1821f5b04">ResourceManager</a>
+</li>
+<li>m_modulated_RLS
+: <a class="el" href="classResourceManager.html#a0b3abab7fc73d4161fcb6af84dc41b3a">ResourceManager</a>
+, <a class="el" href="classVisualMachine.html#ace42aaaab622d1873bfd816d21fb76de">VisualMachine</a>
+</li>
+<li>m_modulation_factor_0
+: <a class="el" href="classResourceManager.html#a92fc8a818249bc9833f9e9256889157e">ResourceManager</a>
+</li>
+<li>m_modulation_factor_1
+: <a class="el" href="classResourceManager.html#ac6b42f92c9160be84b9bb7c054285a0f">ResourceManager</a>
+</li>
+<li>m_modulation_factor_2
+: <a class="el" href="classResourceManager.html#a0bc0ae4808a135dc6b1069c9743faff1">ResourceManager</a>
+</li>
+<li>m_modulation_factor_3
+: <a class="el" href="classResourceManager.html#a324fcccfeff3032c34dc0c146132305e">ResourceManager</a>
+</li>
+<li>m_name_ADDI
+: <a class="el" href="classInfoPanel.html#a7130499bdbc7eb3a96c92bd42698e558">InfoPanel</a>
+</li>
+<li>m_name_fetch
+: <a class="el" href="classInfoPanel.html#a436045f8b79e6c5246fa6f1782fc38f4">InfoPanel</a>
+</li>
+<li>m_name_machine
+: <a class="el" href="classInfoPanel.html#a75676e288816cdedd0e8a8fdab07d05c">InfoPanel</a>
+</li>
+<li>m_name_machine_type
+: <a class="el" href="classInfoPanel.html#ae9f8cb71a217bca36444b3a6750cbc29">InfoPanel</a>
+</li>
+<li>m_name_MF
+: <a class="el" href="classInfoPanel.html#a9035c7bde952224a198528a686bf4bf6">InfoPanel</a>
+</li>
+<li>m_name_repaint
+: <a class="el" href="classInfoPanel.html#a2b495f5027eda434f4a5dcf9ca23cd47">InfoPanel</a>
+</li>
+<li>m_name_SV
+: <a class="el" href="classInfoPanel.html#a5e75c6f4e94eec8fda6e9206916f33b1">InfoPanel</a>
+</li>
+<li>m_name_write
+: <a class="el" href="classInfoPanel.html#a0dcbd08d57043f2a765fbbb147282613">InfoPanel</a>
+</li>
+<li>m_peak_positions
+: <a class="el" href="classResourceManager.html#ab777c24783e35728213113f910a7807f">ResourceManager</a>
+</li>
+<li>m_plot
+: <a class="el" href="classApplication.html#ae3e38c4634a92988b5a101024ce25231">Application</a>
+, <a class="el" href="classMainWindow.html#ab620e20a42da924bf8cf754d7e368d74">MainWindow</a>
+</li>
+<li>m_real
+: <a class="el" href="classComplex.html#ae2c40b02dcf8ff8a083828fee0d10cea">Complex</a>
+</li>
+<li>m_renewEnable
+: <a class="el" href="classPlot.html#ad32d3d6aeb0092ff17d93fab92ca0f21">Plot</a>
+</li>
+<li>m_renewList
+: <a class="el" href="classPlot.html#a194e76aeab067f59727dafd4633d928d">Plot</a>
+</li>
+<li>m_resourceManager
+: <a class="el" href="classPlot.html#ad2b6e1e43e0c2da1dec3ce871edc5abd">Plot</a>
+</li>
+<li>m_RLS_AF_ch0
+: <a class="el" href="classResourceManager.html#a57e6bba67f93e9f881150271e7340191">ResourceManager</a>
+</li>
+<li>m_RLS_AF_ch1
+: <a class="el" href="classResourceManager.html#a88113dcc760a5ba878a9829c3b6063a3">ResourceManager</a>
+</li>
+<li>m_RLS_AF_ch2
+: <a class="el" href="classResourceManager.html#abe0e9ee9a2ab37b9ed2a7c682d2bde7b">ResourceManager</a>
+</li>
+<li>m_RLS_AF_ch3
+: <a class="el" href="classResourceManager.html#ab20392eacd157edfd914ed33f4b0cdb1">ResourceManager</a>
+</li>
+<li>m_RLS_AF_feature
+: <a class="el" href="classResourceManager.html#a074a20747b1d22d9388904fd251287c9">ResourceManager</a>
+</li>
+<li>m_RLS_autocorrelation_function
+: <a class="el" href="classResourceManager.html#a4821ab8f702c4f26ff9c979656e792ed">ResourceManager</a>
+</li>
+<li>m_RLS_ch0
+: <a class="el" href="classResourceManager.html#a8ce07079255844ea0e8feb000f705972">ResourceManager</a>
+</li>
+<li>m_RLS_ch1
+: <a class="el" href="classResourceManager.html#aefee057737fe6ff7a6068074d86796b4">ResourceManager</a>
+</li>
+<li>m_RLS_ch2
+: <a class="el" href="classResourceManager.html#ad0ab406ff52715cfeb984ea7adf32493">ResourceManager</a>
+</li>
+<li>m_RLS_ch3
+: <a class="el" href="classResourceManager.html#ac3454de50d3816635cb43bc3bb6c150a">ResourceManager</a>
+</li>
+<li>m_runnable
+: <a class="el" href="classInfoPanel.html#a80205696630bfa7586696275ff8dd4e7">InfoPanel</a>
+, <a class="el" href="classResourceManager.html#a2ea308293b9012465e74f6f12a3fbcb9">ResourceManager</a>
+</li>
+<li>m_seriesData
+: <a class="el" href="classPlot.html#a9a5d6dae41ddc2a25a91947db7243eca">Plot</a>
+</li>
+<li>m_state
+: <a class="el" href="classVisualMachine.html#a7e0b093e57f1e5e1156a34fd4b3edcf1">VisualMachine</a>
+</li>
+<li>m_states
+: <a class="el" href="classResourceManager.html#a4a414ec82963689d96dc9d838351d664">ResourceManager</a>
+</li>
+<li>m_status_ADDI
+: <a class="el" href="classInfoPanel.html#a232cd34f483f9d5440e3bd5057f5c4f2">InfoPanel</a>
+</li>
+<li>m_status_fetch
+: <a class="el" href="classInfoPanel.html#aa303edfb23f795c1c2abe9ea417d01de">InfoPanel</a>
+</li>
+<li>m_status_machine
+: <a class="el" href="classInfoPanel.html#a307065cb2c1ce197727177ed3174bc50">InfoPanel</a>
+</li>
+<li>m_status_machine_type
+: <a class="el" href="classInfoPanel.html#a7aed188b8a9b61cd9af11a55d61e576b">InfoPanel</a>
+</li>
+<li>m_status_MF
+: <a class="el" href="classInfoPanel.html#a023325d2a079d75bd1bd493b37e073fa">InfoPanel</a>
+</li>
+<li>m_status_repaint
+: <a class="el" href="classInfoPanel.html#a166fe44a1b47aba2daa0265b77e7a29b">InfoPanel</a>
+</li>
+<li>m_status_SV
+: <a class="el" href="classInfoPanel.html#affbe33ced97c99b999243bfa7a7218f7">InfoPanel</a>
+</li>
+<li>m_status_write
+: <a class="el" href="classInfoPanel.html#a79037316d192ab22776d8ee232b42daa">InfoPanel</a>
+</li>
+<li>m_stokes_vector_0
+: <a class="el" href="classResourceManager.html#ac712d5b87a9f0a1fc143fc93ce0b086c">ResourceManager</a>
+</li>
+<li>m_stokes_vector_1
+: <a class="el" href="classResourceManager.html#ac61eb085ce7d66684eb75a100ada64a1">ResourceManager</a>
+</li>
+<li>m_stokes_vector_2
+: <a class="el" href="classResourceManager.html#afd0c8dde759b075b40697b825b21504d">ResourceManager</a>
+</li>
+<li>m_stokes_vector_3
+: <a class="el" href="classResourceManager.html#a831198fbd0bc3eee56cfb4185d7c7cf3">ResourceManager</a>
+</li>
+<li>m_stream_list
+: <a class="el" href="classGraphicsPanel.html#aef885f6b066add80ed57844f9394f187">GraphicsPanel</a>
+</li>
+<li>m_stream_names
+: <a class="el" href="classResourceManager.html#a4eda3c1482b58deb890f0bf161b26328">ResourceManager</a>
+</li>
+<li>m_threads_panel
+: <a class="el" href="classApplication.html#a37d60d5ecd5d0989449ecb5ebf8cdf96">Application</a>
+, <a class="el" href="classMainWindow.html#aacb558853a63461952e282b6ee941d7b">MainWindow</a>
+</li>
+<li>m_title_name
+: <a class="el" href="classInfoPanel.html#a37a0d35f0fd171a3ba95061d50ef6d0a">InfoPanel</a>
+</li>
+<li>m_title_status
+: <a class="el" href="classInfoPanel.html#a7a9c54b6170045fe5d5a33be8b582ea6">InfoPanel</a>
+</li>
+<li>m_untreated_RLS
+: <a class="el" href="classResourceManager.html#a16f6fe1e856b18156c27a63921664b1d">ResourceManager</a>
+, <a class="el" href="classVisualMachine.html#aae2fcffa9241e423ef3135bcd4f32554">VisualMachine</a>
+</li>
+<li>m_work_directory
+: <a class="el" href="classVisualMachine.html#a1bf90966ff4e3b9a9d7a505d2e0214ff">VisualMachine</a>
+</li>
+<li>m_zoomer
+: <a class="el" href="classPlot.html#ae3a43d2b94f02b4cdfac868f71568a05">Plot</a>
+</li>
+<li>main_layout
+: <a class="el" href="classPresetChooser.html#a697757778c7f6d8f25ace7b62de772e7">PresetChooser</a>
+</li>
+<li>MainWindow()
+: <a class="el" href="classMainWindow.html#a34c4b4207b46d11a4100c9b19f0e81bb">MainWindow</a>
+</li>
+<li>MF_0
+: <a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605a41a4f48ecb69c47eb5f5553091188cea">ResourceManager</a>
+</li>
+<li>MF_1
+: <a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605aa091b6a9b07dff2975da0f5ca9394345">ResourceManager</a>
+</li>
+<li>MF_2
+: <a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605a03bec9c62fcdd0dced8290e7f5d426f2">ResourceManager</a>
+</li>
+<li>MF_3
+: <a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605aaa4bea69120e65e9b712abc1476c4eae">ResourceManager</a>
+</li>
+<li>MF_PHI_1
+: <a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605aa14aa0a351bb402536af6196f0d98497">ResourceManager</a>
+</li>
+<li>MF_PHI_2
+: <a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605a55a2ad93337b0ea6b63daa3a61b3089d">ResourceManager</a>
+</li>
+<li>MLS
+: <a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605a374eb3bba248132f79303b0f9c30afda">ResourceManager</a>
+</li>
+<li>MLS_AF
+: <a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605aea368846443636daa36209c2a1f78688">ResourceManager</a>
+</li>
+<li>MLS_AF_CH_0
+: <a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605a767d2a7eebe72bef2aa2d71e70bab481">ResourceManager</a>
+</li>
+<li>MLS_AF_CH_1
+: <a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605ac7039020169e094ff00b58a5e874ce63">ResourceManager</a>
+</li>
+<li>MLS_AF_CH_2
+: <a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605a8f841c0d1768d42dfbac5cb3ca12acdf">ResourceManager</a>
+</li>
+<li>MLS_AF_CH_3
+: <a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605a491b071a78273fb938f38d1f7540a360">ResourceManager</a>
+</li>
+<li>MLS_CH_0
+: <a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605a78d0b5c6467cc063d4116b44a927f2e4">ResourceManager</a>
+</li>
+<li>MLS_CH_1
+: <a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605aace91371b465bb34cf259490ecae73fd">ResourceManager</a>
+</li>
+<li>MLS_CH_2
+: <a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605a3d6aa15c28dee1ac054b2db3bd408a3f">ResourceManager</a>
+</li>
+<li>MLS_CH_3
+: <a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605a97a0e54a349d39d48c1a9fa993a73704">ResourceManager</a>
+</li>
+<li>modulus()
+: <a class="el" href="classComplex.html#aa2645fb46947214f3f6a92c90003d5dc">Complex</a>
+</li>
+<li>MRLS
+: <a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605adcbc1deb56b26ce0f83035f8193c303e">ResourceManager</a>
+</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2016年 五月 30日 星期一 12:41:48 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

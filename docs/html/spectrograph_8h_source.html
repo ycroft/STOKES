@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
       <li><a href="annotated.html"><span>类</span></a></li>
       <li class="current"><a href="files.html"><span>文件</span></a></li>
       <li>
@@ -61,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -68,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,87 +89,121 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="title">spectrograph.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SPECTROGRAPH_H</span></div>
+<a href="spectrograph_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SPECTROGRAPH_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SPECTROGRAPH_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include&lt;string&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include&lt;fstream&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include&lt;sstream&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include&lt;iostream&gt;</span> <span class="comment">// [!]****</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include&lt;Universal/innerdata.h&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include&lt;Universal/math.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="innerdata_8h.html">Universal/innerdata.h</a>&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="math_8h.html">Universal/math.h</a>&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define SUCCESS true</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FAIL false</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="spectrograph_8h.html#aa90cac659d18e8ef6294c7ae337f6b58">   11</a></span>&#160;<span class="preprocessor">#define SUCCESS true</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="spectrograph_8h.html#abb508ea8227673f419e9fe3a86c30d8e">   12</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define FAIL false</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define STREAM_MLS 0</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STREAM_MRLS 1</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STREAM_URLS 2</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SPLINE_POINT_NUM 2048</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="spectrograph_8h.html#a0b4ccf00b035279e19200a1bceb91c18">   14</a></span>&#160;<span class="preprocessor">#define STREAM_MLS 0</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="spectrograph_8h.html#acadeca08036c9e48e326acf0bc4e661f">   15</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STREAM_MRLS 1</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="spectrograph_8h.html#a43a3cd1a071b5f0538bea668d617e00b">   16</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STREAM_URLS 2</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="spectrograph_8h.html#ae84397c66b334df561ba0e50282df995">   17</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SPLINE_POINT_NUM 2048</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> SYS_SEPERATOR = <span class="charliteral">&#39;/&#39;</span>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> LINE_BUF_SIZE = 256;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="spectrograph_8h.html#a7ea557be0a0acdbdd2ccb2086391754c">   19</a></span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="spectrograph_8h.html#a7ea557be0a0acdbdd2ccb2086391754c">SYS_SEPERATOR</a> = <span class="charliteral">&#39;/&#39;</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="spectrograph_8h.html#a01f737451d65aad7d754ccc95a6ce61b">   20</a></span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="spectrograph_8h.html#a01f737451d65aad7d754ccc95a6ce61b">LINE_BUF_SIZE</a> = 256;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* FNAME_INPUT_MRLS = <span class="stringliteral">&quot;mrls.in&quot;</span>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* FNAME_INPUT_URLS = <span class="stringliteral">&quot;urls.in&quot;</span>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* FNAME_INPUT_MLS = <span class="stringliteral">&quot;mls.in&quot;</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="spectrograph_8h.html#ae74e49065f65883734132b7872329564">   22</a></span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="spectrograph_8h.html#ae74e49065f65883734132b7872329564">FNAME_INPUT_MRLS</a> = <span class="stringliteral">&quot;mrls.in&quot;</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="spectrograph_8h.html#a22797d4ce1aee66a69697f280c67f97b">   23</a></span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="spectrograph_8h.html#a22797d4ce1aee66a69697f280c67f97b">FNAME_INPUT_URLS</a> = <span class="stringliteral">&quot;urls.in&quot;</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="spectrograph_8h.html#a6a26dcd6ac21cb52375865277911f5b7">   24</a></span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="spectrograph_8h.html#a6a26dcd6ac21cb52375865277911f5b7">FNAME_INPUT_MLS</a> = <span class="stringliteral">&quot;mls.in&quot;</span>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#define ON 1</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OFF 0</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="spectrograph_8h.html#ad76d1750a6cdeebd506bfcd6752554d2">   26</a></span>&#160;<span class="preprocessor">#define ON 1</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="spectrograph_8h.html#a29e413f6725b2ba32d165ffaa35b01e5">   27</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OFF 0</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structdeviceinfo.html">   29</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structdeviceinfo.html">deviceinfo</a></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    std::string work_directory;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;} <a class="code" href="structdeviceinfo.html">DeviceInfo</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structdeviceinfo.html#a8c9962e3b55b21c36a33dafe0a60c845">   31</a></span>&#160;    std::string <a class="code" href="structdeviceinfo.html#a8c9962e3b55b21c36a33dafe0a60c845">work_directory</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;} <a class="code" href="spectrograph_8h.html#a320dab1a47d01bab393d87f84bc4d35c">DeviceInfo</a>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classSpectrographDevice.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSpectrographDevice.html">SpectrographDevice</a></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classSpectrographDevice.html">SpectrographDevice</a>();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classSpectrographDevice.html">SpectrographDevice</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> Boot() = 0;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> Shutdown() = 0;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> Reboot() = 0;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetState() = 0;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="structdeviceinfo.html">DeviceInfo</a> GetDeviceInfo() = 0;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> ReadDatagram(<a class="code" href="classInnerData.html">InnerData</a>&amp; innerData,<span class="keywordtype">int</span> type = STREAM_MLS) = 0;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">int</span> device_type_id;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classSpectrographDevice.html#a0888055328209b8247e8b5221fbd733f">SpectrographDevice</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classSpectrographDevice.html#ad279904330e12da35ae6abfb149cbada">~SpectrographDevice</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classSpectrographDevice.html#ab5528ab752a50c308239afa8c3134c09">Boot</a>() = 0;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classSpectrographDevice.html#a386f42e70bc04c9c0c2877c3fe21afbb">Shutdown</a>() = 0;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classSpectrographDevice.html#adfd8284edb2d9714725ade8d2ca50abc">Reboot</a>() = 0;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classSpectrographDevice.html#afa0decb2038d66dfaec4af95976aec7f">GetState</a>() = 0;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="structdeviceinfo.html">DeviceInfo</a> <a class="code" href="classSpectrographDevice.html#af155d8cf375b7ace72f3f664a2c1c334">GetDeviceInfo</a>() = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classSpectrographDevice.html#a14cc3abd9063d4ecd958926f52588f56">ReadDatagram</a>(<a class="code" href="classInnerData.html">InnerData</a>&amp; innerData,<span class="keywordtype">int</span> type = <a class="code" href="spectrograph_8h.html#a0b4ccf00b035279e19200a1bceb91c18">STREAM_MLS</a>) = 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classSpectrographDevice.html#a248f634ce92f5170f12d6fb3192e4445">   45</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classSpectrographDevice.html#a248f634ce92f5170f12d6fb3192e4445">device_type_id</a>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classVisualMachine.html">   48</a></span>&#160;<span class="keyword">class </span><a class="code" href="classVisualMachine.html">VisualMachine</a>:<span class="keyword">public</span> <a class="code" href="classSpectrographDevice.html">SpectrographDevice</a></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classVisualMachine.html">VisualMachine</a>(std::string dir);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    ~<a class="code" href="classVisualMachine.html">VisualMachine</a>();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">bool</span> Boot();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">bool</span> Shutdown();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">bool</span> Reboot();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">bool</span> ReadDatagram(<a class="code" href="classInnerData.html">InnerData</a>&amp; innerData,<span class="keywordtype">int</span> type = STREAM_MLS);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> GetState(){ <span class="keywordflow">return</span> m_state; }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="structdeviceinfo.html">DeviceInfo</a> GetDeviceInfo(){</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classVisualMachine.html#a9f27ccbf00a1b882c086d55c7705a4df">VisualMachine</a>(std::string dir);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classVisualMachine.html#a19e04580f453ae826c340ea1f7833b85">~VisualMachine</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classVisualMachine.html#aa8ad515fd4a1b5faec54c5ea31597df3">Boot</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classVisualMachine.html#afe57f3cc33a48a5ba490327bba1ec835">Shutdown</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classVisualMachine.html#a8ab8a009f58e36fe647710ab3b608990">Reboot</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classVisualMachine.html#a196500cd88093dbc652aa0e32ff4bf5f">ReadDatagram</a>(<a class="code" href="classInnerData.html">InnerData</a>&amp; innerData,<span class="keywordtype">int</span> type = <a class="code" href="spectrograph_8h.html#a0b4ccf00b035279e19200a1bceb91c18">STREAM_MLS</a>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classVisualMachine.html#a255fe9708a03723e6a2f8e65ccd6f88f">   57</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classVisualMachine.html#a255fe9708a03723e6a2f8e65ccd6f88f">GetState</a>(){ <span class="keywordflow">return</span> <a class="code" href="classVisualMachine.html#a7e0b093e57f1e5e1156a34fd4b3edcf1">m_state</a>; }</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classVisualMachine.html#a7d679be75e5f2006a565700ae2e98ee3">   58</a></span>&#160;    <a class="code" href="structdeviceinfo.html">DeviceInfo</a> <a class="code" href="classVisualMachine.html#a7d679be75e5f2006a565700ae2e98ee3">GetDeviceInfo</a>(){</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="structdeviceinfo.html">DeviceInfo</a> dinfo;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        dinfo.work_directory = m_work_directory;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        dinfo.<a class="code" href="structdeviceinfo.html#a8c9962e3b55b21c36a33dafe0a60c845">work_directory</a> = <a class="code" href="classVisualMachine.html#a1bf90966ff4e3b9a9d7a505d2e0214ff">m_work_directory</a>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> dinfo;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">int</span> m_state;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    std::string m_work_directory;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    std::ifstream m_modulated_RLS;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    std::ifstream m_untreated_RLS;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::ifstream m_measured_LS;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> __RenewBuffer();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> __ReadBuffer(std::stringstream&amp; buf, std::vector&lt;double&gt;&amp; xaxis, std::vector&lt;double&gt;&amp; yaxis);</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classVisualMachine.html#a7e0b093e57f1e5e1156a34fd4b3edcf1">   64</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classVisualMachine.html#a7e0b093e57f1e5e1156a34fd4b3edcf1">m_state</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classVisualMachine.html#a1bf90966ff4e3b9a9d7a505d2e0214ff">   65</a></span>&#160;    std::string <a class="code" href="classVisualMachine.html#a1bf90966ff4e3b9a9d7a505d2e0214ff">m_work_directory</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classVisualMachine.html#ace42aaaab622d1873bfd816d21fb76de">   66</a></span>&#160;    std::ifstream <a class="code" href="classVisualMachine.html#ace42aaaab622d1873bfd816d21fb76de">m_modulated_RLS</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classVisualMachine.html#aae2fcffa9241e423ef3135bcd4f32554">   67</a></span>&#160;    std::ifstream <a class="code" href="classVisualMachine.html#aae2fcffa9241e423ef3135bcd4f32554">m_untreated_RLS</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classVisualMachine.html#a63a6c0f55917588964e2d1e9f8db8840">   68</a></span>&#160;    std::ifstream <a class="code" href="classVisualMachine.html#a63a6c0f55917588964e2d1e9f8db8840">m_measured_LS</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classVisualMachine.html#a4bc390885cef2afec176e644dad0a647">__RenewBuffer</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classVisualMachine.html#a09ced6d2ad29e72b32cde2e6a103af2f">__ReadBuffer</a>(std::stringstream&amp; buf, std::vector&lt;double&gt;&amp; xaxis, std::vector&lt;double&gt;&amp; yaxis);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif //SPECTROGRAPH_H</span></div>
+<div class="ttc" id="math_8h_html"><div class="ttname"><a href="math_8h.html">math.h</a></div></div>
+<div class="ttc" id="classSpectrographDevice_html_ab5528ab752a50c308239afa8c3134c09"><div class="ttname"><a href="classSpectrographDevice.html#ab5528ab752a50c308239afa8c3134c09">SpectrographDevice::Boot</a></div><div class="ttdeci">virtual bool Boot()=0</div></div>
+<div class="ttc" id="classSpectrographDevice_html_a386f42e70bc04c9c0c2877c3fe21afbb"><div class="ttname"><a href="classSpectrographDevice.html#a386f42e70bc04c9c0c2877c3fe21afbb">SpectrographDevice::Shutdown</a></div><div class="ttdeci">virtual bool Shutdown()=0</div></div>
 <div class="ttc" id="structdeviceinfo_html"><div class="ttname"><a href="structdeviceinfo.html">deviceinfo</a></div><div class="ttdef"><b>Definition:</b> spectrograph.h:29</div></div>
+<div class="ttc" id="spectrograph_8h_html_a0b4ccf00b035279e19200a1bceb91c18"><div class="ttname"><a href="spectrograph_8h.html#a0b4ccf00b035279e19200a1bceb91c18">STREAM_MLS</a></div><div class="ttdeci">#define STREAM_MLS</div><div class="ttdef"><b>Definition:</b> spectrograph.h:14</div></div>
+<div class="ttc" id="classVisualMachine_html_a19e04580f453ae826c340ea1f7833b85"><div class="ttname"><a href="classVisualMachine.html#a19e04580f453ae826c340ea1f7833b85">VisualMachine::~VisualMachine</a></div><div class="ttdeci">~VisualMachine()</div></div>
+<div class="ttc" id="spectrograph_8h_html_a6a26dcd6ac21cb52375865277911f5b7"><div class="ttname"><a href="spectrograph_8h.html#a6a26dcd6ac21cb52375865277911f5b7">FNAME_INPUT_MLS</a></div><div class="ttdeci">static const char * FNAME_INPUT_MLS</div><div class="ttdef"><b>Definition:</b> spectrograph.h:24</div></div>
+<div class="ttc" id="classVisualMachine_html_a255fe9708a03723e6a2f8e65ccd6f88f"><div class="ttname"><a href="classVisualMachine.html#a255fe9708a03723e6a2f8e65ccd6f88f">VisualMachine::GetState</a></div><div class="ttdeci">int GetState()</div><div class="ttdef"><b>Definition:</b> spectrograph.h:57</div></div>
+<div class="ttc" id="classVisualMachine_html_aa8ad515fd4a1b5faec54c5ea31597df3"><div class="ttname"><a href="classVisualMachine.html#aa8ad515fd4a1b5faec54c5ea31597df3">VisualMachine::Boot</a></div><div class="ttdeci">bool Boot()</div></div>
+<div class="ttc" id="spectrograph_8h_html_a22797d4ce1aee66a69697f280c67f97b"><div class="ttname"><a href="spectrograph_8h.html#a22797d4ce1aee66a69697f280c67f97b">FNAME_INPUT_URLS</a></div><div class="ttdeci">static const char * FNAME_INPUT_URLS</div><div class="ttdef"><b>Definition:</b> spectrograph.h:23</div></div>
+<div class="ttc" id="classVisualMachine_html_a63a6c0f55917588964e2d1e9f8db8840"><div class="ttname"><a href="classVisualMachine.html#a63a6c0f55917588964e2d1e9f8db8840">VisualMachine::m_measured_LS</a></div><div class="ttdeci">std::ifstream m_measured_LS</div><div class="ttdef"><b>Definition:</b> spectrograph.h:68</div></div>
+<div class="ttc" id="classVisualMachine_html_a4bc390885cef2afec176e644dad0a647"><div class="ttname"><a href="classVisualMachine.html#a4bc390885cef2afec176e644dad0a647">VisualMachine::__RenewBuffer</a></div><div class="ttdeci">void __RenewBuffer()</div></div>
+<div class="ttc" id="structdeviceinfo_html_a8c9962e3b55b21c36a33dafe0a60c845"><div class="ttname"><a href="structdeviceinfo.html#a8c9962e3b55b21c36a33dafe0a60c845">deviceinfo::work_directory</a></div><div class="ttdeci">std::string work_directory</div><div class="ttdef"><b>Definition:</b> spectrograph.h:31</div></div>
+<div class="ttc" id="classSpectrographDevice_html_afa0decb2038d66dfaec4af95976aec7f"><div class="ttname"><a href="classSpectrographDevice.html#afa0decb2038d66dfaec4af95976aec7f">SpectrographDevice::GetState</a></div><div class="ttdeci">virtual int GetState()=0</div></div>
+<div class="ttc" id="classVisualMachine_html_a196500cd88093dbc652aa0e32ff4bf5f"><div class="ttname"><a href="classVisualMachine.html#a196500cd88093dbc652aa0e32ff4bf5f">VisualMachine::ReadDatagram</a></div><div class="ttdeci">bool ReadDatagram(InnerData &amp;innerData, int type=STREAM_MLS)</div></div>
+<div class="ttc" id="spectrograph_8h_html_a7ea557be0a0acdbdd2ccb2086391754c"><div class="ttname"><a href="spectrograph_8h.html#a7ea557be0a0acdbdd2ccb2086391754c">SYS_SEPERATOR</a></div><div class="ttdeci">static const char SYS_SEPERATOR</div><div class="ttdef"><b>Definition:</b> spectrograph.h:19</div></div>
+<div class="ttc" id="classSpectrographDevice_html_ad279904330e12da35ae6abfb149cbada"><div class="ttname"><a href="classSpectrographDevice.html#ad279904330e12da35ae6abfb149cbada">SpectrographDevice::~SpectrographDevice</a></div><div class="ttdeci">virtual ~SpectrographDevice()</div></div>
+<div class="ttc" id="classVisualMachine_html_afe57f3cc33a48a5ba490327bba1ec835"><div class="ttname"><a href="classVisualMachine.html#afe57f3cc33a48a5ba490327bba1ec835">VisualMachine::Shutdown</a></div><div class="ttdeci">bool Shutdown()</div></div>
+<div class="ttc" id="classVisualMachine_html_ace42aaaab622d1873bfd816d21fb76de"><div class="ttname"><a href="classVisualMachine.html#ace42aaaab622d1873bfd816d21fb76de">VisualMachine::m_modulated_RLS</a></div><div class="ttdeci">std::ifstream m_modulated_RLS</div><div class="ttdef"><b>Definition:</b> spectrograph.h:66</div></div>
+<div class="ttc" id="innerdata_8h_html"><div class="ttname"><a href="innerdata_8h.html">innerdata.h</a></div></div>
+<div class="ttc" id="classSpectrographDevice_html_a14cc3abd9063d4ecd958926f52588f56"><div class="ttname"><a href="classSpectrographDevice.html#a14cc3abd9063d4ecd958926f52588f56">SpectrographDevice::ReadDatagram</a></div><div class="ttdeci">virtual bool ReadDatagram(InnerData &amp;innerData, int type=STREAM_MLS)=0</div></div>
+<div class="ttc" id="classSpectrographDevice_html_af155d8cf375b7ace72f3f664a2c1c334"><div class="ttname"><a href="classSpectrographDevice.html#af155d8cf375b7ace72f3f664a2c1c334">SpectrographDevice::GetDeviceInfo</a></div><div class="ttdeci">virtual DeviceInfo GetDeviceInfo()=0</div></div>
+<div class="ttc" id="classVisualMachine_html_a7e0b093e57f1e5e1156a34fd4b3edcf1"><div class="ttname"><a href="classVisualMachine.html#a7e0b093e57f1e5e1156a34fd4b3edcf1">VisualMachine::m_state</a></div><div class="ttdeci">int m_state</div><div class="ttdef"><b>Definition:</b> spectrograph.h:64</div></div>
 <div class="ttc" id="classInnerData_html"><div class="ttname"><a href="classInnerData.html">InnerData</a></div><div class="ttdef"><b>Definition:</b> innerdata.h:8</div></div>
+<div class="ttc" id="classVisualMachine_html_aae2fcffa9241e423ef3135bcd4f32554"><div class="ttname"><a href="classVisualMachine.html#aae2fcffa9241e423ef3135bcd4f32554">VisualMachine::m_untreated_RLS</a></div><div class="ttdeci">std::ifstream m_untreated_RLS</div><div class="ttdef"><b>Definition:</b> spectrograph.h:67</div></div>
+<div class="ttc" id="classVisualMachine_html_a8ab8a009f58e36fe647710ab3b608990"><div class="ttname"><a href="classVisualMachine.html#a8ab8a009f58e36fe647710ab3b608990">VisualMachine::Reboot</a></div><div class="ttdeci">bool Reboot()</div></div>
+<div class="ttc" id="classVisualMachine_html_a7d679be75e5f2006a565700ae2e98ee3"><div class="ttname"><a href="classVisualMachine.html#a7d679be75e5f2006a565700ae2e98ee3">VisualMachine::GetDeviceInfo</a></div><div class="ttdeci">DeviceInfo GetDeviceInfo()</div><div class="ttdef"><b>Definition:</b> spectrograph.h:58</div></div>
+<div class="ttc" id="spectrograph_8h_html_a01f737451d65aad7d754ccc95a6ce61b"><div class="ttname"><a href="spectrograph_8h.html#a01f737451d65aad7d754ccc95a6ce61b">LINE_BUF_SIZE</a></div><div class="ttdeci">static const unsigned int LINE_BUF_SIZE</div><div class="ttdef"><b>Definition:</b> spectrograph.h:20</div></div>
+<div class="ttc" id="spectrograph_8h_html_ae74e49065f65883734132b7872329564"><div class="ttname"><a href="spectrograph_8h.html#ae74e49065f65883734132b7872329564">FNAME_INPUT_MRLS</a></div><div class="ttdeci">static const char * FNAME_INPUT_MRLS</div><div class="ttdef"><b>Definition:</b> spectrograph.h:22</div></div>
+<div class="ttc" id="classVisualMachine_html_a9f27ccbf00a1b882c086d55c7705a4df"><div class="ttname"><a href="classVisualMachine.html#a9f27ccbf00a1b882c086d55c7705a4df">VisualMachine::VisualMachine</a></div><div class="ttdeci">VisualMachine(std::string dir)</div></div>
+<div class="ttc" id="classSpectrographDevice_html_adfd8284edb2d9714725ade8d2ca50abc"><div class="ttname"><a href="classSpectrographDevice.html#adfd8284edb2d9714725ade8d2ca50abc">SpectrographDevice::Reboot</a></div><div class="ttdeci">virtual bool Reboot()=0</div></div>
+<div class="ttc" id="classVisualMachine_html_a1bf90966ff4e3b9a9d7a505d2e0214ff"><div class="ttname"><a href="classVisualMachine.html#a1bf90966ff4e3b9a9d7a505d2e0214ff">VisualMachine::m_work_directory</a></div><div class="ttdeci">std::string m_work_directory</div><div class="ttdef"><b>Definition:</b> spectrograph.h:65</div></div>
 <div class="ttc" id="classVisualMachine_html"><div class="ttname"><a href="classVisualMachine.html">VisualMachine</a></div><div class="ttdef"><b>Definition:</b> spectrograph.h:48</div></div>
+<div class="ttc" id="spectrograph_8h_html_a320dab1a47d01bab393d87f84bc4d35c"><div class="ttname"><a href="spectrograph_8h.html#a320dab1a47d01bab393d87f84bc4d35c">DeviceInfo</a></div><div class="ttdeci">struct deviceinfo DeviceInfo</div></div>
 <div class="ttc" id="classSpectrographDevice_html"><div class="ttname"><a href="classSpectrographDevice.html">SpectrographDevice</a></div><div class="ttdef"><b>Definition:</b> spectrograph.h:34</div></div>
+<div class="ttc" id="classSpectrographDevice_html_a248f634ce92f5170f12d6fb3192e4445"><div class="ttname"><a href="classSpectrographDevice.html#a248f634ce92f5170f12d6fb3192e4445">SpectrographDevice::device_type_id</a></div><div class="ttdeci">int device_type_id</div><div class="ttdef"><b>Definition:</b> spectrograph.h:45</div></div>
+<div class="ttc" id="classVisualMachine_html_a09ced6d2ad29e72b32cde2e6a103af2f"><div class="ttname"><a href="classVisualMachine.html#a09ced6d2ad29e72b32cde2e6a103af2f">VisualMachine::__ReadBuffer</a></div><div class="ttdeci">void __ReadBuffer(std::stringstream &amp;buf, std::vector&lt; double &gt; &amp;xaxis, std::vector&lt; double &gt; &amp;yaxis)</div></div>
+<div class="ttc" id="classSpectrographDevice_html_a0888055328209b8247e8b5221fbd733f"><div class="ttname"><a href="classSpectrographDevice.html#a0888055328209b8247e8b5221fbd733f">SpectrographDevice::SpectrographDevice</a></div><div class="ttdeci">SpectrographDevice()</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2016年 五月 30日 星期一 12:37:14 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2016年 五月 30日 星期一 12:41:48 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

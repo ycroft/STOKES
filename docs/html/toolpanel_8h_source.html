@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
       <li><a href="annotated.html"><span>类</span></a></li>
       <li class="current"><a href="files.html"><span>文件</span></a></li>
       <li>
@@ -61,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -68,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,11 +89,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="title">toolpanel.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef TOOLPANEL_H</span></div>
+<a href="toolpanel_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef TOOLPANEL_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TOOLPANEL_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include&lt;DataCollection/objmanager.h&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include&lt;DataCollection/spectrograph.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="objmanager_8h.html">DataCollection/objmanager.h</a>&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="spectrograph_8h.html">DataCollection/spectrograph.h</a>&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include&lt;QtGui/QWidget&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include&lt;QtGui/QDialog&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include&lt;QtGui/QGridLayout&gt;</span></div>
@@ -108,51 +110,65 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include&lt;QtCore/QObject&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include&lt;QtCore/QString&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define WIDTH_LEFT_PANEL 300</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="toolpanel_8h.html#ad7b4d131c398f6fccd9121e1e2ac57f4">   22</a></span>&#160;<span class="preprocessor">#define WIDTH_LEFT_PANEL 300</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define POS_X_INFO 0</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define POS_Y_INFO 0</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HEIGHT_INFO 300</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="toolpanel_8h.html#a66568e10836e6f617812ae5603b20dac">   24</a></span>&#160;<span class="preprocessor">#define POS_X_INFO 0</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="toolpanel_8h.html#a62785f3c66a61335e75a619e5c04907c">   25</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define POS_Y_INFO 0</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="toolpanel_8h.html#a8e0377ea86d1d4c5cdda8e162ca8540f">   26</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HEIGHT_INFO 300</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define POS_X_GRAPHICS 0</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define POS_Y_GRAPHICS 300</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HEIGHT_GRAPHICS 300</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="toolpanel_8h.html#af8acea885033af77409b1440a748d414">   28</a></span>&#160;<span class="preprocessor">#define POS_X_GRAPHICS 0</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="toolpanel_8h.html#a9c13e46dd1acc4d083552c4ec6f65bdd">   29</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define POS_Y_GRAPHICS 300</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="toolpanel_8h.html#a26e950865675b281eff1b1887ea8eac6">   30</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HEIGHT_GRAPHICS 300</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#define POS_X_THREADS 0</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define POS_Y_THREADS 720</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HEIGHT_THREADS 180</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="toolpanel_8h.html#a67ddafda902496888106409f8a687460">   32</a></span>&#160;<span class="preprocessor">#define POS_X_THREADS 0</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="toolpanel_8h.html#af6ea373f0a45efe0ccbdd8144ff43994">   33</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define POS_Y_THREADS 720</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="toolpanel_8h.html#a56abb11bf85ae6b057848dddfe53b664">   34</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HEIGHT_THREADS 180</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#define POS_X_ANALYSE 300</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define POS_Y_ANALYSE 720</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WIDTH_ANALYSE 1300</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HEIGHT_ANALYSE 180</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="toolpanel_8h.html#ab34052577d68c8731739afec44f3ad6b">   36</a></span>&#160;<span class="preprocessor">#define POS_X_ANALYSE 300</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="toolpanel_8h.html#af3f81d812e8f3b4a72b70d41622d97f4">   37</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define POS_Y_ANALYSE 720</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="toolpanel_8h.html#a949b2fc1beda1b26546847b54d385363">   38</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WIDTH_ANALYSE 1300</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="toolpanel_8h.html#a75beb4104b10f34c9ef126e6e2029a06">   39</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HEIGHT_ANALYSE 180</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classPanel.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPanel.html">Panel</a> : <span class="keyword">public</span> QFrame</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">enum</span> PanelName</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84">   45</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84">PanelName</a></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        INFO,GRAPHICS,THREADS,ANALYSE,PANELNAME_NUM</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84a43c8b559b087b51e4191858d7eb1644e">   47</a></span>&#160;        <a class="code" href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84a933c2e9581869cc7d99189e60172061b">INFO</a>,<a class="code" href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84a5b575f9d2602eedda26f993d76cc4362">GRAPHICS</a>,<a class="code" href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84a43c8b559b087b51e4191858d7eb1644e">THREADS</a>,<a class="code" href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84afe85cecdcb5be1215b874b6c16a6f938">ANALYSE</a>,<a class="code" href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84ad51a96f960ab98c5856c15e46a126a4a">PANELNAME_NUM</a></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    };</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classPanel.html">Panel</a>(QWidget* parent, <a class="code" href="classSpectrographDevice.html">SpectrographDevice</a>&amp; device, <a class="code" href="classResourceManager.html">ResourceManager</a>&amp; manager);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classPanel.html">Panel</a>() = 0;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classPanel.html#a6a52c614f74380ac66ea2932a2906427">Panel</a>(QWidget* parent, <a class="code" href="classSpectrographDevice.html">SpectrographDevice</a>&amp; device, <a class="code" href="classResourceManager.html">ResourceManager</a>&amp; manager);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classPanel.html#ae8dfca2ecc97e4b31b10976226cfc806">~Panel</a>() = 0;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classSpectrographDevice.html">SpectrographDevice</a>&amp; m_device;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classResourceManager.html">ResourceManager</a>&amp; m_manager;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> closeEvent(QCloseEvent *event); </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classPanel.html#add4ae13edea2ab748adf425e71ccd39b">   52</a></span>&#160;    <a class="code" href="classSpectrographDevice.html">SpectrographDevice</a>&amp; <a class="code" href="classPanel.html#add4ae13edea2ab748adf425e71ccd39b">m_device</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classPanel.html#a88bbc23847b6d3304150fcdd07005d9e">   53</a></span>&#160;    <a class="code" href="classResourceManager.html">ResourceManager</a>&amp; <a class="code" href="classPanel.html#a88bbc23847b6d3304150fcdd07005d9e">m_manager</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPanel.html#a07b94c563d845ea7746ec0217a6c415d">closeEvent</a>(QCloseEvent *event); </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;signals:</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> closed();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPanel.html#a8de68235bf5a6ac3f849ca8a1322dcb9">closed</a>();</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif // TOOLPANEL_H</span></div>
 <div class="ttc" id="classPanel_html"><div class="ttname"><a href="classPanel.html">Panel</a></div><div class="ttdef"><b>Definition:</b> toolpanel.h:41</div></div>
+<div class="ttc" id="spectrograph_8h_html"><div class="ttname"><a href="spectrograph_8h.html">spectrograph.h</a></div></div>
+<div class="ttc" id="classPanel_html_ae8dfca2ecc97e4b31b10976226cfc806"><div class="ttname"><a href="classPanel.html#ae8dfca2ecc97e4b31b10976226cfc806">Panel::~Panel</a></div><div class="ttdeci">virtual ~Panel()=0</div></div>
+<div class="ttc" id="classPanel_html_abb64056f62b0e8ad91662c0e92e66c84a933c2e9581869cc7d99189e60172061b"><div class="ttname"><a href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84a933c2e9581869cc7d99189e60172061b">Panel::INFO</a></div><div class="ttdef"><b>Definition:</b> toolpanel.h:47</div></div>
+<div class="ttc" id="classPanel_html_a07b94c563d845ea7746ec0217a6c415d"><div class="ttname"><a href="classPanel.html#a07b94c563d845ea7746ec0217a6c415d">Panel::closeEvent</a></div><div class="ttdeci">void closeEvent(QCloseEvent *event)</div></div>
+<div class="ttc" id="classPanel_html_abb64056f62b0e8ad91662c0e92e66c84afe85cecdcb5be1215b874b6c16a6f938"><div class="ttname"><a href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84afe85cecdcb5be1215b874b6c16a6f938">Panel::ANALYSE</a></div><div class="ttdef"><b>Definition:</b> toolpanel.h:47</div></div>
+<div class="ttc" id="objmanager_8h_html"><div class="ttname"><a href="objmanager_8h.html">objmanager.h</a></div></div>
+<div class="ttc" id="classPanel_html_add4ae13edea2ab748adf425e71ccd39b"><div class="ttname"><a href="classPanel.html#add4ae13edea2ab748adf425e71ccd39b">Panel::m_device</a></div><div class="ttdeci">SpectrographDevice &amp; m_device</div><div class="ttdef"><b>Definition:</b> toolpanel.h:52</div></div>
+<div class="ttc" id="classPanel_html_a8de68235bf5a6ac3f849ca8a1322dcb9"><div class="ttname"><a href="classPanel.html#a8de68235bf5a6ac3f849ca8a1322dcb9">Panel::closed</a></div><div class="ttdeci">void closed()</div></div>
 <div class="ttc" id="classResourceManager_html"><div class="ttname"><a href="classResourceManager.html">ResourceManager</a></div><div class="ttdef"><b>Definition:</b> objmanager.h:77</div></div>
+<div class="ttc" id="classPanel_html_abb64056f62b0e8ad91662c0e92e66c84a5b575f9d2602eedda26f993d76cc4362"><div class="ttname"><a href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84a5b575f9d2602eedda26f993d76cc4362">Panel::GRAPHICS</a></div><div class="ttdef"><b>Definition:</b> toolpanel.h:47</div></div>
+<div class="ttc" id="classPanel_html_abb64056f62b0e8ad91662c0e92e66c84ad51a96f960ab98c5856c15e46a126a4a"><div class="ttname"><a href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84ad51a96f960ab98c5856c15e46a126a4a">Panel::PANELNAME_NUM</a></div><div class="ttdef"><b>Definition:</b> toolpanel.h:47</div></div>
+<div class="ttc" id="classPanel_html_abb64056f62b0e8ad91662c0e92e66c84a43c8b559b087b51e4191858d7eb1644e"><div class="ttname"><a href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84a43c8b559b087b51e4191858d7eb1644e">Panel::THREADS</a></div><div class="ttdef"><b>Definition:</b> toolpanel.h:47</div></div>
+<div class="ttc" id="classPanel_html_a6a52c614f74380ac66ea2932a2906427"><div class="ttname"><a href="classPanel.html#a6a52c614f74380ac66ea2932a2906427">Panel::Panel</a></div><div class="ttdeci">Panel(QWidget *parent, SpectrographDevice &amp;device, ResourceManager &amp;manager)</div></div>
+<div class="ttc" id="classPanel_html_abb64056f62b0e8ad91662c0e92e66c84"><div class="ttname"><a href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84">Panel::PanelName</a></div><div class="ttdeci">PanelName</div><div class="ttdef"><b>Definition:</b> toolpanel.h:45</div></div>
 <div class="ttc" id="classSpectrographDevice_html"><div class="ttname"><a href="classSpectrographDevice.html">SpectrographDevice</a></div><div class="ttdef"><b>Definition:</b> spectrograph.h:34</div></div>
+<div class="ttc" id="classPanel_html_a88bbc23847b6d3304150fcdd07005d9e"><div class="ttname"><a href="classPanel.html#a88bbc23847b6d3304150fcdd07005d9e">Panel::m_manager</a></div><div class="ttdeci">ResourceManager &amp; m_manager</div><div class="ttdef"><b>Definition:</b> toolpanel.h:53</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2016年 五月 30日 星期一 12:37:14 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2016年 五月 30日 星期一 12:41:48 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
       <li><a href="annotated.html"><span>类</span></a></li>
       <li class="current"><a href="files.html"><span>文件</span></a></li>
       <li>
@@ -61,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -68,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,10 +89,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="title">plot.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PLOT_H</span></div>
+<a href="plot_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PLOT_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PLOT_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include&lt;DataCollection/objmanager.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="objmanager_8h.html">DataCollection/objmanager.h</a>&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include&lt;qwt_plot.h&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include&lt;qwt_legend.h&gt;</span></div>
@@ -109,80 +111,107 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include&lt;QtGui/QFrame&gt;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include&lt;QtGui/QApplication&gt;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define RENEW_MILI_CLOCK 20</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="plot_8h.html#a19dfdf84407f06354b1caa9e1d84b8cd">   23</a></span>&#160;<span class="preprocessor">#define RENEW_MILI_CLOCK 20</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classPlotAttribute.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPlotAttribute.html">PlotAttribute</a></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classPlotAttribute.html">PlotAttribute</a>()</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classPlotAttribute.html#ab8718f910fc59b17d7b71abc9bb4eb84">   28</a></span>&#160;    <a class="code" href="classPlotAttribute.html#ab8718f910fc59b17d7b71abc9bb4eb84">PlotAttribute</a>()</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        title = QString(<span class="stringliteral">&quot;Datagrams&quot;</span>);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        xAxisName = QString(<span class="stringliteral">&quot; &quot;</span>);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        yAxisName = QString(<span class="stringliteral">&quot; &quot;</span>);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        background = QBrush(QColor(<span class="stringliteral">&quot;white&quot;</span>));</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="classPlotAttribute.html#ae2044b8c664b9f433773508a39f22eee">title</a> = QString(<span class="stringliteral">&quot;Datagrams&quot;</span>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classPlotAttribute.html#a00692b27c605bc8c375d48c3c306b34b">xAxisName</a> = QString(<span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="classPlotAttribute.html#a9a12976a61735f46a60386b8afd6719d">yAxisName</a> = QString(<span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="classPlotAttribute.html#ad50fbbed88b7b2f55d7a94a8b82c5f77">background</a> = QBrush(QColor(<span class="stringliteral">&quot;white&quot;</span>));</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    QString title;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    QString xAxisName;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    QString yAxisName;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    QBrush background;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classPlotAttribute.html#ae2044b8c664b9f433773508a39f22eee">   35</a></span>&#160;    QString <a class="code" href="classPlotAttribute.html#ae2044b8c664b9f433773508a39f22eee">title</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classPlotAttribute.html#a00692b27c605bc8c375d48c3c306b34b">   36</a></span>&#160;    QString <a class="code" href="classPlotAttribute.html#a00692b27c605bc8c375d48c3c306b34b">xAxisName</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classPlotAttribute.html#a9a12976a61735f46a60386b8afd6719d">   37</a></span>&#160;    QString <a class="code" href="classPlotAttribute.html#a9a12976a61735f46a60386b8afd6719d">yAxisName</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classPlotAttribute.html#ad50fbbed88b7b2f55d7a94a8b82c5f77">   38</a></span>&#160;    QBrush <a class="code" href="classPlotAttribute.html#ad50fbbed88b7b2f55d7a94a8b82c5f77">background</a>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classCurveAttribute.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCurveAttribute.html">CurveAttribute</a></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classCurveAttribute.html">CurveAttribute</a>()</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classCurveAttribute.html#adc4d12780ce608e3607e0b7f3d83a77f">   44</a></span>&#160;    <a class="code" href="classCurveAttribute.html#adc4d12780ce608e3607e0b7f3d83a77f">CurveAttribute</a>()</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        name = QString(<span class="stringliteral">&quot;no name&quot;</span>);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        pen = QPen(Qt::black);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="classCurveAttribute.html#a0bfb842c661c65fccdd69899a2aa618f">name</a> = QString(<span class="stringliteral">&quot;no name&quot;</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="classCurveAttribute.html#a20485ac5651106cf84c6d7c1e69771e8">pen</a> = QPen(Qt::black);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classCurveAttribute.html">CurveAttribute</a>(QString n, QPen p)</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classCurveAttribute.html#a9d3d67a180c31ad7721e2e888230bcc3">   49</a></span>&#160;    <a class="code" href="classCurveAttribute.html#a9d3d67a180c31ad7721e2e888230bcc3">CurveAttribute</a>(QString n, QPen p)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        name = n;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        pen = p;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="classCurveAttribute.html#a0bfb842c661c65fccdd69899a2aa618f">name</a> = n;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="classCurveAttribute.html#a20485ac5651106cf84c6d7c1e69771e8">pen</a> = p;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    QString name;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    QPen pen;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classCurveAttribute.html#a0bfb842c661c65fccdd69899a2aa618f">   54</a></span>&#160;    QString <a class="code" href="classCurveAttribute.html#a0bfb842c661c65fccdd69899a2aa618f">name</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classCurveAttribute.html#a20485ac5651106cf84c6d7c1e69771e8">   55</a></span>&#160;    QPen <a class="code" href="classCurveAttribute.html#a20485ac5651106cf84c6d7c1e69771e8">pen</a>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classPlot.html">   58</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPlot.html">Plot</a> : <span class="keyword">public</span> QwtPlot</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="classPlot.html">Plot</a>(QWidget* parent, <a class="code" href="classResourceManager.html">ResourceManager</a>&amp; manager, </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classPlot.html#a4e58dccc5a7c81239e3aaff9f433718d">   62</a></span>&#160;    <a class="code" href="classPlot.html#a4e58dccc5a7c81239e3aaff9f433718d">Plot</a>(QWidget* parent, <a class="code" href="classResourceManager.html">ResourceManager</a>&amp; manager, </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="classPlotAttribute.html">PlotAttribute</a> attr=<a class="code" href="classPlotAttribute.html">PlotAttribute</a>()) : QwtPlot(parent),</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        m_resourceManager(manager)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="classPlot.html#ad2b6e1e43e0c2da1dec3ce871edc5abd">m_resourceManager</a>(manager)</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        __Initialize(attr);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="classPlot.html#aa143728a0a12c5f2aec747c11f42f963">__Initialize</a>(attr);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classPlot.html">Plot</a>();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> RenewEnable(<span class="keywordtype">bool</span> flag = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> AddCurve(ResourceManager::DataName dname, <a class="code" href="classCurveAttribute.html">CurveAttribute</a> attr=<a class="code" href="classCurveAttribute.html">CurveAttribute</a>());</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> DelCurve(ResourceManager::DataName dname);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> ClearCurves();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classPlot.html#ac71811ea4362a4c03e017a7a72125e1f">~Plot</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPlot.html#a9bd90d23681c2c0fedbbacdd15b4da26">RenewEnable</a>(<span class="keywordtype">bool</span> flag = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPlot.html#a6f6fe58c8e4c32fd6e2488ab713e2fa3">AddCurve</a>(<a class="code" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605">ResourceManager::DataName</a> dname, <a class="code" href="classCurveAttribute.html">CurveAttribute</a> attr=<a class="code" href="classCurveAttribute.html">CurveAttribute</a>());</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPlot.html#ab93dade3eb8641e702fe08dd4e390ed5">DelCurve</a>(<a class="code" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605">ResourceManager::DataName</a> dname);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPlot.html#a80e8a4f709b3a3f7dc1754164f68f1d1">ClearCurves</a>();</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">bool</span> m_renewEnable;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="classResourceManager.html">ResourceManager</a>&amp; m_resourceManager;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    std::vector&lt;bool&gt; m_renewList;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    std::vector&lt;QwtPlotCurve*&gt; m_curves;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    std::vector&lt;QwtPointSeriesData*&gt; m_seriesData;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    QwtLegend* m_mainLegend;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    QwtPlotZoomer* m_zoomer;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classPlot.html#ad32d3d6aeb0092ff17d93fab92ca0f21">   74</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classPlot.html#ad32d3d6aeb0092ff17d93fab92ca0f21">m_renewEnable</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classPlot.html#ad2b6e1e43e0c2da1dec3ce871edc5abd">   75</a></span>&#160;    <a class="code" href="classResourceManager.html">ResourceManager</a>&amp; <a class="code" href="classPlot.html#ad2b6e1e43e0c2da1dec3ce871edc5abd">m_resourceManager</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classPlot.html#a194e76aeab067f59727dafd4633d928d">   76</a></span>&#160;    std::vector&lt;bool&gt; <a class="code" href="classPlot.html#a194e76aeab067f59727dafd4633d928d">m_renewList</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classPlot.html#a0c8135a04711e5922cd2934d4a728efe">   77</a></span>&#160;    std::vector&lt;QwtPlotCurve*&gt; <a class="code" href="classPlot.html#a0c8135a04711e5922cd2934d4a728efe">m_curves</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classPlot.html#a9a5d6dae41ddc2a25a91947db7243eca">   78</a></span>&#160;    std::vector&lt;QwtPointSeriesData*&gt; <a class="code" href="classPlot.html#a9a5d6dae41ddc2a25a91947db7243eca">m_seriesData</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classPlot.html#ad88c46ce822a0e29772f71352a19aba9">   79</a></span>&#160;    QwtLegend* <a class="code" href="classPlot.html#ad88c46ce822a0e29772f71352a19aba9">m_mainLegend</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classPlot.html#ae3a43d2b94f02b4cdfac868f71568a05">   80</a></span>&#160;    QwtPlotZoomer* <a class="code" href="classPlot.html#ae3a43d2b94f02b4cdfac868f71568a05">m_zoomer</a>;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> __Initialize(<a class="code" href="classPlotAttribute.html">PlotAttribute</a>&amp; attr);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> __Thread_Renew();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPlot.html#aa143728a0a12c5f2aec747c11f42f963">__Initialize</a>(<a class="code" href="classPlotAttribute.html">PlotAttribute</a>&amp; attr);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPlot.html#a2ba887306d63e3898c62eae6471c14ab">__Thread_Renew</a>();</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;signals:</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> DataRenewed();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPlot.html#abddfed7c365b85ab7d1a1533844a4922">DataRenewed</a>();</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif // PLOT_H</span></div>
+<div class="ttc" id="classPlot_html_ad88c46ce822a0e29772f71352a19aba9"><div class="ttname"><a href="classPlot.html#ad88c46ce822a0e29772f71352a19aba9">Plot::m_mainLegend</a></div><div class="ttdeci">QwtLegend * m_mainLegend</div><div class="ttdef"><b>Definition:</b> plot.h:79</div></div>
+<div class="ttc" id="classPlot_html_aa143728a0a12c5f2aec747c11f42f963"><div class="ttname"><a href="classPlot.html#aa143728a0a12c5f2aec747c11f42f963">Plot::__Initialize</a></div><div class="ttdeci">void __Initialize(PlotAttribute &amp;attr)</div></div>
+<div class="ttc" id="classPlotAttribute_html_ae2044b8c664b9f433773508a39f22eee"><div class="ttname"><a href="classPlotAttribute.html#ae2044b8c664b9f433773508a39f22eee">PlotAttribute::title</a></div><div class="ttdeci">QString title</div><div class="ttdef"><b>Definition:</b> plot.h:35</div></div>
+<div class="ttc" id="classPlot_html_ad32d3d6aeb0092ff17d93fab92ca0f21"><div class="ttname"><a href="classPlot.html#ad32d3d6aeb0092ff17d93fab92ca0f21">Plot::m_renewEnable</a></div><div class="ttdeci">bool m_renewEnable</div><div class="ttdef"><b>Definition:</b> plot.h:74</div></div>
+<div class="ttc" id="classPlot_html_a6f6fe58c8e4c32fd6e2488ab713e2fa3"><div class="ttname"><a href="classPlot.html#a6f6fe58c8e4c32fd6e2488ab713e2fa3">Plot::AddCurve</a></div><div class="ttdeci">void AddCurve(ResourceManager::DataName dname, CurveAttribute attr=CurveAttribute())</div></div>
+<div class="ttc" id="classCurveAttribute_html_adc4d12780ce608e3607e0b7f3d83a77f"><div class="ttname"><a href="classCurveAttribute.html#adc4d12780ce608e3607e0b7f3d83a77f">CurveAttribute::CurveAttribute</a></div><div class="ttdeci">CurveAttribute()</div><div class="ttdef"><b>Definition:</b> plot.h:44</div></div>
+<div class="ttc" id="classCurveAttribute_html_a20485ac5651106cf84c6d7c1e69771e8"><div class="ttname"><a href="classCurveAttribute.html#a20485ac5651106cf84c6d7c1e69771e8">CurveAttribute::pen</a></div><div class="ttdeci">QPen pen</div><div class="ttdef"><b>Definition:</b> plot.h:55</div></div>
 <div class="ttc" id="classPlot_html"><div class="ttname"><a href="classPlot.html">Plot</a></div><div class="ttdef"><b>Definition:</b> plot.h:58</div></div>
+<div class="ttc" id="classPlotAttribute_html_ad50fbbed88b7b2f55d7a94a8b82c5f77"><div class="ttname"><a href="classPlotAttribute.html#ad50fbbed88b7b2f55d7a94a8b82c5f77">PlotAttribute::background</a></div><div class="ttdeci">QBrush background</div><div class="ttdef"><b>Definition:</b> plot.h:38</div></div>
+<div class="ttc" id="classCurveAttribute_html_a0bfb842c661c65fccdd69899a2aa618f"><div class="ttname"><a href="classCurveAttribute.html#a0bfb842c661c65fccdd69899a2aa618f">CurveAttribute::name</a></div><div class="ttdeci">QString name</div><div class="ttdef"><b>Definition:</b> plot.h:54</div></div>
 <div class="ttc" id="classCurveAttribute_html"><div class="ttname"><a href="classCurveAttribute.html">CurveAttribute</a></div><div class="ttdef"><b>Definition:</b> plot.h:41</div></div>
+<div class="ttc" id="classPlot_html_ab93dade3eb8641e702fe08dd4e390ed5"><div class="ttname"><a href="classPlot.html#ab93dade3eb8641e702fe08dd4e390ed5">Plot::DelCurve</a></div><div class="ttdeci">void DelCurve(ResourceManager::DataName dname)</div></div>
+<div class="ttc" id="classPlot_html_ae3a43d2b94f02b4cdfac868f71568a05"><div class="ttname"><a href="classPlot.html#ae3a43d2b94f02b4cdfac868f71568a05">Plot::m_zoomer</a></div><div class="ttdeci">QwtPlotZoomer * m_zoomer</div><div class="ttdef"><b>Definition:</b> plot.h:80</div></div>
+<div class="ttc" id="objmanager_8h_html"><div class="ttname"><a href="objmanager_8h.html">objmanager.h</a></div></div>
+<div class="ttc" id="classCurveAttribute_html_a9d3d67a180c31ad7721e2e888230bcc3"><div class="ttname"><a href="classCurveAttribute.html#a9d3d67a180c31ad7721e2e888230bcc3">CurveAttribute::CurveAttribute</a></div><div class="ttdeci">CurveAttribute(QString n, QPen p)</div><div class="ttdef"><b>Definition:</b> plot.h:49</div></div>
+<div class="ttc" id="classPlot_html_ac71811ea4362a4c03e017a7a72125e1f"><div class="ttname"><a href="classPlot.html#ac71811ea4362a4c03e017a7a72125e1f">Plot::~Plot</a></div><div class="ttdeci">virtual ~Plot()</div></div>
+<div class="ttc" id="classPlot_html_abddfed7c365b85ab7d1a1533844a4922"><div class="ttname"><a href="classPlot.html#abddfed7c365b85ab7d1a1533844a4922">Plot::DataRenewed</a></div><div class="ttdeci">void DataRenewed()</div></div>
+<div class="ttc" id="classPlotAttribute_html_a00692b27c605bc8c375d48c3c306b34b"><div class="ttname"><a href="classPlotAttribute.html#a00692b27c605bc8c375d48c3c306b34b">PlotAttribute::xAxisName</a></div><div class="ttdeci">QString xAxisName</div><div class="ttdef"><b>Definition:</b> plot.h:36</div></div>
 <div class="ttc" id="classResourceManager_html"><div class="ttname"><a href="classResourceManager.html">ResourceManager</a></div><div class="ttdef"><b>Definition:</b> objmanager.h:77</div></div>
+<div class="ttc" id="classPlot_html_a194e76aeab067f59727dafd4633d928d"><div class="ttname"><a href="classPlot.html#a194e76aeab067f59727dafd4633d928d">Plot::m_renewList</a></div><div class="ttdeci">std::vector&lt; bool &gt; m_renewList</div><div class="ttdef"><b>Definition:</b> plot.h:76</div></div>
+<div class="ttc" id="classPlot_html_a0c8135a04711e5922cd2934d4a728efe"><div class="ttname"><a href="classPlot.html#a0c8135a04711e5922cd2934d4a728efe">Plot::m_curves</a></div><div class="ttdeci">std::vector&lt; QwtPlotCurve * &gt; m_curves</div><div class="ttdef"><b>Definition:</b> plot.h:77</div></div>
 <div class="ttc" id="classPlotAttribute_html"><div class="ttname"><a href="classPlotAttribute.html">PlotAttribute</a></div><div class="ttdef"><b>Definition:</b> plot.h:25</div></div>
+<div class="ttc" id="classPlot_html_ad2b6e1e43e0c2da1dec3ce871edc5abd"><div class="ttname"><a href="classPlot.html#ad2b6e1e43e0c2da1dec3ce871edc5abd">Plot::m_resourceManager</a></div><div class="ttdeci">ResourceManager &amp; m_resourceManager</div><div class="ttdef"><b>Definition:</b> plot.h:75</div></div>
+<div class="ttc" id="classPlot_html_a9bd90d23681c2c0fedbbacdd15b4da26"><div class="ttname"><a href="classPlot.html#a9bd90d23681c2c0fedbbacdd15b4da26">Plot::RenewEnable</a></div><div class="ttdeci">void RenewEnable(bool flag=true)</div></div>
+<div class="ttc" id="classPlotAttribute_html_a9a12976a61735f46a60386b8afd6719d"><div class="ttname"><a href="classPlotAttribute.html#a9a12976a61735f46a60386b8afd6719d">PlotAttribute::yAxisName</a></div><div class="ttdeci">QString yAxisName</div><div class="ttdef"><b>Definition:</b> plot.h:37</div></div>
+<div class="ttc" id="classPlot_html_a4e58dccc5a7c81239e3aaff9f433718d"><div class="ttname"><a href="classPlot.html#a4e58dccc5a7c81239e3aaff9f433718d">Plot::Plot</a></div><div class="ttdeci">Plot(QWidget *parent, ResourceManager &amp;manager, PlotAttribute attr=PlotAttribute())</div><div class="ttdef"><b>Definition:</b> plot.h:62</div></div>
+<div class="ttc" id="classPlot_html_a80e8a4f709b3a3f7dc1754164f68f1d1"><div class="ttname"><a href="classPlot.html#a80e8a4f709b3a3f7dc1754164f68f1d1">Plot::ClearCurves</a></div><div class="ttdeci">void ClearCurves()</div></div>
+<div class="ttc" id="classPlot_html_a2ba887306d63e3898c62eae6471c14ab"><div class="ttname"><a href="classPlot.html#a2ba887306d63e3898c62eae6471c14ab">Plot::__Thread_Renew</a></div><div class="ttdeci">void __Thread_Renew()</div></div>
+<div class="ttc" id="classPlotAttribute_html_ab8718f910fc59b17d7b71abc9bb4eb84"><div class="ttname"><a href="classPlotAttribute.html#ab8718f910fc59b17d7b71abc9bb4eb84">PlotAttribute::PlotAttribute</a></div><div class="ttdeci">PlotAttribute()</div><div class="ttdef"><b>Definition:</b> plot.h:28</div></div>
+<div class="ttc" id="classResourceManager_html_a83364b9a35eb93052c0cd83f2bd3f605"><div class="ttname"><a href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605">ResourceManager::DataName</a></div><div class="ttdeci">DataName</div><div class="ttdef"><b>Definition:</b> objmanager.h:80</div></div>
+<div class="ttc" id="classPlot_html_a9a5d6dae41ddc2a25a91947db7243eca"><div class="ttname"><a href="classPlot.html#a9a5d6dae41ddc2a25a91947db7243eca">Plot::m_seriesData</a></div><div class="ttdeci">std::vector&lt; QwtPointSeriesData * &gt; m_seriesData</div><div class="ttdef"><b>Definition:</b> plot.h:78</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2016年 五月 30日 星期一 12:37:14 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2016年 五月 30日 星期一 12:41:48 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
       <li class="current"><a href="annotated.html"><span>类</span></a></li>
       <li><a href="files.html"><span>文件</span></a></li>
       <li>
@@ -63,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
       <li><a href="annotated.html"><span>类列表</span></a></li>
       <li><a href="classes.html"><span>类索引</span></a></li>
       <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -70,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -83,61 +85,425 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
 <a href="classComplex-members.html">所有成员列表</a>  </div>
   <div class="headertitle">
 <div class="title">Complex类 参考</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="complex_8h_source.html">complex.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a25ed813bad37f7487029598662b4330f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a25ed813bad37f7487029598662b4330f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Complex</b> (const char *str)</td></tr>
+<tr class="memitem:a43b9f07cdf697c71b5fd506a6cc80b8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComplex.html#a43b9f07cdf697c71b5fd506a6cc80b8f">Complex</a> ()</td></tr>
+<tr class="separator:a43b9f07cdf697c71b5fd506a6cc80b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25ed813bad37f7487029598662b4330f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComplex.html#a25ed813bad37f7487029598662b4330f">Complex</a> (const char *str)</td></tr>
 <tr class="separator:a25ed813bad37f7487029598662b4330f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8df9575d21c2b72b5b958895a9daa00"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8df9575d21c2b72b5b958895a9daa00"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Complex</b> (double real, double imag)</td></tr>
+<tr class="memitem:af8df9575d21c2b72b5b958895a9daa00"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComplex.html#af8df9575d21c2b72b5b958895a9daa00">Complex</a> (double <a class="el" href="classComplex.html#aef034069e4bf3741564757568cdec919">real</a>, double <a class="el" href="classComplex.html#a9acddda2991090c34a15efd849c1deba">imag</a>)</td></tr>
 <tr class="separator:af8df9575d21c2b72b5b958895a9daa00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f84d1f0fb6876f8a81817f4f077b6f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f84d1f0fb6876f8a81817f4f077b6f2"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>ToString</b> ()</td></tr>
+<tr class="memitem:a5f84d1f0fb6876f8a81817f4f077b6f2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComplex.html#a5f84d1f0fb6876f8a81817f4f077b6f2">ToString</a> ()</td></tr>
 <tr class="separator:a5f84d1f0fb6876f8a81817f4f077b6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef034069e4bf3741564757568cdec919"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef034069e4bf3741564757568cdec919"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>real</b> ()</td></tr>
+<tr class="memitem:aef034069e4bf3741564757568cdec919"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComplex.html#aef034069e4bf3741564757568cdec919">real</a> ()</td></tr>
 <tr class="separator:aef034069e4bf3741564757568cdec919"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9acddda2991090c34a15efd849c1deba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9acddda2991090c34a15efd849c1deba"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>imag</b> ()</td></tr>
+<tr class="memitem:a9acddda2991090c34a15efd849c1deba"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComplex.html#a9acddda2991090c34a15efd849c1deba">imag</a> ()</td></tr>
 <tr class="separator:a9acddda2991090c34a15efd849c1deba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7543a9d64127919bd2b97f280b6541b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7543a9d64127919bd2b97f280b6541b6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>real</b> (double real)</td></tr>
+<tr class="memitem:a7543a9d64127919bd2b97f280b6541b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComplex.html#a7543a9d64127919bd2b97f280b6541b6">real</a> (double real)</td></tr>
 <tr class="separator:a7543a9d64127919bd2b97f280b6541b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a415a63ab116e39dca1f6336127231480"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a415a63ab116e39dca1f6336127231480"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>imag</b> (double imag)</td></tr>
+<tr class="memitem:a415a63ab116e39dca1f6336127231480"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComplex.html#a415a63ab116e39dca1f6336127231480">imag</a> (double imag)</td></tr>
 <tr class="separator:a415a63ab116e39dca1f6336127231480"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2645fb46947214f3f6a92c90003d5dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2645fb46947214f3f6a92c90003d5dc"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>modulus</b> ()</td></tr>
+<tr class="memitem:aa2645fb46947214f3f6a92c90003d5dc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComplex.html#aa2645fb46947214f3f6a92c90003d5dc">modulus</a> ()</td></tr>
 <tr class="separator:aa2645fb46947214f3f6a92c90003d5dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21ff0ec47a96d8429f3d29f49207ffe5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21ff0ec47a96d8429f3d29f49207ffe5"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>squareMod</b> ()</td></tr>
+<tr class="memitem:a21ff0ec47a96d8429f3d29f49207ffe5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComplex.html#a21ff0ec47a96d8429f3d29f49207ffe5">squareMod</a> ()</td></tr>
 <tr class="separator:a21ff0ec47a96d8429f3d29f49207ffe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32abd8920b05bd6d287df64e3573d85d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32abd8920b05bd6d287df64e3573d85d"></a>
-<a class="el" href="classComplex.html">Complex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (<a class="el" href="classComplex.html">Complex</a> x)</td></tr>
+<tr class="memitem:a32abd8920b05bd6d287df64e3573d85d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classComplex.html">Complex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComplex.html#a32abd8920b05bd6d287df64e3573d85d">operator+</a> (<a class="el" href="classComplex.html">Complex</a> x)</td></tr>
 <tr class="separator:a32abd8920b05bd6d287df64e3573d85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78eb0f62785c185717c6e8955d1d34e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78eb0f62785c185717c6e8955d1d34e3"></a>
-<a class="el" href="classComplex.html">Complex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (<a class="el" href="classComplex.html">Complex</a> x)</td></tr>
+<tr class="memitem:a78eb0f62785c185717c6e8955d1d34e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classComplex.html">Complex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComplex.html#a78eb0f62785c185717c6e8955d1d34e3">operator-</a> (<a class="el" href="classComplex.html">Complex</a> x)</td></tr>
 <tr class="separator:a78eb0f62785c185717c6e8955d1d34e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a869a75fae0021bc228d4d428ea6a4d88"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a869a75fae0021bc228d4d428ea6a4d88"></a>
-<a class="el" href="classComplex.html">Complex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (<a class="el" href="classComplex.html">Complex</a> x)</td></tr>
+<tr class="memitem:a869a75fae0021bc228d4d428ea6a4d88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classComplex.html">Complex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComplex.html#a869a75fae0021bc228d4d428ea6a4d88">operator*</a> (<a class="el" href="classComplex.html">Complex</a> x)</td></tr>
 <tr class="separator:a869a75fae0021bc228d4d428ea6a4d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2125d5c5e626f721081356a1180e15c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2125d5c5e626f721081356a1180e15c"></a>
-<a class="el" href="classComplex.html">Complex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator/</b> (<a class="el" href="classComplex.html">Complex</a> x)</td></tr>
+<tr class="memitem:af2125d5c5e626f721081356a1180e15c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classComplex.html">Complex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComplex.html#af2125d5c5e626f721081356a1180e15c">operator/</a> (<a class="el" href="classComplex.html">Complex</a> x)</td></tr>
 <tr class="separator:af2125d5c5e626f721081356a1180e15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:ae2c40b02dcf8ff8a083828fee0d10cea"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComplex.html#ae2c40b02dcf8ff8a083828fee0d10cea">m_real</a></td></tr>
+<tr class="separator:ae2c40b02dcf8ff8a083828fee0d10cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb21dbc3ab3e3560c52083ab522e16ce"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComplex.html#aeb21dbc3ab3e3560c52083ab522e16ce">m_imag</a></td></tr>
+<tr class="separator:aeb21dbc3ab3e3560c52083ab522e16ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a43b9f07cdf697c71b5fd506a6cc80b8f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Complex::Complex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classComplex.html#a869a75fae0021bc228d4d428ea6a4d88">operator*()</a>, <a class="el" href="classComplex.html#a32abd8920b05bd6d287df64e3573d85d">operator+()</a>, <a class="el" href="classComplex.html#a78eb0f62785c185717c6e8955d1d34e3">operator-()</a> , 以及 <a class="el" href="classComplex.html#af2125d5c5e626f721081356a1180e15c">operator/()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a25ed813bad37f7487029598662b4330f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Complex::Complex </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af8df9575d21c2b72b5b958895a9daa00"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Complex::Complex </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>real</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>imag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a9acddda2991090c34a15efd849c1deba"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Complex::imag </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classComplex.html#aeb21dbc3ab3e3560c52083ab522e16ce">m_imag</a>.</p>
+
+<p>参考自 <a class="el" href="classComplex.html#a869a75fae0021bc228d4d428ea6a4d88">operator*()</a>, <a class="el" href="classComplex.html#a32abd8920b05bd6d287df64e3573d85d">operator+()</a>, <a class="el" href="classComplex.html#a78eb0f62785c185717c6e8955d1d34e3">operator-()</a> , 以及 <a class="el" href="classComplex.html#af2125d5c5e626f721081356a1180e15c">operator/()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a415a63ab116e39dca1f6336127231480"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Complex::imag </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>imag</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classComplex.html#a415a63ab116e39dca1f6336127231480">imag()</a> , 以及 <a class="el" href="classComplex.html#aeb21dbc3ab3e3560c52083ab522e16ce">m_imag</a>.</p>
+
+<p>参考自 <a class="el" href="classComplex.html#a415a63ab116e39dca1f6336127231480">imag()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa2645fb46947214f3f6a92c90003d5dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Complex::modulus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a869a75fae0021bc228d4d428ea6a4d88"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classComplex.html">Complex</a> Complex::operator* </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classComplex.html">Complex</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classComplex.html#a43b9f07cdf697c71b5fd506a6cc80b8f">Complex()</a>, <a class="el" href="classComplex.html#a9acddda2991090c34a15efd849c1deba">imag()</a>, <a class="el" href="classComplex.html#aeb21dbc3ab3e3560c52083ab522e16ce">m_imag</a>, <a class="el" href="classComplex.html#ae2c40b02dcf8ff8a083828fee0d10cea">m_real</a> , 以及 <a class="el" href="classComplex.html#aef034069e4bf3741564757568cdec919">real()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a32abd8920b05bd6d287df64e3573d85d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classComplex.html">Complex</a> Complex::operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classComplex.html">Complex</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classComplex.html#a43b9f07cdf697c71b5fd506a6cc80b8f">Complex()</a>, <a class="el" href="classComplex.html#a9acddda2991090c34a15efd849c1deba">imag()</a>, <a class="el" href="classComplex.html#aeb21dbc3ab3e3560c52083ab522e16ce">m_imag</a>, <a class="el" href="classComplex.html#ae2c40b02dcf8ff8a083828fee0d10cea">m_real</a> , 以及 <a class="el" href="classComplex.html#aef034069e4bf3741564757568cdec919">real()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a78eb0f62785c185717c6e8955d1d34e3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classComplex.html">Complex</a> Complex::operator- </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classComplex.html">Complex</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classComplex.html#a43b9f07cdf697c71b5fd506a6cc80b8f">Complex()</a>, <a class="el" href="classComplex.html#a9acddda2991090c34a15efd849c1deba">imag()</a>, <a class="el" href="classComplex.html#aeb21dbc3ab3e3560c52083ab522e16ce">m_imag</a>, <a class="el" href="classComplex.html#ae2c40b02dcf8ff8a083828fee0d10cea">m_real</a> , 以及 <a class="el" href="classComplex.html#aef034069e4bf3741564757568cdec919">real()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af2125d5c5e626f721081356a1180e15c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classComplex.html">Complex</a> Complex::operator/ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classComplex.html">Complex</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classComplex.html#a43b9f07cdf697c71b5fd506a6cc80b8f">Complex()</a>, <a class="el" href="classComplex.html#a9acddda2991090c34a15efd849c1deba">imag()</a>, <a class="el" href="classComplex.html#aeb21dbc3ab3e3560c52083ab522e16ce">m_imag</a>, <a class="el" href="classComplex.html#ae2c40b02dcf8ff8a083828fee0d10cea">m_real</a> , 以及 <a class="el" href="classComplex.html#aef034069e4bf3741564757568cdec919">real()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aef034069e4bf3741564757568cdec919"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Complex::real </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classComplex.html#ae2c40b02dcf8ff8a083828fee0d10cea">m_real</a>.</p>
+
+<p>参考自 <a class="el" href="classComplex.html#a869a75fae0021bc228d4d428ea6a4d88">operator*()</a>, <a class="el" href="classComplex.html#a32abd8920b05bd6d287df64e3573d85d">operator+()</a>, <a class="el" href="classComplex.html#a78eb0f62785c185717c6e8955d1d34e3">operator-()</a> , 以及 <a class="el" href="classComplex.html#af2125d5c5e626f721081356a1180e15c">operator/()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7543a9d64127919bd2b97f280b6541b6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Complex::real </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>real</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classComplex.html#ae2c40b02dcf8ff8a083828fee0d10cea">m_real</a> , 以及 <a class="el" href="classComplex.html#a7543a9d64127919bd2b97f280b6541b6">real()</a>.</p>
+
+<p>参考自 <a class="el" href="classComplex.html#a7543a9d64127919bd2b97f280b6541b6">real()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a21ff0ec47a96d8429f3d29f49207ffe5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Complex::squareMod </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5f84d1f0fb6876f8a81817f4f077b6f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Complex::ToString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="aeb21dbc3ab3e3560c52083ab522e16ce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Complex::m_imag</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classComplex.html#a9acddda2991090c34a15efd849c1deba">imag()</a>, <a class="el" href="classComplex.html#a869a75fae0021bc228d4d428ea6a4d88">operator*()</a>, <a class="el" href="classComplex.html#a32abd8920b05bd6d287df64e3573d85d">operator+()</a>, <a class="el" href="classComplex.html#a78eb0f62785c185717c6e8955d1d34e3">operator-()</a> , 以及 <a class="el" href="classComplex.html#af2125d5c5e626f721081356a1180e15c">operator/()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae2c40b02dcf8ff8a083828fee0d10cea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Complex::m_real</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classComplex.html#a869a75fae0021bc228d4d428ea6a4d88">operator*()</a>, <a class="el" href="classComplex.html#a32abd8920b05bd6d287df64e3573d85d">operator+()</a>, <a class="el" href="classComplex.html#a78eb0f62785c185717c6e8955d1d34e3">operator-()</a>, <a class="el" href="classComplex.html#af2125d5c5e626f721081356a1180e15c">operator/()</a> , 以及 <a class="el" href="classComplex.html#aef034069e4bf3741564757568cdec919">real()</a>.</p>
+
+</div>
+</div>
 <hr/>该类的文档由以下文件生成:<ul>
 <li>include/Universal/<a class="el" href="complex_8h_source.html">complex.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2016年 五月 30日 星期一 12:37:14 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2016年 五月 30日 星期一 12:41:48 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

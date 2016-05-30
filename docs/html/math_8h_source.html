@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
       <li><a href="annotated.html"><span>类</span></a></li>
       <li class="current"><a href="files.html"><span>文件</span></a></li>
       <li>
@@ -61,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -68,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,42 +89,48 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="title">math.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef UNIVERSAL_MATH_H</span></div>
+<a href="math_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef UNIVERSAL_MATH_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define UNIVERSAL_MATH_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include&lt;vector&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include&lt;cstdlib&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include&lt;cmath&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include&lt;Universal/complex.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="complex_8h.html">Universal/complex.h</a>&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define GLOBAL_SCALE 10000000</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PI 3.1415926</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PHI_0(x) ((2*x+1)*(x-1)*(x-1))</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PHI_1(x) (x*(x-1)*(x-1))</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define POWER(a,b,c) \</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="math_8h.html#a04d3d4f70b4c6caf5cfa811b879e32a1">    9</a></span>&#160;<span class="preprocessor">#define GLOBAL_SCALE 10000000</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="math_8h.html#a598a3330b3c21701223ee0ca14316eca">   10</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PI 3.1415926</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="math_8h.html#a4e7ca983aba30b509ffce36d2faac568">   11</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PHI_0(x) ((2*x+1)*(x-1)*(x-1))</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="math_8h.html#a4d288d3989dd8aff04999315ce3e9cce">   12</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PHI_1(x) (x*(x-1)*(x-1))</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="math_8h.html#a155c9a0f90f6568bff4470f223637bee">   13</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define POWER(a,b,c) \</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">    c = 1;\</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">    for(int i=0;i&lt;b;i++) c = c*a;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WNP(n,p,c) \</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="math_8h.html#a15349d5621a5536f044f7a7efcd31bfe">   16</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WNP(n,p,c) \</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">    c.real(cos(2*M_PI*p/n));\</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">    c.imag(-1*sin(2*M_PI*p/n));</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>math</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="namespacemath.html">   20</a></span>&#160;<span class="keyword">namespace </span>math</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> chase(<span class="keywordtype">double</span>* x, <span class="keyword">const</span> <span class="keywordtype">double</span>* a, <span class="keyword">const</span> <span class="keywordtype">double</span>* b, <span class="keyword">const</span> <span class="keywordtype">double</span>* c,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespacemath.html#adeb1ad6ecd5fbeafcd561e788cd7bb48">chase</a>(<span class="keywordtype">double</span>* x, <span class="keyword">const</span> <span class="keywordtype">double</span>* a, <span class="keyword">const</span> <span class="keywordtype">double</span>* b, <span class="keyword">const</span> <span class="keywordtype">double</span>* c,</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span>* f, <span class="keyword">const</span> <span class="keywordtype">int</span> size);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> spline(<span class="keywordtype">double</span>* sy, <span class="keyword">const</span> <span class="keywordtype">double</span>* x, <span class="keyword">const</span> <span class="keywordtype">double</span>* y, <span class="keyword">const</span> <span class="keywordtype">double</span>* sx,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespacemath.html#aa60abc74f9944f409af4f102fb3fb63a">spline</a>(<span class="keywordtype">double</span>* sy, <span class="keyword">const</span> <span class="keywordtype">double</span>* x, <span class="keyword">const</span> <span class="keywordtype">double</span>* y, <span class="keyword">const</span> <span class="keywordtype">double</span>* sx,</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">int</span> length, <span class="keywordtype">int</span> lsy);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> fft(<a class="code" href="classComplex.html">Complex</a>* f, <span class="keywordtype">int</span> N);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> ifft(<a class="code" href="classComplex.html">Complex</a>* f, <span class="keywordtype">int</span> N);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> reciprocal(std::vector&lt;double&gt;&amp; x, std::vector&lt;double&gt;&amp; y);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespacemath.html#a1106b723dc0333205e334f3ebdd4ed68">fft</a>(<a class="code" href="classComplex.html">Complex</a>* f, <span class="keywordtype">int</span> N);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespacemath.html#abf0364cdb91ddc65770a1efc29823825">ifft</a>(<a class="code" href="classComplex.html">Complex</a>* f, <span class="keywordtype">int</span> N);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespacemath.html#a5c443cd695f587a84a88d99cf507108c">reciprocal</a>(std::vector&lt;double&gt;&amp; x, std::vector&lt;double&gt;&amp; y);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif // UNIVERSAL_MATH_H</span></div>
+<div class="ttc" id="complex_8h_html"><div class="ttname"><a href="complex_8h.html">complex.h</a></div></div>
+<div class="ttc" id="namespacemath_html_abf0364cdb91ddc65770a1efc29823825"><div class="ttname"><a href="namespacemath.html#abf0364cdb91ddc65770a1efc29823825">math::ifft</a></div><div class="ttdeci">void ifft(Complex *f, int N)</div></div>
+<div class="ttc" id="namespacemath_html_aa60abc74f9944f409af4f102fb3fb63a"><div class="ttname"><a href="namespacemath.html#aa60abc74f9944f409af4f102fb3fb63a">math::spline</a></div><div class="ttdeci">void spline(double *sy, const double *x, const double *y, const double *sx, int length, int lsy)</div></div>
+<div class="ttc" id="namespacemath_html_a5c443cd695f587a84a88d99cf507108c"><div class="ttname"><a href="namespacemath.html#a5c443cd695f587a84a88d99cf507108c">math::reciprocal</a></div><div class="ttdeci">void reciprocal(std::vector&lt; double &gt; &amp;x, std::vector&lt; double &gt; &amp;y)</div></div>
+<div class="ttc" id="namespacemath_html_adeb1ad6ecd5fbeafcd561e788cd7bb48"><div class="ttname"><a href="namespacemath.html#adeb1ad6ecd5fbeafcd561e788cd7bb48">math::chase</a></div><div class="ttdeci">void chase(double *x, const double *a, const double *b, const double *c, const double *f, const int size)</div></div>
+<div class="ttc" id="namespacemath_html_a1106b723dc0333205e334f3ebdd4ed68"><div class="ttname"><a href="namespacemath.html#a1106b723dc0333205e334f3ebdd4ed68">math::fft</a></div><div class="ttdeci">void fft(Complex *f, int N)</div></div>
 <div class="ttc" id="classComplex_html"><div class="ttname"><a href="classComplex.html">Complex</a></div><div class="ttdef"><b>Definition:</b> complex.h:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2016年 五月 30日 星期一 12:37:14 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2016年 五月 30日 星期一 12:41:48 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

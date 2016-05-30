@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
       <li class="current"><a href="annotated.html"><span>类</span></a></li>
       <li><a href="files.html"><span>文件</span></a></li>
       <li>
@@ -63,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
       <li><a href="annotated.html"><span>类列表</span></a></li>
       <li><a href="classes.html"><span>类索引</span></a></li>
       <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -70,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -84,11 +86,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div class="summary">
 <a href="#signals">信号</a> &#124;
 <a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-slots">Private 槽</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
 <a href="classPresetChooser-members.html">所有成员列表</a>  </div>
   <div class="headertitle">
 <div class="title">PresetChooser类 参考</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="graphicspanel_8h_source.html">graphicspanel.h</a>&gt;</code></p>
 <div class="dynheader">
 类 PresetChooser 继承关系图:</div>
 <div class="dyncontent">
@@ -100,23 +106,909 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 信号</h2></td></tr>
-<tr class="memitem:a9f83c643f02c693d42c50da9a61f6343"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f83c643f02c693d42c50da9a61f6343"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SendCurve</b> (ResourceManager::DataName)</td></tr>
+<tr class="memitem:a9f83c643f02c693d42c50da9a61f6343"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#a9f83c643f02c693d42c50da9a61f6343">SendCurve</a> (<a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605">ResourceManager::DataName</a>)</td></tr>
 <tr class="separator:a9f83c643f02c693d42c50da9a61f6343"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a0a6e8002e715761be45bf388fa443e9e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a6e8002e715761be45bf388fa443e9e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PresetChooser</b> (QWidget *parent)</td></tr>
+<tr class="memitem:a0a6e8002e715761be45bf388fa443e9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#a0a6e8002e715761be45bf388fa443e9e">PresetChooser</a> (QWidget *parent)</td></tr>
 <tr class="separator:a0a6e8002e715761be45bf388fa443e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
+Private 槽</h2></td></tr>
+<tr class="memitem:afb13ca26cfbc06f90ba22ffbcd023e9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#afb13ca26cfbc06f90ba22ffbcd023e9d">__SelectCurve</a> ()</td></tr>
+<tr class="separator:afb13ca26cfbc06f90ba22ffbcd023e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a697757778c7f6d8f25ace7b62de772e7"><td class="memItemLeft" align="right" valign="top">QGridLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#a697757778c7f6d8f25ace7b62de772e7">main_layout</a></td></tr>
+<tr class="separator:a697757778c7f6d8f25ace7b62de772e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaff22b6bd1fb1ef35c450cff3987abcc"><td class="memItemLeft" align="right" valign="top">QListWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#aaff22b6bd1fb1ef35c450cff3987abcc">list_names</a></td></tr>
+<tr class="separator:aaff22b6bd1fb1ef35c450cff3987abcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3b4f299879ac083478779624cad3619"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#ac3b4f299879ac083478779624cad3619">title</a></td></tr>
+<tr class="separator:ac3b4f299879ac083478779624cad3619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74a5cba189d8475f36e92281df671952"><td class="memItemLeft" align="right" valign="top">QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#a74a5cba189d8475f36e92281df671952">button_add</a></td></tr>
+<tr class="separator:a74a5cba189d8475f36e92281df671952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e6617eb5b3393c1916228c1a9dc7873"><td class="memItemLeft" align="right" valign="top">QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#a0e6617eb5b3393c1916228c1a9dc7873">button_cancel</a></td></tr>
+<tr class="separator:a0e6617eb5b3393c1916228c1a9dc7873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acde924ae3719347679a61a2ecb2f56bc"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#acde924ae3719347679a61a2ecb2f56bc">item_modulated_RLS</a></td></tr>
+<tr class="separator:acde924ae3719347679a61a2ecb2f56bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a2120646bc40270883cd6dd5ba5d24f"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#a1a2120646bc40270883cd6dd5ba5d24f">item_untreated_RLS</a></td></tr>
+<tr class="separator:a1a2120646bc40270883cd6dd5ba5d24f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae95f2befb982fe610b613e3cfab4bb55"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#ae95f2befb982fe610b613e3cfab4bb55">item_measured_LS</a></td></tr>
+<tr class="separator:ae95f2befb982fe610b613e3cfab4bb55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16ceb76a6ebffcbd9a60ce694132671c"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#a16ceb76a6ebffcbd9a60ce694132671c">item_RLS_autocorrelation_function</a></td></tr>
+<tr class="separator:a16ceb76a6ebffcbd9a60ce694132671c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a0d3d2a21fb4b2bfdeafd70fda0e9c3"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#a8a0d3d2a21fb4b2bfdeafd70fda0e9c3">item_RLS_AF_ch0</a></td></tr>
+<tr class="separator:a8a0d3d2a21fb4b2bfdeafd70fda0e9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff143268ee656ef3305c73601b2825e1"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#aff143268ee656ef3305c73601b2825e1">item_RLS_AF_ch1</a></td></tr>
+<tr class="separator:aff143268ee656ef3305c73601b2825e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5e5b9359070e6252dc353f2965b82fd"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#aa5e5b9359070e6252dc353f2965b82fd">item_RLS_AF_ch2</a></td></tr>
+<tr class="separator:aa5e5b9359070e6252dc353f2965b82fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b2991bc39a79889f30fbae90b60594d"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#a5b2991bc39a79889f30fbae90b60594d">item_RLS_AF_ch3</a></td></tr>
+<tr class="separator:a5b2991bc39a79889f30fbae90b60594d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4631b562588fa04d8653635def48652f"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#a4631b562588fa04d8653635def48652f">item_RLS_ch0</a></td></tr>
+<tr class="separator:a4631b562588fa04d8653635def48652f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8607f8094b9001d29829a920289ca272"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#a8607f8094b9001d29829a920289ca272">item_RLS_ch1</a></td></tr>
+<tr class="separator:a8607f8094b9001d29829a920289ca272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c22a81e7ee98f194d06d494272f9125"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#a8c22a81e7ee98f194d06d494272f9125">item_RLS_ch2</a></td></tr>
+<tr class="separator:a8c22a81e7ee98f194d06d494272f9125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8f818af392ed8fb3caff00b99e2641d"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#ad8f818af392ed8fb3caff00b99e2641d">item_RLS_ch3</a></td></tr>
+<tr class="separator:ad8f818af392ed8fb3caff00b99e2641d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6f8ebd955e1aebd633ccac99b0c2bb4"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#aa6f8ebd955e1aebd633ccac99b0c2bb4">item_modulation_factor_0</a></td></tr>
+<tr class="separator:aa6f8ebd955e1aebd633ccac99b0c2bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab29604c7a1d376a9a8cb08064bfadd5d"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#ab29604c7a1d376a9a8cb08064bfadd5d">item_modulation_factor_1</a></td></tr>
+<tr class="separator:ab29604c7a1d376a9a8cb08064bfadd5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a246a277b61678a280ee9e30a10bafac9"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#a246a277b61678a280ee9e30a10bafac9">item_modulation_factor_2</a></td></tr>
+<tr class="separator:a246a277b61678a280ee9e30a10bafac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a8ca1639b0e587e597cafde6c1de93a"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#a3a8ca1639b0e587e597cafde6c1de93a">item_modulation_factor_3</a></td></tr>
+<tr class="separator:a3a8ca1639b0e587e597cafde6c1de93a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6943d3ff8422f37c3f877a76848a46cf"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#a6943d3ff8422f37c3f877a76848a46cf">item_MLS_autocorrelation_function</a></td></tr>
+<tr class="separator:a6943d3ff8422f37c3f877a76848a46cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a1cdbe03f53ef98a7a66188c4a065e0"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#a1a1cdbe03f53ef98a7a66188c4a065e0">item_MLS_AF_ch0</a></td></tr>
+<tr class="separator:a1a1cdbe03f53ef98a7a66188c4a065e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d5d6c82925bc821ee46b843ad082cf1"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#a5d5d6c82925bc821ee46b843ad082cf1">item_MLS_AF_ch1</a></td></tr>
+<tr class="separator:a5d5d6c82925bc821ee46b843ad082cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab09d92375fa146df1177520f377b926f"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#ab09d92375fa146df1177520f377b926f">item_MLS_AF_ch2</a></td></tr>
+<tr class="separator:ab09d92375fa146df1177520f377b926f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fbe5c9f7e9a76322da480e89b320c88"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#a4fbe5c9f7e9a76322da480e89b320c88">item_MLS_AF_ch3</a></td></tr>
+<tr class="separator:a4fbe5c9f7e9a76322da480e89b320c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a350745e1ec96922f3eb3f08bb40d607f"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#a350745e1ec96922f3eb3f08bb40d607f">item_MLS_ch0</a></td></tr>
+<tr class="separator:a350745e1ec96922f3eb3f08bb40d607f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb7caf08981bf95c082d6f3547555e48"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#afb7caf08981bf95c082d6f3547555e48">item_MLS_ch1</a></td></tr>
+<tr class="separator:afb7caf08981bf95c082d6f3547555e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a05bb31fd39a9b38098e86f996d0a20"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#a0a05bb31fd39a9b38098e86f996d0a20">item_MLS_ch2</a></td></tr>
+<tr class="separator:a0a05bb31fd39a9b38098e86f996d0a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d4f045986bdbf9ca4ed5d37c16a7a75"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#a2d4f045986bdbf9ca4ed5d37c16a7a75">item_MLS_ch3</a></td></tr>
+<tr class="separator:a2d4f045986bdbf9ca4ed5d37c16a7a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29e0a0857684f6f7a420b821dcd065ad"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#a29e0a0857684f6f7a420b821dcd065ad">item_modification_factor_phi1</a></td></tr>
+<tr class="separator:a29e0a0857684f6f7a420b821dcd065ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7e041207de3ac6746dc2973f4de81ec"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#aa7e041207de3ac6746dc2973f4de81ec">item_modification_factor_phi2</a></td></tr>
+<tr class="separator:aa7e041207de3ac6746dc2973f4de81ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59137378d55a940199fb2a38a8d91489"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#a59137378d55a940199fb2a38a8d91489">item_stokes_vector_0</a></td></tr>
+<tr class="separator:a59137378d55a940199fb2a38a8d91489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dcee505455e59105a1dd2c8efd06562"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#a0dcee505455e59105a1dd2c8efd06562">item_stokes_vector_1</a></td></tr>
+<tr class="separator:a0dcee505455e59105a1dd2c8efd06562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a279d837fa3f6a79d3a729e49eb139be0"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#a279d837fa3f6a79d3a729e49eb139be0">item_stokes_vector_2</a></td></tr>
+<tr class="separator:a279d837fa3f6a79d3a729e49eb139be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec35d3e8dcd25b5bdbe6da5f77140108"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#aec35d3e8dcd25b5bdbe6da5f77140108">item_stokes_vector_3</a></td></tr>
+<tr class="separator:aec35d3e8dcd25b5bdbe6da5f77140108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dfbbf20862f83e42d9498afc215a6ee"><td class="memItemLeft" align="right" valign="top">QListWidgetItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPresetChooser.html#a8dfbbf20862f83e42d9498afc215a6ee">item_DOP</a></td></tr>
+<tr class="separator:a8dfbbf20862f83e42d9498afc215a6ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a0a6e8002e715761be45bf388fa443e9e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PresetChooser::PresetChooser </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="afb13ca26cfbc06f90ba22ffbcd023e9d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PresetChooser::__SelectCurve </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9f83c643f02c693d42c50da9a61f6343"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PresetChooser::SendCurve </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605">ResourceManager::DataName</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a74a5cba189d8475f36e92281df671952"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPushButton* PresetChooser::button_add</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0e6617eb5b3393c1916228c1a9dc7873"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPushButton* PresetChooser::button_cancel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8dfbbf20862f83e42d9498afc215a6ee"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_DOP</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae95f2befb982fe610b613e3cfab4bb55"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_measured_LS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1a1cdbe03f53ef98a7a66188c4a065e0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_MLS_AF_ch0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5d5d6c82925bc821ee46b843ad082cf1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_MLS_AF_ch1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab09d92375fa146df1177520f377b926f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_MLS_AF_ch2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4fbe5c9f7e9a76322da480e89b320c88"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_MLS_AF_ch3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6943d3ff8422f37c3f877a76848a46cf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_MLS_autocorrelation_function</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a350745e1ec96922f3eb3f08bb40d607f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_MLS_ch0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afb7caf08981bf95c082d6f3547555e48"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_MLS_ch1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0a05bb31fd39a9b38098e86f996d0a20"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_MLS_ch2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2d4f045986bdbf9ca4ed5d37c16a7a75"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_MLS_ch3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a29e0a0857684f6f7a420b821dcd065ad"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_modification_factor_phi1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa7e041207de3ac6746dc2973f4de81ec"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_modification_factor_phi2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acde924ae3719347679a61a2ecb2f56bc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_modulated_RLS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa6f8ebd955e1aebd633ccac99b0c2bb4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_modulation_factor_0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab29604c7a1d376a9a8cb08064bfadd5d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_modulation_factor_1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a246a277b61678a280ee9e30a10bafac9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_modulation_factor_2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3a8ca1639b0e587e597cafde6c1de93a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_modulation_factor_3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8a0d3d2a21fb4b2bfdeafd70fda0e9c3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_RLS_AF_ch0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aff143268ee656ef3305c73601b2825e1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_RLS_AF_ch1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa5e5b9359070e6252dc353f2965b82fd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_RLS_AF_ch2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5b2991bc39a79889f30fbae90b60594d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_RLS_AF_ch3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a16ceb76a6ebffcbd9a60ce694132671c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_RLS_autocorrelation_function</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4631b562588fa04d8653635def48652f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_RLS_ch0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8607f8094b9001d29829a920289ca272"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_RLS_ch1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8c22a81e7ee98f194d06d494272f9125"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_RLS_ch2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad8f818af392ed8fb3caff00b99e2641d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_RLS_ch3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a59137378d55a940199fb2a38a8d91489"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_stokes_vector_0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0dcee505455e59105a1dd2c8efd06562"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_stokes_vector_1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a279d837fa3f6a79d3a729e49eb139be0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_stokes_vector_2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aec35d3e8dcd25b5bdbe6da5f77140108"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_stokes_vector_3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1a2120646bc40270883cd6dd5ba5d24f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidgetItem* PresetChooser::item_untreated_RLS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaff22b6bd1fb1ef35c450cff3987abcc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QListWidget* PresetChooser::list_names</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a697757778c7f6d8f25ace7b62de772e7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QGridLayout* PresetChooser::main_layout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac3b4f299879ac083478779624cad3619"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* PresetChooser::title</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>该类的文档由以下文件生成:<ul>
 <li>include/UI/<a class="el" href="graphicspanel_8h_source.html">graphicspanel.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2016年 五月 30日 星期一 12:37:14 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2016年 五月 30日 星期一 12:41:48 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

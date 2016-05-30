@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
       <li><a href="annotated.html"><span>类</span></a></li>
       <li class="current"><a href="files.html"><span>文件</span></a></li>
       <li>
@@ -61,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -68,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,7 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="title">complex.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef COMPLEX_H</span></div>
+<a href="complex_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef COMPLEX_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define COMPLEX_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include&lt;cstdlib&gt;</span></div>
@@ -98,53 +100,67 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classComplex.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classComplex.html">Complex</a></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">double</span> m_real;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">double</span> m_imag;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classComplex.html#ae2c40b02dcf8ff8a083828fee0d10cea">   12</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classComplex.html#ae2c40b02dcf8ff8a083828fee0d10cea">m_real</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classComplex.html#aeb21dbc3ab3e3560c52083ab522e16ce">   13</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classComplex.html#aeb21dbc3ab3e3560c52083ab522e16ce">m_imag</a>;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classComplex.html">Complex</a>();</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classComplex.html">Complex</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* str);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classComplex.html">Complex</a>(<span class="keywordtype">double</span> real, <span class="keywordtype">double</span> imag);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::string ToString();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">double</span> real(){ <span class="keywordflow">return</span> m_real;}</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">double</span> imag(){ <span class="keywordflow">return</span> m_imag;}</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> real(<span class="keywordtype">double</span> real){ m_real = real;}</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> imag(<span class="keywordtype">double</span> imag){ m_imag = imag;}</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">double</span> modulus();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">double</span> squareMod();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classComplex.html">Complex</a> operator+(<a class="code" href="classComplex.html">Complex</a> x);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classComplex.html">Complex</a> operator-(<a class="code" href="classComplex.html">Complex</a> x);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classComplex.html">Complex</a> operator*(<a class="code" href="classComplex.html">Complex</a> x);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classComplex.html">Complex</a> operator/(<a class="code" href="classComplex.html">Complex</a> x);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classComplex.html#a43b9f07cdf697c71b5fd506a6cc80b8f">Complex</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classComplex.html#a43b9f07cdf697c71b5fd506a6cc80b8f">Complex</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* str);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classComplex.html#a43b9f07cdf697c71b5fd506a6cc80b8f">Complex</a>(<span class="keywordtype">double</span> <a class="code" href="classComplex.html#aef034069e4bf3741564757568cdec919">real</a>, <span class="keywordtype">double</span> <a class="code" href="classComplex.html#a9acddda2991090c34a15efd849c1deba">imag</a>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::string <a class="code" href="classComplex.html#a5f84d1f0fb6876f8a81817f4f077b6f2">ToString</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classComplex.html#aef034069e4bf3741564757568cdec919">   19</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classComplex.html#aef034069e4bf3741564757568cdec919">real</a>(){ <span class="keywordflow">return</span> <a class="code" href="classComplex.html#ae2c40b02dcf8ff8a083828fee0d10cea">m_real</a>;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classComplex.html#a9acddda2991090c34a15efd849c1deba">   20</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classComplex.html#a9acddda2991090c34a15efd849c1deba">imag</a>(){ <span class="keywordflow">return</span> <a class="code" href="classComplex.html#aeb21dbc3ab3e3560c52083ab522e16ce">m_imag</a>;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classComplex.html#a7543a9d64127919bd2b97f280b6541b6">   21</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classComplex.html#a7543a9d64127919bd2b97f280b6541b6">real</a>(<span class="keywordtype">double</span> <a class="code" href="classComplex.html#aef034069e4bf3741564757568cdec919">real</a>){ <a class="code" href="classComplex.html#ae2c40b02dcf8ff8a083828fee0d10cea">m_real</a> = <a class="code" href="classComplex.html#a7543a9d64127919bd2b97f280b6541b6">real</a>;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classComplex.html#a415a63ab116e39dca1f6336127231480">   22</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classComplex.html#a415a63ab116e39dca1f6336127231480">imag</a>(<span class="keywordtype">double</span> <a class="code" href="classComplex.html#a9acddda2991090c34a15efd849c1deba">imag</a>){ <a class="code" href="classComplex.html#aeb21dbc3ab3e3560c52083ab522e16ce">m_imag</a> = <a class="code" href="classComplex.html#a415a63ab116e39dca1f6336127231480">imag</a>;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classComplex.html#aa2645fb46947214f3f6a92c90003d5dc">modulus</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classComplex.html#a21ff0ec47a96d8429f3d29f49207ffe5">squareMod</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classComplex.html">Complex</a> <a class="code" href="classComplex.html#a32abd8920b05bd6d287df64e3573d85d">operator+</a>(<a class="code" href="classComplex.html">Complex</a> x);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classComplex.html">Complex</a> <a class="code" href="classComplex.html#a78eb0f62785c185717c6e8955d1d34e3">operator-</a>(<a class="code" href="classComplex.html">Complex</a> x);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classComplex.html">Complex</a> <a class="code" href="classComplex.html#a869a75fae0021bc228d4d428ea6a4d88">operator*</a>(<a class="code" href="classComplex.html">Complex</a> x);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classComplex.html">Complex</a> <a class="code" href="classComplex.html#af2125d5c5e626f721081356a1180e15c">operator/</a>(<a class="code" href="classComplex.html">Complex</a> x);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">inline</span> <a class="code" href="classComplex.html">Complex</a> Complex::operator+(<a class="code" href="classComplex.html">Complex</a> x)</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classComplex.html#a32abd8920b05bd6d287df64e3573d85d">   31</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="classComplex.html">Complex</a> <a class="code" href="classComplex.html#a32abd8920b05bd6d287df64e3573d85d">Complex::operator+</a>(<a class="code" href="classComplex.html">Complex</a> x)</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classComplex.html">Complex</a>(m_real + x.real(), m_imag + x.imag());</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classComplex.html#a43b9f07cdf697c71b5fd506a6cc80b8f">Complex</a>(<a class="code" href="classComplex.html#ae2c40b02dcf8ff8a083828fee0d10cea">m_real</a> + x.<a class="code" href="classComplex.html#aef034069e4bf3741564757568cdec919">real</a>(), <a class="code" href="classComplex.html#aeb21dbc3ab3e3560c52083ab522e16ce">m_imag</a> + x.<a class="code" href="classComplex.html#a9acddda2991090c34a15efd849c1deba">imag</a>());</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">inline</span> <a class="code" href="classComplex.html">Complex</a> Complex::operator-(<a class="code" href="classComplex.html">Complex</a> x)</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classComplex.html#a78eb0f62785c185717c6e8955d1d34e3">   36</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="classComplex.html">Complex</a> <a class="code" href="classComplex.html#a78eb0f62785c185717c6e8955d1d34e3">Complex::operator-</a>(<a class="code" href="classComplex.html">Complex</a> x)</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classComplex.html">Complex</a>(m_real - x.real(), m_imag - x.imag());</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classComplex.html#a43b9f07cdf697c71b5fd506a6cc80b8f">Complex</a>(<a class="code" href="classComplex.html#ae2c40b02dcf8ff8a083828fee0d10cea">m_real</a> - x.<a class="code" href="classComplex.html#aef034069e4bf3741564757568cdec919">real</a>(), <a class="code" href="classComplex.html#aeb21dbc3ab3e3560c52083ab522e16ce">m_imag</a> - x.<a class="code" href="classComplex.html#a9acddda2991090c34a15efd849c1deba">imag</a>());</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">inline</span> <a class="code" href="classComplex.html">Complex</a> Complex::operator*(<a class="code" href="classComplex.html">Complex</a> x)</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classComplex.html#a869a75fae0021bc228d4d428ea6a4d88">   41</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="classComplex.html">Complex</a> <a class="code" href="classComplex.html#a869a75fae0021bc228d4d428ea6a4d88">Complex::operator*</a>(<a class="code" href="classComplex.html">Complex</a> x)</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classComplex.html">Complex</a>(m_real * x.real() - m_imag * x.imag(), m_real * x.imag() + m_imag * x.real());</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classComplex.html#a43b9f07cdf697c71b5fd506a6cc80b8f">Complex</a>(<a class="code" href="classComplex.html#ae2c40b02dcf8ff8a083828fee0d10cea">m_real</a> * x.<a class="code" href="classComplex.html#aef034069e4bf3741564757568cdec919">real</a>() - <a class="code" href="classComplex.html#aeb21dbc3ab3e3560c52083ab522e16ce">m_imag</a> * x.<a class="code" href="classComplex.html#a9acddda2991090c34a15efd849c1deba">imag</a>(), <a class="code" href="classComplex.html#ae2c40b02dcf8ff8a083828fee0d10cea">m_real</a> * x.<a class="code" href="classComplex.html#a9acddda2991090c34a15efd849c1deba">imag</a>() + <a class="code" href="classComplex.html#aeb21dbc3ab3e3560c52083ab522e16ce">m_imag</a> * x.<a class="code" href="classComplex.html#aef034069e4bf3741564757568cdec919">real</a>());</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">inline</span> <a class="code" href="classComplex.html">Complex</a> Complex::operator/(<a class="code" href="classComplex.html">Complex</a> x)</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classComplex.html#af2125d5c5e626f721081356a1180e15c">   46</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="classComplex.html">Complex</a> <a class="code" href="classComplex.html#af2125d5c5e626f721081356a1180e15c">Complex::operator/</a>(<a class="code" href="classComplex.html">Complex</a> x)</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">double</span> base = x.real() * x.real() + x.imag() * x.imag();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classComplex.html">Complex</a>((m_real * x.real() + m_imag * x.imag()) / base,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            (m_imag * x.real() - m_real * x.imag()) / base);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">double</span> base = x.<a class="code" href="classComplex.html#aef034069e4bf3741564757568cdec919">real</a>() * x.<a class="code" href="classComplex.html#aef034069e4bf3741564757568cdec919">real</a>() + x.<a class="code" href="classComplex.html#a9acddda2991090c34a15efd849c1deba">imag</a>() * x.<a class="code" href="classComplex.html#a9acddda2991090c34a15efd849c1deba">imag</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classComplex.html#a43b9f07cdf697c71b5fd506a6cc80b8f">Complex</a>((<a class="code" href="classComplex.html#ae2c40b02dcf8ff8a083828fee0d10cea">m_real</a> * x.<a class="code" href="classComplex.html#aef034069e4bf3741564757568cdec919">real</a>() + <a class="code" href="classComplex.html#aeb21dbc3ab3e3560c52083ab522e16ce">m_imag</a> * x.<a class="code" href="classComplex.html#a9acddda2991090c34a15efd849c1deba">imag</a>()) / base,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            (<a class="code" href="classComplex.html#aeb21dbc3ab3e3560c52083ab522e16ce">m_imag</a> * x.<a class="code" href="classComplex.html#aef034069e4bf3741564757568cdec919">real</a>() - <a class="code" href="classComplex.html#ae2c40b02dcf8ff8a083828fee0d10cea">m_real</a> * x.<a class="code" href="classComplex.html#a9acddda2991090c34a15efd849c1deba">imag</a>()) / base);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif // COMPLEX_H</span></div>
+<div class="ttc" id="classComplex_html_a7543a9d64127919bd2b97f280b6541b6"><div class="ttname"><a href="classComplex.html#a7543a9d64127919bd2b97f280b6541b6">Complex::real</a></div><div class="ttdeci">void real(double real)</div><div class="ttdef"><b>Definition:</b> complex.h:21</div></div>
+<div class="ttc" id="classComplex_html_a5f84d1f0fb6876f8a81817f4f077b6f2"><div class="ttname"><a href="classComplex.html#a5f84d1f0fb6876f8a81817f4f077b6f2">Complex::ToString</a></div><div class="ttdeci">std::string ToString()</div></div>
+<div class="ttc" id="classComplex_html_a78eb0f62785c185717c6e8955d1d34e3"><div class="ttname"><a href="classComplex.html#a78eb0f62785c185717c6e8955d1d34e3">Complex::operator-</a></div><div class="ttdeci">Complex operator-(Complex x)</div><div class="ttdef"><b>Definition:</b> complex.h:36</div></div>
+<div class="ttc" id="classComplex_html_aef034069e4bf3741564757568cdec919"><div class="ttname"><a href="classComplex.html#aef034069e4bf3741564757568cdec919">Complex::real</a></div><div class="ttdeci">double real()</div><div class="ttdef"><b>Definition:</b> complex.h:19</div></div>
+<div class="ttc" id="classComplex_html_a43b9f07cdf697c71b5fd506a6cc80b8f"><div class="ttname"><a href="classComplex.html#a43b9f07cdf697c71b5fd506a6cc80b8f">Complex::Complex</a></div><div class="ttdeci">Complex()</div></div>
+<div class="ttc" id="classComplex_html_ae2c40b02dcf8ff8a083828fee0d10cea"><div class="ttname"><a href="classComplex.html#ae2c40b02dcf8ff8a083828fee0d10cea">Complex::m_real</a></div><div class="ttdeci">double m_real</div><div class="ttdef"><b>Definition:</b> complex.h:12</div></div>
+<div class="ttc" id="classComplex_html_a21ff0ec47a96d8429f3d29f49207ffe5"><div class="ttname"><a href="classComplex.html#a21ff0ec47a96d8429f3d29f49207ffe5">Complex::squareMod</a></div><div class="ttdeci">double squareMod()</div></div>
+<div class="ttc" id="classComplex_html_a32abd8920b05bd6d287df64e3573d85d"><div class="ttname"><a href="classComplex.html#a32abd8920b05bd6d287df64e3573d85d">Complex::operator+</a></div><div class="ttdeci">Complex operator+(Complex x)</div><div class="ttdef"><b>Definition:</b> complex.h:31</div></div>
+<div class="ttc" id="classComplex_html_a9acddda2991090c34a15efd849c1deba"><div class="ttname"><a href="classComplex.html#a9acddda2991090c34a15efd849c1deba">Complex::imag</a></div><div class="ttdeci">double imag()</div><div class="ttdef"><b>Definition:</b> complex.h:20</div></div>
+<div class="ttc" id="classComplex_html_aeb21dbc3ab3e3560c52083ab522e16ce"><div class="ttname"><a href="classComplex.html#aeb21dbc3ab3e3560c52083ab522e16ce">Complex::m_imag</a></div><div class="ttdeci">double m_imag</div><div class="ttdef"><b>Definition:</b> complex.h:13</div></div>
+<div class="ttc" id="classComplex_html_aa2645fb46947214f3f6a92c90003d5dc"><div class="ttname"><a href="classComplex.html#aa2645fb46947214f3f6a92c90003d5dc">Complex::modulus</a></div><div class="ttdeci">double modulus()</div></div>
+<div class="ttc" id="classComplex_html_a415a63ab116e39dca1f6336127231480"><div class="ttname"><a href="classComplex.html#a415a63ab116e39dca1f6336127231480">Complex::imag</a></div><div class="ttdeci">void imag(double imag)</div><div class="ttdef"><b>Definition:</b> complex.h:22</div></div>
+<div class="ttc" id="classComplex_html_af2125d5c5e626f721081356a1180e15c"><div class="ttname"><a href="classComplex.html#af2125d5c5e626f721081356a1180e15c">Complex::operator/</a></div><div class="ttdeci">Complex operator/(Complex x)</div><div class="ttdef"><b>Definition:</b> complex.h:46</div></div>
+<div class="ttc" id="classComplex_html_a869a75fae0021bc228d4d428ea6a4d88"><div class="ttname"><a href="classComplex.html#a869a75fae0021bc228d4d428ea6a4d88">Complex::operator*</a></div><div class="ttdeci">Complex operator*(Complex x)</div><div class="ttdef"><b>Definition:</b> complex.h:41</div></div>
 <div class="ttc" id="classComplex_html"><div class="ttname"><a href="classComplex.html">Complex</a></div><div class="ttdef"><b>Definition:</b> complex.h:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2016年 五月 30日 星期一 12:37:14 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2016年 五月 30日 星期一 12:41:48 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

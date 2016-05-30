@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
       <li><a href="annotated.html"><span>类</span></a></li>
       <li class="current"><a href="files.html"><span>文件</span></a></li>
       <li>
@@ -61,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -68,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,40 +89,54 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="title">innerdata.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef INNERDATA_H</span></div>
+<a href="innerdata_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef INNERDATA_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define INNERDATA_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include&lt;vector&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include&lt;Universal/complex.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="complex_8h.html">Universal/complex.h</a>&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include&lt;iostream&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classInnerData.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="classInnerData.html">InnerData</a></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    std::vector&lt;Complex&gt; x;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    std::vector&lt;Complex&gt; y;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classInnerData.html#af853122f6117e98ac9258327e1897c35">   11</a></span>&#160;    std::vector&lt;Complex&gt; <a class="code" href="classInnerData.html#af853122f6117e98ac9258327e1897c35">x</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classInnerData.html#a42c6dfb32645fc239acc4d79af7c49eb">   12</a></span>&#160;    std::vector&lt;Complex&gt; <a class="code" href="classInnerData.html#a42c6dfb32645fc239acc4d79af7c49eb">y</a>;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="classInnerData.html">InnerData</a>();</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classInnerData.html">InnerData</a>(std::vector&lt;Complex&gt; x, std::vector&lt;Complex&gt; y);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> SetContent(std::vector&lt;Complex&gt;&amp; lx, std::vector&lt;Complex&gt;&amp; ly);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> peek(<span class="keywordtype">int</span> i); <span class="comment">// [!]</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::vector&lt;Complex&gt; getX();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    std::vector&lt;Complex&gt; getY();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    std::vector&lt;Complex&gt;&amp; GetControlX();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    std::vector&lt;Complex&gt;&amp; GetControlY();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classComplex.html">Complex</a> GetXMax(){ <span class="keywordflow">return</span> x[x.size()-1]; }</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classComplex.html">Complex</a> GetXMin(){ <span class="keywordflow">return</span> x[0]; }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">bool</span> empty(){ <span class="keywordflow">return</span> x.size()==0; }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">int</span> length();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="classInnerData.html#aeddb2eba000e117e764d10b3bd619bd7">InnerData</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classInnerData.html#aeddb2eba000e117e764d10b3bd619bd7">InnerData</a>(std::vector&lt;Complex&gt; <a class="code" href="classInnerData.html#af853122f6117e98ac9258327e1897c35">x</a>, std::vector&lt;Complex&gt; <a class="code" href="classInnerData.html#a42c6dfb32645fc239acc4d79af7c49eb">y</a>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classInnerData.html#a6a759244dc844e8e489295a80ce0a3ef">SetContent</a>(std::vector&lt;Complex&gt;&amp; lx, std::vector&lt;Complex&gt;&amp; ly);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classInnerData.html#a109f7a74753f78f552d0861ee32f1b4b">peek</a>(<span class="keywordtype">int</span> i); <span class="comment">// [!]</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::vector&lt;Complex&gt; <a class="code" href="classInnerData.html#a2aedd61cc0a51fda0e35e5c0e389155d">getX</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    std::vector&lt;Complex&gt; <a class="code" href="classInnerData.html#a2a6b2ba6b341ba450b48873788f62ed1">getY</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    std::vector&lt;Complex&gt;&amp; <a class="code" href="classInnerData.html#a25ba68f488dd0ed170633dbe13101556">GetControlX</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    std::vector&lt;Complex&gt;&amp; <a class="code" href="classInnerData.html#a63827b8cf00ee2949f206b1f3438d954">GetControlY</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classInnerData.html#a003ebc5bb0391de3c6b89e299fd13115">   22</a></span>&#160;    <a class="code" href="classComplex.html">Complex</a> <a class="code" href="classInnerData.html#a003ebc5bb0391de3c6b89e299fd13115">GetXMax</a>(){ <span class="keywordflow">return</span> <a class="code" href="classInnerData.html#af853122f6117e98ac9258327e1897c35">x</a>[<a class="code" href="classInnerData.html#af853122f6117e98ac9258327e1897c35">x</a>.size()-1]; }</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classInnerData.html#a2c902ad1d0a8c9d51d780f21dc37f661">   23</a></span>&#160;    <a class="code" href="classComplex.html">Complex</a> <a class="code" href="classInnerData.html#a2c902ad1d0a8c9d51d780f21dc37f661">GetXMin</a>(){ <span class="keywordflow">return</span> <a class="code" href="classInnerData.html#af853122f6117e98ac9258327e1897c35">x</a>[0]; }</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classInnerData.html#a029355117ddc0086ebb68d27596f0b58">   24</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classInnerData.html#a029355117ddc0086ebb68d27596f0b58">empty</a>(){ <span class="keywordflow">return</span> <a class="code" href="classInnerData.html#af853122f6117e98ac9258327e1897c35">x</a>.size()==0; }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classInnerData.html#acff59f697d436516782f852a9e2010aa">length</a>();</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif // INNERDATA_H</span></div>
+<div class="ttc" id="classInnerData_html_a6a759244dc844e8e489295a80ce0a3ef"><div class="ttname"><a href="classInnerData.html#a6a759244dc844e8e489295a80ce0a3ef">InnerData::SetContent</a></div><div class="ttdeci">void SetContent(std::vector&lt; Complex &gt; &amp;lx, std::vector&lt; Complex &gt; &amp;ly)</div></div>
+<div class="ttc" id="classInnerData_html_a42c6dfb32645fc239acc4d79af7c49eb"><div class="ttname"><a href="classInnerData.html#a42c6dfb32645fc239acc4d79af7c49eb">InnerData::y</a></div><div class="ttdeci">std::vector&lt; Complex &gt; y</div><div class="ttdef"><b>Definition:</b> innerdata.h:12</div></div>
+<div class="ttc" id="complex_8h_html"><div class="ttname"><a href="complex_8h.html">complex.h</a></div></div>
+<div class="ttc" id="classInnerData_html_aeddb2eba000e117e764d10b3bd619bd7"><div class="ttname"><a href="classInnerData.html#aeddb2eba000e117e764d10b3bd619bd7">InnerData::InnerData</a></div><div class="ttdeci">InnerData()</div></div>
+<div class="ttc" id="classInnerData_html_a029355117ddc0086ebb68d27596f0b58"><div class="ttname"><a href="classInnerData.html#a029355117ddc0086ebb68d27596f0b58">InnerData::empty</a></div><div class="ttdeci">bool empty()</div><div class="ttdef"><b>Definition:</b> innerdata.h:24</div></div>
+<div class="ttc" id="classInnerData_html_a109f7a74753f78f552d0861ee32f1b4b"><div class="ttname"><a href="classInnerData.html#a109f7a74753f78f552d0861ee32f1b4b">InnerData::peek</a></div><div class="ttdeci">void peek(int i)</div></div>
+<div class="ttc" id="classInnerData_html_a2a6b2ba6b341ba450b48873788f62ed1"><div class="ttname"><a href="classInnerData.html#a2a6b2ba6b341ba450b48873788f62ed1">InnerData::getY</a></div><div class="ttdeci">std::vector&lt; Complex &gt; getY()</div></div>
+<div class="ttc" id="classInnerData_html_a2aedd61cc0a51fda0e35e5c0e389155d"><div class="ttname"><a href="classInnerData.html#a2aedd61cc0a51fda0e35e5c0e389155d">InnerData::getX</a></div><div class="ttdeci">std::vector&lt; Complex &gt; getX()</div></div>
+<div class="ttc" id="classInnerData_html_a63827b8cf00ee2949f206b1f3438d954"><div class="ttname"><a href="classInnerData.html#a63827b8cf00ee2949f206b1f3438d954">InnerData::GetControlY</a></div><div class="ttdeci">std::vector&lt; Complex &gt; &amp; GetControlY()</div></div>
+<div class="ttc" id="classInnerData_html_acff59f697d436516782f852a9e2010aa"><div class="ttname"><a href="classInnerData.html#acff59f697d436516782f852a9e2010aa">InnerData::length</a></div><div class="ttdeci">int length()</div></div>
+<div class="ttc" id="classInnerData_html_a003ebc5bb0391de3c6b89e299fd13115"><div class="ttname"><a href="classInnerData.html#a003ebc5bb0391de3c6b89e299fd13115">InnerData::GetXMax</a></div><div class="ttdeci">Complex GetXMax()</div><div class="ttdef"><b>Definition:</b> innerdata.h:22</div></div>
+<div class="ttc" id="classInnerData_html_af853122f6117e98ac9258327e1897c35"><div class="ttname"><a href="classInnerData.html#af853122f6117e98ac9258327e1897c35">InnerData::x</a></div><div class="ttdeci">std::vector&lt; Complex &gt; x</div><div class="ttdef"><b>Definition:</b> innerdata.h:11</div></div>
 <div class="ttc" id="classInnerData_html"><div class="ttname"><a href="classInnerData.html">InnerData</a></div><div class="ttdef"><b>Definition:</b> innerdata.h:8</div></div>
+<div class="ttc" id="classInnerData_html_a25ba68f488dd0ed170633dbe13101556"><div class="ttname"><a href="classInnerData.html#a25ba68f488dd0ed170633dbe13101556">InnerData::GetControlX</a></div><div class="ttdeci">std::vector&lt; Complex &gt; &amp; GetControlX()</div></div>
+<div class="ttc" id="classInnerData_html_a2c902ad1d0a8c9d51d780f21dc37f661"><div class="ttname"><a href="classInnerData.html#a2c902ad1d0a8c9d51d780f21dc37f661">InnerData::GetXMin</a></div><div class="ttdeci">Complex GetXMin()</div><div class="ttdef"><b>Definition:</b> innerdata.h:23</div></div>
 <div class="ttc" id="classComplex_html"><div class="ttname"><a href="classComplex.html">Complex</a></div><div class="ttdef"><b>Definition:</b> complex.h:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2016年 五月 30日 星期一 12:37:14 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2016年 五月 30日 星期一 12:41:48 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

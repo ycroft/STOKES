@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
       <li class="current"><a href="annotated.html"><span>类</span></a></li>
       <li><a href="files.html"><span>文件</span></a></li>
       <li>
@@ -63,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
       <li><a href="annotated.html"><span>类列表</span></a></li>
       <li><a href="classes.html"><span>类索引</span></a></li>
       <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -70,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -83,11 +85,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
 <a href="classInfoPanel-members.html">所有成员列表</a>  </div>
   <div class="headertitle">
 <div class="title">InfoPanel类 参考</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="infopanel_8h_source.html">infopanel.h</a>&gt;</code></p>
 <div class="dynheader">
 类 InfoPanel 继承关系图:</div>
 <div class="dyncontent">
@@ -100,50 +106,625 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a88efe366ca3363459d08ca2910435444"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88efe366ca3363459d08ca2910435444"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>InfoPanel</b> (QWidget *parent, <a class="el" href="classSpectrographDevice.html">SpectrographDevice</a> &amp;device, <a class="el" href="classResourceManager.html">ResourceManager</a> &amp;manager)</td></tr>
+<tr class="memitem:a88efe366ca3363459d08ca2910435444"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInfoPanel.html#a88efe366ca3363459d08ca2910435444">InfoPanel</a> (QWidget *parent, <a class="el" href="classSpectrographDevice.html">SpectrographDevice</a> &amp;device, <a class="el" href="classResourceManager.html">ResourceManager</a> &amp;manager)</td></tr>
 <tr class="separator:a88efe366ca3363459d08ca2910435444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b487d4e28736bbe497a0a2fe36ac075"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInfoPanel.html#a8b487d4e28736bbe497a0a2fe36ac075">~InfoPanel</a> ()</td></tr>
+<tr class="separator:a8b487d4e28736bbe497a0a2fe36ac075"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classPanel"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classPanel')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classPanel.html">Panel</a></td></tr>
-<tr class="memitem:a6a52c614f74380ac66ea2932a2906427 inherit pub_methods_classPanel"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a52c614f74380ac66ea2932a2906427"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Panel</b> (QWidget *parent, <a class="el" href="classSpectrographDevice.html">SpectrographDevice</a> &amp;device, <a class="el" href="classResourceManager.html">ResourceManager</a> &amp;manager)</td></tr>
+<tr class="memitem:a6a52c614f74380ac66ea2932a2906427 inherit pub_methods_classPanel"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPanel.html#a6a52c614f74380ac66ea2932a2906427">Panel</a> (QWidget *parent, <a class="el" href="classSpectrographDevice.html">SpectrographDevice</a> &amp;device, <a class="el" href="classResourceManager.html">ResourceManager</a> &amp;manager)</td></tr>
 <tr class="separator:a6a52c614f74380ac66ea2932a2906427 inherit pub_methods_classPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8dfca2ecc97e4b31b10976226cfc806 inherit pub_methods_classPanel"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPanel.html#ae8dfca2ecc97e4b31b10976226cfc806">~Panel</a> ()=0</td></tr>
+<tr class="separator:ae8dfca2ecc97e4b31b10976226cfc806 inherit pub_methods_classPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:aa872e5e235f9c787e76e5c607e9ca68f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInfoPanel.html#aa872e5e235f9c787e76e5c607e9ca68f">__Renew</a> ()</td></tr>
+<tr class="separator:aa872e5e235f9c787e76e5c607e9ca68f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad241cc501d8e0e15f35eb37e75f00826"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInfoPanel.html#ad241cc501d8e0e15f35eb37e75f00826">__GetStateName</a> (int s)</td></tr>
+<tr class="separator:ad241cc501d8e0e15f35eb37e75f00826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:ae3be349c63b2422a44aaefb3a5d25e6a"><td class="memItemLeft" align="right" valign="top">QGridLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInfoPanel.html#ae3be349c63b2422a44aaefb3a5d25e6a">m_main_layout</a></td></tr>
+<tr class="separator:ae3be349c63b2422a44aaefb3a5d25e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37a0d35f0fd171a3ba95061d50ef6d0a"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInfoPanel.html#a37a0d35f0fd171a3ba95061d50ef6d0a">m_title_name</a></td></tr>
+<tr class="separator:a37a0d35f0fd171a3ba95061d50ef6d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a9c54b6170045fe5d5a33be8b582ea6"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInfoPanel.html#a7a9c54b6170045fe5d5a33be8b582ea6">m_title_status</a></td></tr>
+<tr class="separator:a7a9c54b6170045fe5d5a33be8b582ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9f8cb71a217bca36444b3a6750cbc29"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInfoPanel.html#ae9f8cb71a217bca36444b3a6750cbc29">m_name_machine_type</a></td></tr>
+<tr class="separator:ae9f8cb71a217bca36444b3a6750cbc29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75676e288816cdedd0e8a8fdab07d05c"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInfoPanel.html#a75676e288816cdedd0e8a8fdab07d05c">m_name_machine</a></td></tr>
+<tr class="separator:a75676e288816cdedd0e8a8fdab07d05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dcbd08d57043f2a765fbbb147282613"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInfoPanel.html#a0dcbd08d57043f2a765fbbb147282613">m_name_write</a></td></tr>
+<tr class="separator:a0dcbd08d57043f2a765fbbb147282613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a436045f8b79e6c5246fa6f1782fc38f4"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInfoPanel.html#a436045f8b79e6c5246fa6f1782fc38f4">m_name_fetch</a></td></tr>
+<tr class="separator:a436045f8b79e6c5246fa6f1782fc38f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9035c7bde952224a198528a686bf4bf6"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInfoPanel.html#a9035c7bde952224a198528a686bf4bf6">m_name_MF</a></td></tr>
+<tr class="separator:a9035c7bde952224a198528a686bf4bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e75c6f4e94eec8fda6e9206916f33b1"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInfoPanel.html#a5e75c6f4e94eec8fda6e9206916f33b1">m_name_SV</a></td></tr>
+<tr class="separator:a5e75c6f4e94eec8fda6e9206916f33b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7130499bdbc7eb3a96c92bd42698e558"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInfoPanel.html#a7130499bdbc7eb3a96c92bd42698e558">m_name_ADDI</a></td></tr>
+<tr class="separator:a7130499bdbc7eb3a96c92bd42698e558"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b495f5027eda434f4a5dcf9ca23cd47"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInfoPanel.html#a2b495f5027eda434f4a5dcf9ca23cd47">m_name_repaint</a></td></tr>
+<tr class="separator:a2b495f5027eda434f4a5dcf9ca23cd47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aed188b8a9b61cd9af11a55d61e576b"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInfoPanel.html#a7aed188b8a9b61cd9af11a55d61e576b">m_status_machine_type</a></td></tr>
+<tr class="separator:a7aed188b8a9b61cd9af11a55d61e576b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a307065cb2c1ce197727177ed3174bc50"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInfoPanel.html#a307065cb2c1ce197727177ed3174bc50">m_status_machine</a></td></tr>
+<tr class="separator:a307065cb2c1ce197727177ed3174bc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79037316d192ab22776d8ee232b42daa"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInfoPanel.html#a79037316d192ab22776d8ee232b42daa">m_status_write</a></td></tr>
+<tr class="separator:a79037316d192ab22776d8ee232b42daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa303edfb23f795c1c2abe9ea417d01de"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInfoPanel.html#aa303edfb23f795c1c2abe9ea417d01de">m_status_fetch</a></td></tr>
+<tr class="separator:aa303edfb23f795c1c2abe9ea417d01de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a023325d2a079d75bd1bd493b37e073fa"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInfoPanel.html#a023325d2a079d75bd1bd493b37e073fa">m_status_MF</a></td></tr>
+<tr class="separator:a023325d2a079d75bd1bd493b37e073fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affbe33ced97c99b999243bfa7a7218f7"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInfoPanel.html#affbe33ced97c99b999243bfa7a7218f7">m_status_SV</a></td></tr>
+<tr class="separator:affbe33ced97c99b999243bfa7a7218f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a232cd34f483f9d5440e3bd5057f5c4f2"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInfoPanel.html#a232cd34f483f9d5440e3bd5057f5c4f2">m_status_ADDI</a></td></tr>
+<tr class="separator:a232cd34f483f9d5440e3bd5057f5c4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a166fe44a1b47aba2daa0265b77e7a29b"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInfoPanel.html#a166fe44a1b47aba2daa0265b77e7a29b">m_status_repaint</a></td></tr>
+<tr class="separator:a166fe44a1b47aba2daa0265b77e7a29b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb185d1b90ca24ca667d8757952162de"><td class="memItemLeft" align="right" valign="top">QFrame *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInfoPanel.html#acb185d1b90ca24ca667d8757952162de">m_line</a></td></tr>
+<tr class="separator:acb185d1b90ca24ca667d8757952162de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80205696630bfa7586696275ff8dd4e7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInfoPanel.html#a80205696630bfa7586696275ff8dd4e7">m_runnable</a></td></tr>
+<tr class="separator:a80205696630bfa7586696275ff8dd4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 额外继承的成员函数</h2></td></tr>
 <tr class="inherit_header pub_types_classPanel"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classPanel')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="classPanel.html">Panel</a></td></tr>
-<tr class="memitem:abb64056f62b0e8ad91662c0e92e66c84 inherit pub_types_classPanel"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>PanelName</b> { <br/>
-&#160;&#160;<b>INFO</b>, 
-<b>GRAPHICS</b>, 
-<b>THREADS</b>, 
-<b>ANALYSE</b>, 
+<tr class="memitem:abb64056f62b0e8ad91662c0e92e66c84 inherit pub_types_classPanel"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84">PanelName</a> { <br/>
+&#160;&#160;<a class="el" href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84a933c2e9581869cc7d99189e60172061b">INFO</a>, 
+<a class="el" href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84a5b575f9d2602eedda26f993d76cc4362">GRAPHICS</a>, 
+<a class="el" href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84a43c8b559b087b51e4191858d7eb1644e">THREADS</a>, 
+<a class="el" href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84afe85cecdcb5be1215b874b6c16a6f938">ANALYSE</a>, 
 <br/>
-&#160;&#160;<b>PANELNAME_NUM</b>
+&#160;&#160;<a class="el" href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84ad51a96f960ab98c5856c15e46a126a4a">PANELNAME_NUM</a>
 <br/>
  }</td></tr>
 <tr class="separator:abb64056f62b0e8ad91662c0e92e66c84 inherit pub_types_classPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header signals_classPanel"><td colspan="2" onclick="javascript:toggleInherit('signals_classPanel')"><img src="closed.png" alt="-"/>&#160;信号 继承自 <a class="el" href="classPanel.html">Panel</a></td></tr>
-<tr class="memitem:a8de68235bf5a6ac3f849ca8a1322dcb9 inherit signals_classPanel"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8de68235bf5a6ac3f849ca8a1322dcb9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>closed</b> ()</td></tr>
+<tr class="memitem:a8de68235bf5a6ac3f849ca8a1322dcb9 inherit signals_classPanel"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPanel.html#a8de68235bf5a6ac3f849ca8a1322dcb9">closed</a> ()</td></tr>
 <tr class="separator:a8de68235bf5a6ac3f849ca8a1322dcb9 inherit signals_classPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classPanel"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classPanel')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classPanel.html">Panel</a></td></tr>
-<tr class="memitem:a07b94c563d845ea7746ec0217a6c415d inherit pro_methods_classPanel"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a07b94c563d845ea7746ec0217a6c415d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>closeEvent</b> (QCloseEvent *event)</td></tr>
+<tr class="memitem:a07b94c563d845ea7746ec0217a6c415d inherit pro_methods_classPanel"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPanel.html#a07b94c563d845ea7746ec0217a6c415d">closeEvent</a> (QCloseEvent *event)</td></tr>
 <tr class="separator:a07b94c563d845ea7746ec0217a6c415d inherit pro_methods_classPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classPanel"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classPanel')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classPanel.html">Panel</a></td></tr>
-<tr class="memitem:add4ae13edea2ab748adf425e71ccd39b inherit pro_attribs_classPanel"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add4ae13edea2ab748adf425e71ccd39b"></a>
-<a class="el" href="classSpectrographDevice.html">SpectrographDevice</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_device</b></td></tr>
+<tr class="memitem:add4ae13edea2ab748adf425e71ccd39b inherit pro_attribs_classPanel"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSpectrographDevice.html">SpectrographDevice</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPanel.html#add4ae13edea2ab748adf425e71ccd39b">m_device</a></td></tr>
 <tr class="separator:add4ae13edea2ab748adf425e71ccd39b inherit pro_attribs_classPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88bbc23847b6d3304150fcdd07005d9e inherit pro_attribs_classPanel"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88bbc23847b6d3304150fcdd07005d9e"></a>
-<a class="el" href="classResourceManager.html">ResourceManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_manager</b></td></tr>
+<tr class="memitem:a88bbc23847b6d3304150fcdd07005d9e inherit pro_attribs_classPanel"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classResourceManager.html">ResourceManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPanel.html#a88bbc23847b6d3304150fcdd07005d9e">m_manager</a></td></tr>
 <tr class="separator:a88bbc23847b6d3304150fcdd07005d9e inherit pro_attribs_classPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a88efe366ca3363459d08ca2910435444"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">InfoPanel::InfoPanel </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpectrographDevice.html">SpectrographDevice</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classResourceManager.html">ResourceManager</a> &amp;&#160;</td>
+          <td class="paramname"><em>manager</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8b487d4e28736bbe497a0a2fe36ac075"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual InfoPanel::~InfoPanel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="ad241cc501d8e0e15f35eb37e75f00826"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString InfoPanel::__GetStateName </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa872e5e235f9c787e76e5c607e9ca68f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InfoPanel::__Renew </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="acb185d1b90ca24ca667d8757952162de"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QFrame* InfoPanel::m_line</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae3be349c63b2422a44aaefb3a5d25e6a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QGridLayout* InfoPanel::m_main_layout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7130499bdbc7eb3a96c92bd42698e558"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* InfoPanel::m_name_ADDI</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a436045f8b79e6c5246fa6f1782fc38f4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* InfoPanel::m_name_fetch</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a75676e288816cdedd0e8a8fdab07d05c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* InfoPanel::m_name_machine</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae9f8cb71a217bca36444b3a6750cbc29"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* InfoPanel::m_name_machine_type</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9035c7bde952224a198528a686bf4bf6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* InfoPanel::m_name_MF</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2b495f5027eda434f4a5dcf9ca23cd47"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* InfoPanel::m_name_repaint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5e75c6f4e94eec8fda6e9206916f33b1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* InfoPanel::m_name_SV</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0dcbd08d57043f2a765fbbb147282613"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* InfoPanel::m_name_write</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a80205696630bfa7586696275ff8dd4e7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool InfoPanel::m_runnable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a232cd34f483f9d5440e3bd5057f5c4f2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* InfoPanel::m_status_ADDI</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa303edfb23f795c1c2abe9ea417d01de"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* InfoPanel::m_status_fetch</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a307065cb2c1ce197727177ed3174bc50"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* InfoPanel::m_status_machine</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7aed188b8a9b61cd9af11a55d61e576b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* InfoPanel::m_status_machine_type</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a023325d2a079d75bd1bd493b37e073fa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* InfoPanel::m_status_MF</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a166fe44a1b47aba2daa0265b77e7a29b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* InfoPanel::m_status_repaint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="affbe33ced97c99b999243bfa7a7218f7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* InfoPanel::m_status_SV</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a79037316d192ab22776d8ee232b42daa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* InfoPanel::m_status_write</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a37a0d35f0fd171a3ba95061d50ef6d0a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* InfoPanel::m_title_name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7a9c54b6170045fe5d5a33be8b582ea6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* InfoPanel::m_title_status</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>该类的文档由以下文件生成:<ul>
 <li>include/UI/<a class="el" href="infopanel_8h_source.html">infopanel.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2016年 五月 30日 星期一 12:37:14 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2016年 五月 30日 星期一 12:41:48 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

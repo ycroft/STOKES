@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
       <li class="current"><a href="annotated.html"><span>类</span></a></li>
       <li><a href="files.html"><span>文件</span></a></li>
       <li>
@@ -63,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
       <li><a href="annotated.html"><span>类列表</span></a></li>
       <li><a href="classes.html"><span>类索引</span></a></li>
       <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -70,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,29 +91,121 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="title">CurveAttribute类 参考</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="plot_8h_source.html">plot.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a9d3d67a180c31ad7721e2e888230bcc3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d3d67a180c31ad7721e2e888230bcc3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CurveAttribute</b> (QString n, QPen p)</td></tr>
+<tr class="memitem:adc4d12780ce608e3607e0b7f3d83a77f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCurveAttribute.html#adc4d12780ce608e3607e0b7f3d83a77f">CurveAttribute</a> ()</td></tr>
+<tr class="separator:adc4d12780ce608e3607e0b7f3d83a77f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d3d67a180c31ad7721e2e888230bcc3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCurveAttribute.html#a9d3d67a180c31ad7721e2e888230bcc3">CurveAttribute</a> (QString n, QPen p)</td></tr>
 <tr class="separator:a9d3d67a180c31ad7721e2e888230bcc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public 属性</h2></td></tr>
-<tr class="memitem:a0bfb842c661c65fccdd69899a2aa618f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0bfb842c661c65fccdd69899a2aa618f"></a>
-QString&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
+<tr class="memitem:a0bfb842c661c65fccdd69899a2aa618f"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCurveAttribute.html#a0bfb842c661c65fccdd69899a2aa618f">name</a></td></tr>
 <tr class="separator:a0bfb842c661c65fccdd69899a2aa618f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20485ac5651106cf84c6d7c1e69771e8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20485ac5651106cf84c6d7c1e69771e8"></a>
-QPen&#160;</td><td class="memItemRight" valign="bottom"><b>pen</b></td></tr>
+<tr class="memitem:a20485ac5651106cf84c6d7c1e69771e8"><td class="memItemLeft" align="right" valign="top">QPen&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCurveAttribute.html#a20485ac5651106cf84c6d7c1e69771e8">pen</a></td></tr>
 <tr class="separator:a20485ac5651106cf84c6d7c1e69771e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="adc4d12780ce608e3607e0b7f3d83a77f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CurveAttribute::CurveAttribute </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classCurveAttribute.html#a0bfb842c661c65fccdd69899a2aa618f">name</a> , 以及 <a class="el" href="classCurveAttribute.html#a20485ac5651106cf84c6d7c1e69771e8">pen</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9d3d67a180c31ad7721e2e888230bcc3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CurveAttribute::CurveAttribute </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QPen&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>参考 <a class="el" href="classCurveAttribute.html#a0bfb842c661c65fccdd69899a2aa618f">name</a> , 以及 <a class="el" href="classCurveAttribute.html#a20485ac5651106cf84c6d7c1e69771e8">pen</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a0bfb842c661c65fccdd69899a2aa618f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString CurveAttribute::name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classCurveAttribute.html#adc4d12780ce608e3607e0b7f3d83a77f">CurveAttribute()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a20485ac5651106cf84c6d7c1e69771e8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPen CurveAttribute::pen</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classCurveAttribute.html#adc4d12780ce608e3607e0b7f3d83a77f">CurveAttribute()</a>.</p>
+
+</div>
+</div>
 <hr/>该类的文档由以下文件生成:<ul>
 <li>include/UI/<a class="el" href="plot_8h_source.html">plot.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2016年 五月 30日 星期一 12:37:14 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2016年 五月 30日 星期一 12:41:48 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

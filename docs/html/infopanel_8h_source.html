@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
       <li><a href="annotated.html"><span>类</span></a></li>
       <li class="current"><a href="files.html"><span>文件</span></a></li>
       <li>
@@ -61,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -68,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,56 +89,82 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="title">infopanel.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef INFOPANEL_H</span></div>
+<a href="infopanel_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef INFOPANEL_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define INFOPANEL_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include&lt;UI/toolpanel.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="toolpanel_8h.html">UI/toolpanel.h</a>&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define INFO_RENEW_CLOCK 1000</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="infopanel_8h.html#ac07a9d264f1effedf13651f2a0709546">    6</a></span>&#160;<span class="preprocessor">#define INFO_RENEW_CLOCK 1000</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classInfoPanel.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="classInfoPanel.html">InfoPanel</a> : <span class="keyword">public</span> <a class="code" href="classPanel.html">Panel</a></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="classInfoPanel.html">InfoPanel</a>(QWidget* parent, <a class="code" href="classSpectrographDevice.html">SpectrographDevice</a>&amp; device, <a class="code" href="classResourceManager.html">ResourceManager</a>&amp; manager);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classInfoPanel.html">InfoPanel</a>();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="classInfoPanel.html#a88efe366ca3363459d08ca2910435444">InfoPanel</a>(QWidget* parent, <a class="code" href="classSpectrographDevice.html">SpectrographDevice</a>&amp; device, <a class="code" href="classResourceManager.html">ResourceManager</a>&amp; manager);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classInfoPanel.html#a8b487d4e28736bbe497a0a2fe36ac075">~InfoPanel</a>();</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    QGridLayout* m_main_layout;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    QLabel* m_title_name;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    QLabel* m_title_status;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    QLabel* m_name_machine_type;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    QLabel* m_name_machine;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    QLabel* m_name_write;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    QLabel* m_name_fetch;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    QLabel* m_name_MF;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    QLabel* m_name_SV;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    QLabel* m_name_ADDI;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    QLabel* m_name_repaint;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    QLabel* m_status_machine_type;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    QLabel* m_status_machine;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    QLabel* m_status_write;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    QLabel* m_status_fetch;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    QLabel* m_status_MF;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    QLabel* m_status_SV;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    QLabel* m_status_ADDI;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    QLabel* m_status_repaint;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classInfoPanel.html#ae3be349c63b2422a44aaefb3a5d25e6a">   15</a></span>&#160;    QGridLayout* <a class="code" href="classInfoPanel.html#ae3be349c63b2422a44aaefb3a5d25e6a">m_main_layout</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classInfoPanel.html#a37a0d35f0fd171a3ba95061d50ef6d0a">   16</a></span>&#160;    QLabel* <a class="code" href="classInfoPanel.html#a37a0d35f0fd171a3ba95061d50ef6d0a">m_title_name</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classInfoPanel.html#a7a9c54b6170045fe5d5a33be8b582ea6">   17</a></span>&#160;    QLabel* <a class="code" href="classInfoPanel.html#a7a9c54b6170045fe5d5a33be8b582ea6">m_title_status</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classInfoPanel.html#ae9f8cb71a217bca36444b3a6750cbc29">   18</a></span>&#160;    QLabel* <a class="code" href="classInfoPanel.html#ae9f8cb71a217bca36444b3a6750cbc29">m_name_machine_type</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classInfoPanel.html#a75676e288816cdedd0e8a8fdab07d05c">   19</a></span>&#160;    QLabel* <a class="code" href="classInfoPanel.html#a75676e288816cdedd0e8a8fdab07d05c">m_name_machine</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classInfoPanel.html#a0dcbd08d57043f2a765fbbb147282613">   20</a></span>&#160;    QLabel* <a class="code" href="classInfoPanel.html#a0dcbd08d57043f2a765fbbb147282613">m_name_write</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classInfoPanel.html#a436045f8b79e6c5246fa6f1782fc38f4">   21</a></span>&#160;    QLabel* <a class="code" href="classInfoPanel.html#a436045f8b79e6c5246fa6f1782fc38f4">m_name_fetch</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classInfoPanel.html#a9035c7bde952224a198528a686bf4bf6">   22</a></span>&#160;    QLabel* <a class="code" href="classInfoPanel.html#a9035c7bde952224a198528a686bf4bf6">m_name_MF</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classInfoPanel.html#a5e75c6f4e94eec8fda6e9206916f33b1">   23</a></span>&#160;    QLabel* <a class="code" href="classInfoPanel.html#a5e75c6f4e94eec8fda6e9206916f33b1">m_name_SV</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classInfoPanel.html#a7130499bdbc7eb3a96c92bd42698e558">   24</a></span>&#160;    QLabel* <a class="code" href="classInfoPanel.html#a7130499bdbc7eb3a96c92bd42698e558">m_name_ADDI</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classInfoPanel.html#a2b495f5027eda434f4a5dcf9ca23cd47">   25</a></span>&#160;    QLabel* <a class="code" href="classInfoPanel.html#a2b495f5027eda434f4a5dcf9ca23cd47">m_name_repaint</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classInfoPanel.html#a7aed188b8a9b61cd9af11a55d61e576b">   26</a></span>&#160;    QLabel* <a class="code" href="classInfoPanel.html#a7aed188b8a9b61cd9af11a55d61e576b">m_status_machine_type</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classInfoPanel.html#a307065cb2c1ce197727177ed3174bc50">   27</a></span>&#160;    QLabel* <a class="code" href="classInfoPanel.html#a307065cb2c1ce197727177ed3174bc50">m_status_machine</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classInfoPanel.html#a79037316d192ab22776d8ee232b42daa">   28</a></span>&#160;    QLabel* <a class="code" href="classInfoPanel.html#a79037316d192ab22776d8ee232b42daa">m_status_write</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classInfoPanel.html#aa303edfb23f795c1c2abe9ea417d01de">   29</a></span>&#160;    QLabel* <a class="code" href="classInfoPanel.html#aa303edfb23f795c1c2abe9ea417d01de">m_status_fetch</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classInfoPanel.html#a023325d2a079d75bd1bd493b37e073fa">   30</a></span>&#160;    QLabel* <a class="code" href="classInfoPanel.html#a023325d2a079d75bd1bd493b37e073fa">m_status_MF</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classInfoPanel.html#affbe33ced97c99b999243bfa7a7218f7">   31</a></span>&#160;    QLabel* <a class="code" href="classInfoPanel.html#affbe33ced97c99b999243bfa7a7218f7">m_status_SV</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classInfoPanel.html#a232cd34f483f9d5440e3bd5057f5c4f2">   32</a></span>&#160;    QLabel* <a class="code" href="classInfoPanel.html#a232cd34f483f9d5440e3bd5057f5c4f2">m_status_ADDI</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classInfoPanel.html#a166fe44a1b47aba2daa0265b77e7a29b">   33</a></span>&#160;    QLabel* <a class="code" href="classInfoPanel.html#a166fe44a1b47aba2daa0265b77e7a29b">m_status_repaint</a>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    QFrame* m_line;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classInfoPanel.html#acb185d1b90ca24ca667d8757952162de">   35</a></span>&#160;    QFrame* <a class="code" href="classInfoPanel.html#acb185d1b90ca24ca667d8757952162de">m_line</a>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">bool</span> m_runnable;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> __Renew();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    QString __GetStateName(<span class="keywordtype">int</span> s);</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classInfoPanel.html#a80205696630bfa7586696275ff8dd4e7">   37</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classInfoPanel.html#a80205696630bfa7586696275ff8dd4e7">m_runnable</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classInfoPanel.html#aa872e5e235f9c787e76e5c607e9ca68f">__Renew</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    QString <a class="code" href="classInfoPanel.html#ad241cc501d8e0e15f35eb37e75f00826">__GetStateName</a>(<span class="keywordtype">int</span> s);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif // INFOPANEL_H</span></div>
 <div class="ttc" id="classPanel_html"><div class="ttname"><a href="classPanel.html">Panel</a></div><div class="ttdef"><b>Definition:</b> toolpanel.h:41</div></div>
+<div class="ttc" id="classInfoPanel_html_a80205696630bfa7586696275ff8dd4e7"><div class="ttname"><a href="classInfoPanel.html#a80205696630bfa7586696275ff8dd4e7">InfoPanel::m_runnable</a></div><div class="ttdeci">bool m_runnable</div><div class="ttdef"><b>Definition:</b> infopanel.h:37</div></div>
+<div class="ttc" id="classInfoPanel_html_a5e75c6f4e94eec8fda6e9206916f33b1"><div class="ttname"><a href="classInfoPanel.html#a5e75c6f4e94eec8fda6e9206916f33b1">InfoPanel::m_name_SV</a></div><div class="ttdeci">QLabel * m_name_SV</div><div class="ttdef"><b>Definition:</b> infopanel.h:23</div></div>
+<div class="ttc" id="classInfoPanel_html_acb185d1b90ca24ca667d8757952162de"><div class="ttname"><a href="classInfoPanel.html#acb185d1b90ca24ca667d8757952162de">InfoPanel::m_line</a></div><div class="ttdeci">QFrame * m_line</div><div class="ttdef"><b>Definition:</b> infopanel.h:35</div></div>
+<div class="ttc" id="classInfoPanel_html_a2b495f5027eda434f4a5dcf9ca23cd47"><div class="ttname"><a href="classInfoPanel.html#a2b495f5027eda434f4a5dcf9ca23cd47">InfoPanel::m_name_repaint</a></div><div class="ttdeci">QLabel * m_name_repaint</div><div class="ttdef"><b>Definition:</b> infopanel.h:25</div></div>
+<div class="ttc" id="classInfoPanel_html_a9035c7bde952224a198528a686bf4bf6"><div class="ttname"><a href="classInfoPanel.html#a9035c7bde952224a198528a686bf4bf6">InfoPanel::m_name_MF</a></div><div class="ttdeci">QLabel * m_name_MF</div><div class="ttdef"><b>Definition:</b> infopanel.h:22</div></div>
+<div class="ttc" id="classInfoPanel_html_a307065cb2c1ce197727177ed3174bc50"><div class="ttname"><a href="classInfoPanel.html#a307065cb2c1ce197727177ed3174bc50">InfoPanel::m_status_machine</a></div><div class="ttdeci">QLabel * m_status_machine</div><div class="ttdef"><b>Definition:</b> infopanel.h:27</div></div>
+<div class="ttc" id="classInfoPanel_html_ae9f8cb71a217bca36444b3a6750cbc29"><div class="ttname"><a href="classInfoPanel.html#ae9f8cb71a217bca36444b3a6750cbc29">InfoPanel::m_name_machine_type</a></div><div class="ttdeci">QLabel * m_name_machine_type</div><div class="ttdef"><b>Definition:</b> infopanel.h:18</div></div>
+<div class="ttc" id="classInfoPanel_html_a7a9c54b6170045fe5d5a33be8b582ea6"><div class="ttname"><a href="classInfoPanel.html#a7a9c54b6170045fe5d5a33be8b582ea6">InfoPanel::m_title_status</a></div><div class="ttdeci">QLabel * m_title_status</div><div class="ttdef"><b>Definition:</b> infopanel.h:17</div></div>
+<div class="ttc" id="classInfoPanel_html_ad241cc501d8e0e15f35eb37e75f00826"><div class="ttname"><a href="classInfoPanel.html#ad241cc501d8e0e15f35eb37e75f00826">InfoPanel::__GetStateName</a></div><div class="ttdeci">QString __GetStateName(int s)</div></div>
+<div class="ttc" id="classInfoPanel_html_a166fe44a1b47aba2daa0265b77e7a29b"><div class="ttname"><a href="classInfoPanel.html#a166fe44a1b47aba2daa0265b77e7a29b">InfoPanel::m_status_repaint</a></div><div class="ttdeci">QLabel * m_status_repaint</div><div class="ttdef"><b>Definition:</b> infopanel.h:33</div></div>
+<div class="ttc" id="classInfoPanel_html_aa303edfb23f795c1c2abe9ea417d01de"><div class="ttname"><a href="classInfoPanel.html#aa303edfb23f795c1c2abe9ea417d01de">InfoPanel::m_status_fetch</a></div><div class="ttdeci">QLabel * m_status_fetch</div><div class="ttdef"><b>Definition:</b> infopanel.h:29</div></div>
+<div class="ttc" id="classInfoPanel_html_a232cd34f483f9d5440e3bd5057f5c4f2"><div class="ttname"><a href="classInfoPanel.html#a232cd34f483f9d5440e3bd5057f5c4f2">InfoPanel::m_status_ADDI</a></div><div class="ttdeci">QLabel * m_status_ADDI</div><div class="ttdef"><b>Definition:</b> infopanel.h:32</div></div>
+<div class="ttc" id="classInfoPanel_html_ae3be349c63b2422a44aaefb3a5d25e6a"><div class="ttname"><a href="classInfoPanel.html#ae3be349c63b2422a44aaefb3a5d25e6a">InfoPanel::m_main_layout</a></div><div class="ttdeci">QGridLayout * m_main_layout</div><div class="ttdef"><b>Definition:</b> infopanel.h:15</div></div>
+<div class="ttc" id="classInfoPanel_html_aa872e5e235f9c787e76e5c607e9ca68f"><div class="ttname"><a href="classInfoPanel.html#aa872e5e235f9c787e76e5c607e9ca68f">InfoPanel::__Renew</a></div><div class="ttdeci">void __Renew()</div></div>
 <div class="ttc" id="classInfoPanel_html"><div class="ttname"><a href="classInfoPanel.html">InfoPanel</a></div><div class="ttdef"><b>Definition:</b> infopanel.h:8</div></div>
+<div class="ttc" id="classInfoPanel_html_a75676e288816cdedd0e8a8fdab07d05c"><div class="ttname"><a href="classInfoPanel.html#a75676e288816cdedd0e8a8fdab07d05c">InfoPanel::m_name_machine</a></div><div class="ttdeci">QLabel * m_name_machine</div><div class="ttdef"><b>Definition:</b> infopanel.h:19</div></div>
 <div class="ttc" id="classResourceManager_html"><div class="ttname"><a href="classResourceManager.html">ResourceManager</a></div><div class="ttdef"><b>Definition:</b> objmanager.h:77</div></div>
+<div class="ttc" id="toolpanel_8h_html"><div class="ttname"><a href="toolpanel_8h.html">toolpanel.h</a></div></div>
+<div class="ttc" id="classInfoPanel_html_a37a0d35f0fd171a3ba95061d50ef6d0a"><div class="ttname"><a href="classInfoPanel.html#a37a0d35f0fd171a3ba95061d50ef6d0a">InfoPanel::m_title_name</a></div><div class="ttdeci">QLabel * m_title_name</div><div class="ttdef"><b>Definition:</b> infopanel.h:16</div></div>
+<div class="ttc" id="classInfoPanel_html_a436045f8b79e6c5246fa6f1782fc38f4"><div class="ttname"><a href="classInfoPanel.html#a436045f8b79e6c5246fa6f1782fc38f4">InfoPanel::m_name_fetch</a></div><div class="ttdeci">QLabel * m_name_fetch</div><div class="ttdef"><b>Definition:</b> infopanel.h:21</div></div>
+<div class="ttc" id="classInfoPanel_html_a7aed188b8a9b61cd9af11a55d61e576b"><div class="ttname"><a href="classInfoPanel.html#a7aed188b8a9b61cd9af11a55d61e576b">InfoPanel::m_status_machine_type</a></div><div class="ttdeci">QLabel * m_status_machine_type</div><div class="ttdef"><b>Definition:</b> infopanel.h:26</div></div>
+<div class="ttc" id="classInfoPanel_html_a0dcbd08d57043f2a765fbbb147282613"><div class="ttname"><a href="classInfoPanel.html#a0dcbd08d57043f2a765fbbb147282613">InfoPanel::m_name_write</a></div><div class="ttdeci">QLabel * m_name_write</div><div class="ttdef"><b>Definition:</b> infopanel.h:20</div></div>
+<div class="ttc" id="classInfoPanel_html_a88efe366ca3363459d08ca2910435444"><div class="ttname"><a href="classInfoPanel.html#a88efe366ca3363459d08ca2910435444">InfoPanel::InfoPanel</a></div><div class="ttdeci">InfoPanel(QWidget *parent, SpectrographDevice &amp;device, ResourceManager &amp;manager)</div></div>
+<div class="ttc" id="classInfoPanel_html_a8b487d4e28736bbe497a0a2fe36ac075"><div class="ttname"><a href="classInfoPanel.html#a8b487d4e28736bbe497a0a2fe36ac075">InfoPanel::~InfoPanel</a></div><div class="ttdeci">virtual ~InfoPanel()</div></div>
+<div class="ttc" id="classInfoPanel_html_a79037316d192ab22776d8ee232b42daa"><div class="ttname"><a href="classInfoPanel.html#a79037316d192ab22776d8ee232b42daa">InfoPanel::m_status_write</a></div><div class="ttdeci">QLabel * m_status_write</div><div class="ttdef"><b>Definition:</b> infopanel.h:28</div></div>
+<div class="ttc" id="classInfoPanel_html_affbe33ced97c99b999243bfa7a7218f7"><div class="ttname"><a href="classInfoPanel.html#affbe33ced97c99b999243bfa7a7218f7">InfoPanel::m_status_SV</a></div><div class="ttdeci">QLabel * m_status_SV</div><div class="ttdef"><b>Definition:</b> infopanel.h:31</div></div>
+<div class="ttc" id="classInfoPanel_html_a023325d2a079d75bd1bd493b37e073fa"><div class="ttname"><a href="classInfoPanel.html#a023325d2a079d75bd1bd493b37e073fa">InfoPanel::m_status_MF</a></div><div class="ttdeci">QLabel * m_status_MF</div><div class="ttdef"><b>Definition:</b> infopanel.h:30</div></div>
 <div class="ttc" id="classSpectrographDevice_html"><div class="ttname"><a href="classSpectrographDevice.html">SpectrographDevice</a></div><div class="ttdef"><b>Definition:</b> spectrograph.h:34</div></div>
+<div class="ttc" id="classInfoPanel_html_a7130499bdbc7eb3a96c92bd42698e558"><div class="ttname"><a href="classInfoPanel.html#a7130499bdbc7eb3a96c92bd42698e558">InfoPanel::m_name_ADDI</a></div><div class="ttdeci">QLabel * m_name_ADDI</div><div class="ttdef"><b>Definition:</b> infopanel.h:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2016年 五月 30日 星期一 12:37:14 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2016年 五月 30日 星期一 12:41:48 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

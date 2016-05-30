@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
       <li class="current"><a href="annotated.html"><span>类</span></a></li>
       <li><a href="files.html"><span>文件</span></a></li>
       <li>
@@ -63,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
       <li><a href="annotated.html"><span>类列表</span></a></li>
       <li><a href="classes.html"><span>类索引</span></a></li>
       <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -70,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,6 +84,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-slots">Private 槽</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
 <a href="classApplication-members.html">所有成员列表</a>  </div>
   <div class="headertitle">
 <div class="title">Application类 参考</div>  </div>
@@ -97,15 +103,365 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <map id="Application_map" name="Application_map">
 </map>
  </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:afa8cc05ce6b6092be5ecdfdae44e05f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#afa8cc05ce6b6092be5ecdfdae44e05f8">Application</a> ()</td></tr>
+<tr class="separator:afa8cc05ce6b6092be5ecdfdae44e05f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20573928a0d53fb96d929513bc5acde6"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#a20573928a0d53fb96d929513bc5acde6">~Application</a> ()</td></tr>
+<tr class="separator:a20573928a0d53fb96d929513bc5acde6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
+Private 槽</h2></td></tr>
+<tr class="memitem:a206a314562c30f4ab1e91200e067e099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#a206a314562c30f4ab1e91200e067e099">__AddCurve</a> (<a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605">ResourceManager::DataName</a>)</td></tr>
+<tr class="separator:a206a314562c30f4ab1e91200e067e099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2052affdd73e3fc94f2cca59d7aa78f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#a2052affdd73e3fc94f2cca59d7aa78f6">__DelCurve</a> (<a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605">ResourceManager::DataName</a>)</td></tr>
+<tr class="separator:a2052affdd73e3fc94f2cca59d7aa78f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4a765c1e66432a63b83b6939ab6e434"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#ac4a765c1e66432a63b83b6939ab6e434">__ClearCurves</a> ()</td></tr>
+<tr class="separator:ac4a765c1e66432a63b83b6939ab6e434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b7ef3eba5ccc4c4ee4da39612dda9ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#a1b7ef3eba5ccc4c4ee4da39612dda9ce">__ChangeWorkplace</a> ()</td></tr>
+<tr class="separator:a1b7ef3eba5ccc4c4ee4da39612dda9ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a944c9575335b5a2f6ed5119e2e80c274"><td class="memItemLeft" align="right" valign="top">bool m_curves[<a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605a2fb32c4f3fc113bb30a46073045f8255">ResourceManager::DATA_NUM</a>] <br class="typebreak"/>
+； void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#a944c9575335b5a2f6ed5119e2e80c274">__SetupUI</a> ()</td></tr>
+<tr class="separator:a944c9575335b5a2f6ed5119e2e80c274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a6d124eb3c0024913826003a9ea2bd87b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSpectrographDevice.html">SpectrographDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#a6d124eb3c0024913826003a9ea2bd87b">m_device</a></td></tr>
+<tr class="separator:a6d124eb3c0024913826003a9ea2bd87b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7229e54463f1fe60db1020c88d233dc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classResourceManager.html">ResourceManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#a7229e54463f1fe60db1020c88d233dc5">m_manager</a></td></tr>
+<tr class="separator:a7229e54463f1fe60db1020c88d233dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3e38c4634a92988b5a101024ce25231"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPlot.html">Plot</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#ae3e38c4634a92988b5a101024ce25231">m_plot</a></td></tr>
+<tr class="separator:ae3e38c4634a92988b5a101024ce25231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae380d2c4c2ce9ec6866e14275a864911"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classInfoPanel.html">InfoPanel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#ae380d2c4c2ce9ec6866e14275a864911">m_info_panel</a></td></tr>
+<tr class="separator:ae380d2c4c2ce9ec6866e14275a864911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abce49f9c334a3ed4b96a005528f4edac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGraphicsPanel.html">GraphicsPanel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#abce49f9c334a3ed4b96a005528f4edac">m_graphics_panel</a></td></tr>
+<tr class="separator:abce49f9c334a3ed4b96a005528f4edac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37d60d5ecd5d0989449ecb5ebf8cdf96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#a37d60d5ecd5d0989449ecb5ebf8cdf96">m_threads_panel</a></td></tr>
+<tr class="separator:a37d60d5ecd5d0989449ecb5ebf8cdf96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eea8b72670acb9f002178e0fd5f418c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAnalysePanel.html">AnalysePanel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#a9eea8b72670acb9f002178e0fd5f418c">m_analyse_panel</a></td></tr>
+<tr class="separator:a9eea8b72670acb9f002178e0fd5f418c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>主窗口 整个软件的主界面、程序执行入口 </p>
-</div><hr/>该类的文档由以下文件生成:<ul>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="afa8cc05ce6b6092be5ecdfdae44e05f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Application::Application </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a20573928a0d53fb96d929513bc5acde6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Application::~Application </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a206a314562c30f4ab1e91200e067e099"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Application::__AddCurve </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605">ResourceManager::DataName</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1b7ef3eba5ccc4c4ee4da39612dda9ce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Application::__ChangeWorkplace </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>私有槽： 清除所有绘图面板上的曲线 </p>
+
+</div>
+</div>
+<a class="anchor" id="ac4a765c1e66432a63b83b6939ab6e434"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Application::__ClearCurves </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>私有槽： 从绘图面板删除曲线 </p>
+
+</div>
+</div>
+<a class="anchor" id="a2052affdd73e3fc94f2cca59d7aa78f6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Application::__DelCurve </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605">ResourceManager::DataName</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>私有槽： 添加曲线到绘图面板 </p>
+
+</div>
+</div>
+<a class="anchor" id="a944c9575335b5a2f6ed5119e2e80c274"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool m_curves [<a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605a2fb32c4f3fc113bb30a46073045f8255">ResourceManager::DATA_NUM</a>] ； void Application::__SetupUI </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>分析信息面板，用于显示各种分析结果 保存绘图状态 这个数组保存所有可以用于绘图的函数, 已经被绘图的记作true，未被绘图的记作false 这是由于绘图面板可以同时绘制多幅函数图像导致的 初始化UI </p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a9eea8b72670acb9f002178e0fd5f418c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classAnalysePanel.html">AnalysePanel</a>* Application::m_analyse_panel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>线程控制面板，用于控制各个线程的开闭以及输入流 </p>
+
+</div>
+</div>
+<a class="anchor" id="a6d124eb3c0024913826003a9ea2bd87b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSpectrographDevice.html">SpectrographDevice</a>* Application::m_device</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abce49f9c334a3ed4b96a005528f4edac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGraphicsPanel.html">GraphicsPanel</a>* Application::m_graphics_panel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>信息面板，用于显示各个线程的状态 </p>
+
+</div>
+</div>
+<a class="anchor" id="ae380d2c4c2ce9ec6866e14275a864911"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classInfoPanel.html">InfoPanel</a>* Application::m_info_panel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>绘图面板，用于绘制函数图像 </p>
+
+</div>
+</div>
+<a class="anchor" id="a7229e54463f1fe60db1020c88d233dc5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classResourceManager.html">ResourceManager</a>* Application::m_manager</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>声明光谱设备（实机或虚机） </p>
+
+</div>
+</div>
+<a class="anchor" id="ae3e38c4634a92988b5a101024ce25231"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPlot.html">Plot</a>* Application::m_plot</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>资源管理器：负责维护计算流程 </p>
+
+</div>
+</div>
+<a class="anchor" id="a37d60d5ecd5d0989449ecb5ebf8cdf96"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a>* Application::m_threads_panel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>函数图像面板，用于显示正在绘制的函数图像列表 </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
 <li>include/UI/<a class="el" href="application_8h_source.html">application.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2016年 五月 30日 星期一 12:37:14 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2016年 五月 30日 星期一 12:41:48 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

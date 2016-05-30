@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
       <li class="current"><a href="annotated.html"><span>类</span></a></li>
       <li><a href="files.html"><span>文件</span></a></li>
       <li>
@@ -63,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
       <li><a href="annotated.html"><span>类列表</span></a></li>
       <li><a href="classes.html"><span>类索引</span></a></li>
       <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -70,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,26 +90,64 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <div class="title">config结构体 参考</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="objmanager_8h_source.html">objmanager.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public 属性</h2></td></tr>
-<tr class="memitem:a0541949c4206d12106d5a86ac09c9a62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0541949c4206d12106d5a86ac09c9a62"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>_read_stream_type</b></td></tr>
+<tr class="memitem:a0541949c4206d12106d5a86ac09c9a62"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconfig.html#a0541949c4206d12106d5a86ac09c9a62">_read_stream_type</a></td></tr>
 <tr class="separator:a0541949c4206d12106d5a86ac09c9a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62764391a848a84396b81a4feee8f529"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62764391a848a84396b81a4feee8f529"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>_enable_write</b></td></tr>
+<tr class="memitem:a62764391a848a84396b81a4feee8f529"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconfig.html#a62764391a848a84396b81a4feee8f529">_enable_write</a></td></tr>
 <tr class="separator:a62764391a848a84396b81a4feee8f529"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c76332eec794576da1763210974a84d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c76332eec794576da1763210974a84d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>_enable_calc_MF</b></td></tr>
+<tr class="memitem:a8c76332eec794576da1763210974a84d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structconfig.html#a8c76332eec794576da1763210974a84d">_enable_calc_MF</a></td></tr>
 <tr class="separator:a8c76332eec794576da1763210974a84d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a8c76332eec794576da1763210974a84d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool config::_enable_calc_MF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a62764391a848a84396b81a4feee8f529"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool config::_enable_write</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0541949c4206d12106d5a86ac09c9a62"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int config::_read_stream_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参考自 <a class="el" href="classResourceManager.html#a761c324e0fea6d6a67894633e258d95f">ResourceManager::SetReadStreamType()</a>.</p>
+
+</div>
+</div>
 <hr/>该结构体的文档由以下文件生成:<ul>
 <li>include/DataCollection/<a class="el" href="objmanager_8h_source.html">objmanager.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2016年 五月 30日 星期一 12:37:14 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2016年 五月 30日 星期一 12:41:48 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

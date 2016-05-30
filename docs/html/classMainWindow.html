@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
       <li class="current"><a href="annotated.html"><span>类</span></a></li>
       <li><a href="files.html"><span>文件</span></a></li>
       <li>
@@ -63,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
       <li><a href="annotated.html"><span>类列表</span></a></li>
       <li><a href="classes.html"><span>类索引</span></a></li>
       <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -70,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,12 +84,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
 <a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pri-slots">Private 槽</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
 <a href="classMainWindow-members.html">所有成员列表</a>  </div>
   <div class="headertitle">
 <div class="title">MainWindow类 参考</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>&gt;</code></p>
 <div class="dynheader">
 类 MainWindow 继承关系图:</div>
 <div class="dyncontent">
@@ -97,52 +104,488 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a34c4b4207b46d11a4100c9b19f0e81bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a34c4b4207b46d11a4100c9b19f0e81bb">MainWindow</a> ()</td></tr>
+<tr class="separator:a34c4b4207b46d11a4100c9b19f0e81bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a780b70b080b3e745298191099bba4d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a9a780b70b080b3e745298191099bba4d">~MainWindow</a> ()</td></tr>
+<tr class="separator:a9a780b70b080b3e745298191099bba4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public 属性</h2></td></tr>
-<tr class="memitem:ae6aface721b478390574fbf1c5436b86"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6aface721b478390574fbf1c5436b86"></a>
-QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>m_action_file_workplace</b></td></tr>
+<tr class="memitem:ae6aface721b478390574fbf1c5436b86"><td class="memItemLeft" align="right" valign="top">QAction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#ae6aface721b478390574fbf1c5436b86">m_action_file_workplace</a></td></tr>
 <tr class="separator:ae6aface721b478390574fbf1c5436b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2467b4c7e596c61586707f026ccd86c9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2467b4c7e596c61586707f026ccd86c9"></a>
-QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>m_action_windows_threads</b></td></tr>
+<tr class="memitem:a2467b4c7e596c61586707f026ccd86c9"><td class="memItemLeft" align="right" valign="top">QAction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a2467b4c7e596c61586707f026ccd86c9">m_action_windows_threads</a></td></tr>
 <tr class="separator:a2467b4c7e596c61586707f026ccd86c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65ed78f835171609773c25e3f6071412"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65ed78f835171609773c25e3f6071412"></a>
-QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>m_action_windows_graphics</b></td></tr>
+<tr class="memitem:a65ed78f835171609773c25e3f6071412"><td class="memItemLeft" align="right" valign="top">QAction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a65ed78f835171609773c25e3f6071412">m_action_windows_graphics</a></td></tr>
 <tr class="separator:a65ed78f835171609773c25e3f6071412"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03390cec3e480ca6e237e551423b7604"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03390cec3e480ca6e237e551423b7604"></a>
-QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>m_action_windows_info</b></td></tr>
+<tr class="memitem:a03390cec3e480ca6e237e551423b7604"><td class="memItemLeft" align="right" valign="top">QAction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a03390cec3e480ca6e237e551423b7604">m_action_windows_info</a></td></tr>
 <tr class="separator:a03390cec3e480ca6e237e551423b7604"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a5b98b732dc51f689f675496ccf4e48"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a5b98b732dc51f689f675496ccf4e48"></a>
-QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>m_action_windows_analyse</b></td></tr>
+<tr class="memitem:a4a5b98b732dc51f689f675496ccf4e48"><td class="memItemLeft" align="right" valign="top">QAction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a4a5b98b732dc51f689f675496ccf4e48">m_action_windows_analyse</a></td></tr>
 <tr class="separator:a4a5b98b732dc51f689f675496ccf4e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab620e20a42da924bf8cf754d7e368d74"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab620e20a42da924bf8cf754d7e368d74"></a>
-<a class="el" href="classPlot.html">Plot</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_plot</b></td></tr>
+<tr class="memitem:ab620e20a42da924bf8cf754d7e368d74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPlot.html">Plot</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#ab620e20a42da924bf8cf754d7e368d74">m_plot</a></td></tr>
 <tr class="separator:ab620e20a42da924bf8cf754d7e368d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01a166ddf3aedc906c914383bbbc2a10"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a01a166ddf3aedc906c914383bbbc2a10"></a>
-<a class="el" href="classInfoPanel.html">InfoPanel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_info_panel</b></td></tr>
+<tr class="memitem:a01a166ddf3aedc906c914383bbbc2a10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classInfoPanel.html">InfoPanel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a01a166ddf3aedc906c914383bbbc2a10">m_info_panel</a></td></tr>
 <tr class="separator:a01a166ddf3aedc906c914383bbbc2a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a719037915de04a13dd1eaf13c1dc78be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a719037915de04a13dd1eaf13c1dc78be"></a>
-<a class="el" href="classGraphicsPanel.html">GraphicsPanel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_graphics_panel</b></td></tr>
+<tr class="memitem:a719037915de04a13dd1eaf13c1dc78be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGraphicsPanel.html">GraphicsPanel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a719037915de04a13dd1eaf13c1dc78be">m_graphics_panel</a></td></tr>
 <tr class="separator:a719037915de04a13dd1eaf13c1dc78be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacb558853a63461952e282b6ee941d7b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aacb558853a63461952e282b6ee941d7b"></a>
-<a class="el" href="classThreadsPanel.html">ThreadsPanel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_threads_panel</b></td></tr>
+<tr class="memitem:aacb558853a63461952e282b6ee941d7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#aacb558853a63461952e282b6ee941d7b">m_threads_panel</a></td></tr>
 <tr class="separator:aacb558853a63461952e282b6ee941d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a732b3ede4806319132c618c22cc30861"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a732b3ede4806319132c618c22cc30861"></a>
-<a class="el" href="classAnalysePanel.html">AnalysePanel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_analyse_panel</b></td></tr>
+<tr class="memitem:a732b3ede4806319132c618c22cc30861"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAnalysePanel.html">AnalysePanel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a732b3ede4806319132c618c22cc30861">m_analyse_panel</a></td></tr>
 <tr class="separator:a732b3ede4806319132c618c22cc30861"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cb4a2221a262fe14bdd5df121d1a164"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8cb4a2221a262fe14bdd5df121d1a164"></a>
-<a class="el" href="classSpectrographDevice.html">SpectrographDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_device</b></td></tr>
+<tr class="memitem:a8cb4a2221a262fe14bdd5df121d1a164"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSpectrographDevice.html">SpectrographDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a8cb4a2221a262fe14bdd5df121d1a164">m_device</a></td></tr>
 <tr class="separator:a8cb4a2221a262fe14bdd5df121d1a164"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a575c0b58003985487739aaa6f5e871c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a575c0b58003985487739aaa6f5e871c2"></a>
-<a class="el" href="classResourceManager.html">ResourceManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_manager</b></td></tr>
+<tr class="memitem:a575c0b58003985487739aaa6f5e871c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classResourceManager.html">ResourceManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a575c0b58003985487739aaa6f5e871c2">m_manager</a></td></tr>
 <tr class="separator:a575c0b58003985487739aaa6f5e871c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
+Private 槽</h2></td></tr>
+<tr class="memitem:a95d489c04fda361173e4ceca5fe42a08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a95d489c04fda361173e4ceca5fe42a08">__ChangeWorkplace</a> ()</td></tr>
+<tr class="separator:a95d489c04fda361173e4ceca5fe42a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a370b70bc9783fd0bf86af4cf1d24394e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a370b70bc9783fd0bf86af4cf1d24394e">__ToggleAction_INFO</a> ()</td></tr>
+<tr class="separator:a370b70bc9783fd0bf86af4cf1d24394e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ceb3527a82c7a600c1be5555a038519"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a1ceb3527a82c7a600c1be5555a038519">__CloseAction_INFO</a> ()</td></tr>
+<tr class="separator:a1ceb3527a82c7a600c1be5555a038519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4792762eb8228f2504006affa3755e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#ac4792762eb8228f2504006affa3755e8">__ToggleAction_GRAPHICS</a> ()</td></tr>
+<tr class="separator:ac4792762eb8228f2504006affa3755e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f1e7cdd691d39ccbd6180fe9d08c6ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a5f1e7cdd691d39ccbd6180fe9d08c6ca">__CloseAction_GRAPHICS</a> ()</td></tr>
+<tr class="separator:a5f1e7cdd691d39ccbd6180fe9d08c6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b7a7235304e3f6f4d470b102769df45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a2b7a7235304e3f6f4d470b102769df45">__ToggleAction_THREADS</a> ()</td></tr>
+<tr class="separator:a2b7a7235304e3f6f4d470b102769df45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab34250554982efb7713cce9aeadd4f90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#ab34250554982efb7713cce9aeadd4f90">__CloseAction_THREADS</a> ()</td></tr>
+<tr class="separator:ab34250554982efb7713cce9aeadd4f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba3fe187180e92f66cba4d2b3986d537"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#aba3fe187180e92f66cba4d2b3986d537">__ToggleAction_ANALYSE</a> ()</td></tr>
+<tr class="separator:aba3fe187180e92f66cba4d2b3986d537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fe2f25404dcfcf15b5f84f482ff90b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a6fe2f25404dcfcf15b5f84f482ff90b3">__CloseAction_ANALYSE</a> ()</td></tr>
+<tr class="separator:a6fe2f25404dcfcf15b5f84f482ff90b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:a8a621dc22745b1a4b889a29556ec55ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMainWindow.html#a8a621dc22745b1a4b889a29556ec55ca">__SetupUI</a> ()</td></tr>
+<tr class="separator:a8a621dc22745b1a4b889a29556ec55ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a34c4b4207b46d11a4100c9b19f0e81bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MainWindow::MainWindow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9a780b70b080b3e745298191099bba4d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual MainWindow::~MainWindow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a95d489c04fda361173e4ceca5fe42a08"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::__ChangeWorkplace </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6fe2f25404dcfcf15b5f84f482ff90b3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::__CloseAction_ANALYSE </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5f1e7cdd691d39ccbd6180fe9d08c6ca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::__CloseAction_GRAPHICS </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1ceb3527a82c7a600c1be5555a038519"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::__CloseAction_INFO </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab34250554982efb7713cce9aeadd4f90"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::__CloseAction_THREADS </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8a621dc22745b1a4b889a29556ec55ca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::__SetupUI </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aba3fe187180e92f66cba4d2b3986d537"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::__ToggleAction_ANALYSE </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac4792762eb8228f2504006affa3755e8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::__ToggleAction_GRAPHICS </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a370b70bc9783fd0bf86af4cf1d24394e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::__ToggleAction_INFO </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2b7a7235304e3f6f4d470b102769df45"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::__ToggleAction_THREADS </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="ae6aface721b478390574fbf1c5436b86"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QAction* MainWindow::m_action_file_workplace</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4a5b98b732dc51f689f675496ccf4e48"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QAction* MainWindow::m_action_windows_analyse</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a65ed78f835171609773c25e3f6071412"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QAction* MainWindow::m_action_windows_graphics</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a03390cec3e480ca6e237e551423b7604"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QAction* MainWindow::m_action_windows_info</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2467b4c7e596c61586707f026ccd86c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QAction* MainWindow::m_action_windows_threads</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a732b3ede4806319132c618c22cc30861"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classAnalysePanel.html">AnalysePanel</a>* MainWindow::m_analyse_panel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8cb4a2221a262fe14bdd5df121d1a164"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSpectrographDevice.html">SpectrographDevice</a>* MainWindow::m_device</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a719037915de04a13dd1eaf13c1dc78be"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGraphicsPanel.html">GraphicsPanel</a>* MainWindow::m_graphics_panel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a01a166ddf3aedc906c914383bbbc2a10"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classInfoPanel.html">InfoPanel</a>* MainWindow::m_info_panel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a575c0b58003985487739aaa6f5e871c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classResourceManager.html">ResourceManager</a>* MainWindow::m_manager</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab620e20a42da924bf8cf754d7e368d74"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPlot.html">Plot</a>* MainWindow::m_plot</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aacb558853a63461952e282b6ee941d7b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classThreadsPanel.html">ThreadsPanel</a>* MainWindow::m_threads_panel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>该类的文档由以下文件生成:<ul>
 <li>include/UI/<a class="el" href="mainwindow_8h_source.html">mainwindow.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2016年 五月 30日 星期一 12:37:14 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2016年 五月 30日 星期一 12:41:48 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

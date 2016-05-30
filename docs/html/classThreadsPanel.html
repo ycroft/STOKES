@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
       <li class="current"><a href="annotated.html"><span>类</span></a></li>
       <li><a href="files.html"><span>文件</span></a></li>
       <li>
@@ -63,6 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
       <li><a href="annotated.html"><span>类列表</span></a></li>
       <li><a href="classes.html"><span>类索引</span></a></li>
       <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -70,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -84,11 +86,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
   <div class="summary">
 <a href="#pub-slots">Public 槽</a> &#124;
 <a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
 <a href="classThreadsPanel-members.html">所有成员列表</a>  </div>
   <div class="headertitle">
 <div class="title">ThreadsPanel类 参考</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="threadspanel_8h_source.html">threadspanel.h</a>&gt;</code></p>
 <div class="dynheader">
 类 ThreadsPanel 继承关系图:</div>
 <div class="dyncontent">
@@ -101,74 +106,512 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Public 槽</h2></td></tr>
-<tr class="memitem:a8e82ec31bfe9f60cb5f428e8749b1d1f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e82ec31bfe9f60cb5f428e8749b1d1f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>__Toggle_Write</b> (bool)</td></tr>
+<tr class="memitem:a8e82ec31bfe9f60cb5f428e8749b1d1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadsPanel.html#a8e82ec31bfe9f60cb5f428e8749b1d1f">__Toggle_Write</a> (bool)</td></tr>
 <tr class="separator:a8e82ec31bfe9f60cb5f428e8749b1d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65d85fb8aa517ad0d870e168e9c63d80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65d85fb8aa517ad0d870e168e9c63d80"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>__Toggle_MF</b> (bool)</td></tr>
+<tr class="memitem:a65d85fb8aa517ad0d870e168e9c63d80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadsPanel.html#a65d85fb8aa517ad0d870e168e9c63d80">__Toggle_MF</a> (bool)</td></tr>
 <tr class="separator:a65d85fb8aa517ad0d870e168e9c63d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfbf6504d19a8f71e445a619516ecd0f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfbf6504d19a8f71e445a619516ecd0f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>__Select_MLS</b> (bool)</td></tr>
+<tr class="memitem:acfbf6504d19a8f71e445a619516ecd0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadsPanel.html#acfbf6504d19a8f71e445a619516ecd0f">__Select_MLS</a> (bool)</td></tr>
 <tr class="separator:acfbf6504d19a8f71e445a619516ecd0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addc3cd848e399aefbbb6fd3bd361a954"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="addc3cd848e399aefbbb6fd3bd361a954"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>__Select_MRLS</b> (bool)</td></tr>
+<tr class="memitem:addc3cd848e399aefbbb6fd3bd361a954"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadsPanel.html#addc3cd848e399aefbbb6fd3bd361a954">__Select_MRLS</a> (bool)</td></tr>
 <tr class="separator:addc3cd848e399aefbbb6fd3bd361a954"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7f88a946795903286800dad290d33df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7f88a946795903286800dad290d33df"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>__Select_URLS</b> (bool)</td></tr>
+<tr class="memitem:aa7f88a946795903286800dad290d33df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadsPanel.html#aa7f88a946795903286800dad290d33df">__Select_URLS</a> (bool)</td></tr>
 <tr class="separator:aa7f88a946795903286800dad290d33df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27e0ec5f03828ba6edb1403b28894c53"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27e0ec5f03828ba6edb1403b28894c53"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>__StartAll</b> ()</td></tr>
+<tr class="memitem:a27e0ec5f03828ba6edb1403b28894c53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadsPanel.html#a27e0ec5f03828ba6edb1403b28894c53">__StartAll</a> ()</td></tr>
 <tr class="separator:a27e0ec5f03828ba6edb1403b28894c53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0eb2d2baf5ffc416ff94c306dafabd3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0eb2d2baf5ffc416ff94c306dafabd3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>__StopAll</b> ()</td></tr>
+<tr class="memitem:ac0eb2d2baf5ffc416ff94c306dafabd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadsPanel.html#ac0eb2d2baf5ffc416ff94c306dafabd3">__StopAll</a> ()</td></tr>
 <tr class="separator:ac0eb2d2baf5ffc416ff94c306dafabd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a6995f449346c812074f1b5c465d834a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6995f449346c812074f1b5c465d834a9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ThreadsPanel</b> (QWidget *parent, <a class="el" href="classSpectrographDevice.html">SpectrographDevice</a> &amp;device, <a class="el" href="classResourceManager.html">ResourceManager</a> &amp;manager)</td></tr>
+<tr class="memitem:a6995f449346c812074f1b5c465d834a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadsPanel.html#a6995f449346c812074f1b5c465d834a9">ThreadsPanel</a> (QWidget *parent, <a class="el" href="classSpectrographDevice.html">SpectrographDevice</a> &amp;device, <a class="el" href="classResourceManager.html">ResourceManager</a> &amp;manager)</td></tr>
 <tr class="separator:a6995f449346c812074f1b5c465d834a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ac43bc2c607ba1b703a417f893ea4c9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadsPanel.html#a2ac43bc2c607ba1b703a417f893ea4c9">~ThreadsPanel</a> ()</td></tr>
+<tr class="separator:a2ac43bc2c607ba1b703a417f893ea4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classPanel"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classPanel')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classPanel.html">Panel</a></td></tr>
-<tr class="memitem:a6a52c614f74380ac66ea2932a2906427 inherit pub_methods_classPanel"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a52c614f74380ac66ea2932a2906427"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Panel</b> (QWidget *parent, <a class="el" href="classSpectrographDevice.html">SpectrographDevice</a> &amp;device, <a class="el" href="classResourceManager.html">ResourceManager</a> &amp;manager)</td></tr>
+<tr class="memitem:a6a52c614f74380ac66ea2932a2906427 inherit pub_methods_classPanel"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPanel.html#a6a52c614f74380ac66ea2932a2906427">Panel</a> (QWidget *parent, <a class="el" href="classSpectrographDevice.html">SpectrographDevice</a> &amp;device, <a class="el" href="classResourceManager.html">ResourceManager</a> &amp;manager)</td></tr>
 <tr class="separator:a6a52c614f74380ac66ea2932a2906427 inherit pub_methods_classPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8dfca2ecc97e4b31b10976226cfc806 inherit pub_methods_classPanel"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPanel.html#ae8dfca2ecc97e4b31b10976226cfc806">~Panel</a> ()=0</td></tr>
+<tr class="separator:ae8dfca2ecc97e4b31b10976226cfc806 inherit pub_methods_classPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a902e0dc4455bdfb545e8a196c1ab8d55"><td class="memItemLeft" align="right" valign="top">QGridLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadsPanel.html#a902e0dc4455bdfb545e8a196c1ab8d55">m_main_layout</a></td></tr>
+<tr class="separator:a902e0dc4455bdfb545e8a196c1ab8d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e7918aef81c36308b445a9870fdf512"><td class="memItemLeft" align="right" valign="top">QRadioButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadsPanel.html#a9e7918aef81c36308b445a9870fdf512">radio_write_enable</a></td></tr>
+<tr class="separator:a9e7918aef81c36308b445a9870fdf512"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26a9c5ff5f6bab7692d11e9f2be706e7"><td class="memItemLeft" align="right" valign="top">QRadioButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadsPanel.html#a26a9c5ff5f6bab7692d11e9f2be706e7">radio_write_disable</a></td></tr>
+<tr class="separator:a26a9c5ff5f6bab7692d11e9f2be706e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4d9ef0eefc684d04cb5e2f70394c7cc"><td class="memItemLeft" align="right" valign="top">QRadioButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadsPanel.html#ae4d9ef0eefc684d04cb5e2f70394c7cc">radio_calc_MF_enable</a></td></tr>
+<tr class="separator:ae4d9ef0eefc684d04cb5e2f70394c7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a457853cabac07e5737221e9ce71b617e"><td class="memItemLeft" align="right" valign="top">QRadioButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadsPanel.html#a457853cabac07e5737221e9ce71b617e">radio_calc_MF_disable</a></td></tr>
+<tr class="separator:a457853cabac07e5737221e9ce71b617e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97d10fff50309b30dfaffeb776fb7439"><td class="memItemLeft" align="right" valign="top">QRadioButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadsPanel.html#a97d10fff50309b30dfaffeb776fb7439">radio_switcher_MLS</a></td></tr>
+<tr class="separator:a97d10fff50309b30dfaffeb776fb7439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8a5040368b49b1fd7423774a31d76d2"><td class="memItemLeft" align="right" valign="top">QRadioButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadsPanel.html#aa8a5040368b49b1fd7423774a31d76d2">radio_switcher_MRLS</a></td></tr>
+<tr class="separator:aa8a5040368b49b1fd7423774a31d76d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a255b5d1c35082164c22c5b556caae949"><td class="memItemLeft" align="right" valign="top">QRadioButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadsPanel.html#a255b5d1c35082164c22c5b556caae949">radio_switcher_URLS</a></td></tr>
+<tr class="separator:a255b5d1c35082164c22c5b556caae949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6635fac1759999c3961f8e15de4de6f2"><td class="memItemLeft" align="right" valign="top">QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadsPanel.html#a6635fac1759999c3961f8e15de4de6f2">button_start</a></td></tr>
+<tr class="separator:a6635fac1759999c3961f8e15de4de6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a043906efef3326c29d417cc4cbdfaa"><td class="memItemLeft" align="right" valign="top">QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classThreadsPanel.html#a8a043906efef3326c29d417cc4cbdfaa">button_stop</a></td></tr>
+<tr class="separator:a8a043906efef3326c29d417cc4cbdfaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 额外继承的成员函数</h2></td></tr>
 <tr class="inherit_header pub_types_classPanel"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classPanel')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="classPanel.html">Panel</a></td></tr>
-<tr class="memitem:abb64056f62b0e8ad91662c0e92e66c84 inherit pub_types_classPanel"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>PanelName</b> { <br/>
-&#160;&#160;<b>INFO</b>, 
-<b>GRAPHICS</b>, 
-<b>THREADS</b>, 
-<b>ANALYSE</b>, 
+<tr class="memitem:abb64056f62b0e8ad91662c0e92e66c84 inherit pub_types_classPanel"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84">PanelName</a> { <br/>
+&#160;&#160;<a class="el" href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84a933c2e9581869cc7d99189e60172061b">INFO</a>, 
+<a class="el" href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84a5b575f9d2602eedda26f993d76cc4362">GRAPHICS</a>, 
+<a class="el" href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84a43c8b559b087b51e4191858d7eb1644e">THREADS</a>, 
+<a class="el" href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84afe85cecdcb5be1215b874b6c16a6f938">ANALYSE</a>, 
 <br/>
-&#160;&#160;<b>PANELNAME_NUM</b>
+&#160;&#160;<a class="el" href="classPanel.html#abb64056f62b0e8ad91662c0e92e66c84ad51a96f960ab98c5856c15e46a126a4a">PANELNAME_NUM</a>
 <br/>
  }</td></tr>
 <tr class="separator:abb64056f62b0e8ad91662c0e92e66c84 inherit pub_types_classPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header signals_classPanel"><td colspan="2" onclick="javascript:toggleInherit('signals_classPanel')"><img src="closed.png" alt="-"/>&#160;信号 继承自 <a class="el" href="classPanel.html">Panel</a></td></tr>
-<tr class="memitem:a8de68235bf5a6ac3f849ca8a1322dcb9 inherit signals_classPanel"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8de68235bf5a6ac3f849ca8a1322dcb9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>closed</b> ()</td></tr>
+<tr class="memitem:a8de68235bf5a6ac3f849ca8a1322dcb9 inherit signals_classPanel"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPanel.html#a8de68235bf5a6ac3f849ca8a1322dcb9">closed</a> ()</td></tr>
 <tr class="separator:a8de68235bf5a6ac3f849ca8a1322dcb9 inherit signals_classPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classPanel"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classPanel')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classPanel.html">Panel</a></td></tr>
-<tr class="memitem:a07b94c563d845ea7746ec0217a6c415d inherit pro_methods_classPanel"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a07b94c563d845ea7746ec0217a6c415d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>closeEvent</b> (QCloseEvent *event)</td></tr>
+<tr class="memitem:a07b94c563d845ea7746ec0217a6c415d inherit pro_methods_classPanel"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPanel.html#a07b94c563d845ea7746ec0217a6c415d">closeEvent</a> (QCloseEvent *event)</td></tr>
 <tr class="separator:a07b94c563d845ea7746ec0217a6c415d inherit pro_methods_classPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classPanel"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classPanel')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classPanel.html">Panel</a></td></tr>
-<tr class="memitem:add4ae13edea2ab748adf425e71ccd39b inherit pro_attribs_classPanel"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add4ae13edea2ab748adf425e71ccd39b"></a>
-<a class="el" href="classSpectrographDevice.html">SpectrographDevice</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_device</b></td></tr>
+<tr class="memitem:add4ae13edea2ab748adf425e71ccd39b inherit pro_attribs_classPanel"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSpectrographDevice.html">SpectrographDevice</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPanel.html#add4ae13edea2ab748adf425e71ccd39b">m_device</a></td></tr>
 <tr class="separator:add4ae13edea2ab748adf425e71ccd39b inherit pro_attribs_classPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88bbc23847b6d3304150fcdd07005d9e inherit pro_attribs_classPanel"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88bbc23847b6d3304150fcdd07005d9e"></a>
-<a class="el" href="classResourceManager.html">ResourceManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_manager</b></td></tr>
+<tr class="memitem:a88bbc23847b6d3304150fcdd07005d9e inherit pro_attribs_classPanel"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classResourceManager.html">ResourceManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPanel.html#a88bbc23847b6d3304150fcdd07005d9e">m_manager</a></td></tr>
 <tr class="separator:a88bbc23847b6d3304150fcdd07005d9e inherit pro_attribs_classPanel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a6995f449346c812074f1b5c465d834a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ThreadsPanel::ThreadsPanel </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpectrographDevice.html">SpectrographDevice</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classResourceManager.html">ResourceManager</a> &amp;&#160;</td>
+          <td class="paramname"><em>manager</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2ac43bc2c607ba1b703a417f893ea4c9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ThreadsPanel::~ThreadsPanel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="acfbf6504d19a8f71e445a619516ecd0f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ThreadsPanel::__Select_MLS </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="addc3cd848e399aefbbb6fd3bd361a954"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ThreadsPanel::__Select_MRLS </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa7f88a946795903286800dad290d33df"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ThreadsPanel::__Select_URLS </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a27e0ec5f03828ba6edb1403b28894c53"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ThreadsPanel::__StartAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac0eb2d2baf5ffc416ff94c306dafabd3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ThreadsPanel::__StopAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a65d85fb8aa517ad0d870e168e9c63d80"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ThreadsPanel::__Toggle_MF </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8e82ec31bfe9f60cb5f428e8749b1d1f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ThreadsPanel::__Toggle_Write </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a6635fac1759999c3961f8e15de4de6f2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPushButton* ThreadsPanel::button_start</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8a043906efef3326c29d417cc4cbdfaa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPushButton* ThreadsPanel::button_stop</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a902e0dc4455bdfb545e8a196c1ab8d55"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QGridLayout* ThreadsPanel::m_main_layout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a457853cabac07e5737221e9ce71b617e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRadioButton* ThreadsPanel::radio_calc_MF_disable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae4d9ef0eefc684d04cb5e2f70394c7cc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRadioButton* ThreadsPanel::radio_calc_MF_enable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a97d10fff50309b30dfaffeb776fb7439"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRadioButton* ThreadsPanel::radio_switcher_MLS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa8a5040368b49b1fd7423774a31d76d2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRadioButton* ThreadsPanel::radio_switcher_MRLS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a255b5d1c35082164c22c5b556caae949"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRadioButton* ThreadsPanel::radio_switcher_URLS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a26a9c5ff5f6bab7692d11e9f2be706e7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRadioButton* ThreadsPanel::radio_write_disable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9e7918aef81c36308b445a9870fdf512"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRadioButton* ThreadsPanel::radio_write_enable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>该类的文档由以下文件生成:<ul>
 <li>include/UI/<a class="el" href="threadspanel_8h_source.html">threadspanel.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2016年 五月 30日 星期一 12:37:14 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2016年 五月 30日 星期一 12:41:48 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
