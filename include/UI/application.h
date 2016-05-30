@@ -68,7 +68,7 @@ private:
      * 已经被绘图的记作true，未被绘图的记作false<br>
      * 这是由于绘图面板可以同时绘制多幅函数图像导致的<br>
      */
-    bool m_curves[ResourceManager::DATA_NUM]；
+    bool m_curves[ResourceManager::DATA_NUM];
     /**
      * 初始化UI
      */
