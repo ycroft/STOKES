@@ -31,7 +31,7 @@ static const char* ICON_REPAINT = "/home/ycroft/Pictures/stokes/repaint.gif";
 static const char* ICON_STATIC = "/home/ycroft/Pictures/stokes/static.gif";
 
 /**
- * 主窗口
+ * 主窗口<br>
  * 整个软件的主界面、程序执行入口
  */
 class Application : public QMainWindow
@@ -41,18 +41,32 @@ public:
     Application();
     virtual ~Application();
 private:
-    SpectrographDevice* m_device;           /** 声明光谱设备（实机或虚机） */
-    ResourceManager* m_manager;             /** 资源管理器：负责维护计算流程 */
-    Plot* m_plot;                           /** 绘图面板，用于绘制函数图像 */
-    InfoPanel* m_info_panel;                /** 信息面板，用于显示各个线程的状态 */
-    GraphicsPanel* m_graphics_panel;        /** 函数图像面板，用于显示正在绘制的函数图像列表 */
-    ThreadsPanel* m_threads_panel;          /** 线程控制面板，用于控制各个线程的开闭以及输入流 */
-    AnalysePanel* m_analyse_panel;          /** 分析信息面板，用于显示各种分析结果 */
+    /** ###声明光谱设备<br>
+     * （实机或虚机） */
+    SpectrographDevice* m_device;
+    /** ###资源管理器<br>
+     * 负责维护计算流程 */
+    ResourceManager* m_manager;
+    /** ###绘图面板<br>
+     * 用于绘制函数图像 */
+    Plot* m_plot;
+    /** ###信息面板<br>
+     * 用于显示各个线程的状态 */
+    InfoPanel* m_info_panel;
+    /** ###函数图像面板<br>
+     * 用于显示正在绘制的函数图像列表 */
+    GraphicsPanel* m_graphics_panel;
+    /** ###线程控制面板<br>
+     * 用于控制各个线程的开闭以及输入流 */
+    ThreadsPanel* m_threads_panel;
+    /** ###分析信息面板<br>
+     * 用于显示各种分析结果 */
+    AnalysePanel* m_analyse_panel;
     /**
-     * 保存绘图状态
-     * 这个数组保存所有可以用于绘图的函数,
-     * 已经被绘图的记作true，未被绘图的记作false
-     * 这是由于绘图面板可以同时绘制多幅函数图像导致的
+     * ###保存绘图状态<br>
+     * 这个数组保存所有可以用于绘图的函数,<br>
+     * 已经被绘图的记作true，未被绘图的记作false<br>
+     * 这是由于绘图面板可以同时绘制多幅函数图像导致的<br>
      */
     bool m_curves[ResourceManager::DATA_NUM]；
     /**
@@ -60,10 +74,18 @@ private:
      */
     void __SetupUI();
 private slots:
-    void __AddCurve(ResourceManager::DataName); /** 私有槽： 添加曲线到绘图面板 */
-    void __DelCurve(ResourceManager::DataName); /** 私有槽： 从绘图面板删除曲线 */
-    void __ClearCurves();                       /** 私有槽： 清除所有绘图面板上的曲线 */
-    void __ChangeWorkplace();                   /** 私有槽： 更改工作路径 */
+    /** ###私有槽： <br>
+     * 添加曲线到绘图面板 */
+    void __AddCurve(ResourceManager::DataName);
+    /** ###私有槽： <br>
+     * 从绘图面板删除曲线 */
+    void __DelCurve(ResourceManager::DataName);
+    /** ###私有槽： <br>
+     * 清除所有绘图面板上的曲线 */
+    void __ClearCurves();
+    /** ###私有槽：<br>
+     * 更改工作路径 */
+    void __ChangeWorkplace();
 };
 
 #endif // APPLICATION_H
