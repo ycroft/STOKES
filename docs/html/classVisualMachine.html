@@ -116,8 +116,8 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:afe57f3cc33a48a5ba490327bba1ec835"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ab8a009f58e36fe647710ab3b608990"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVisualMachine.html#a8ab8a009f58e36fe647710ab3b608990">Reboot</a> ()</td></tr>
 <tr class="separator:a8ab8a009f58e36fe647710ab3b608990"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a196500cd88093dbc652aa0e32ff4bf5f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVisualMachine.html#a196500cd88093dbc652aa0e32ff4bf5f">ReadDatagram</a> (<a class="el" href="classInnerData.html">InnerData</a> &amp;innerData, int type=<a class="el" href="spectrograph_8h.html#a0b4ccf00b035279e19200a1bceb91c18">STREAM_MLS</a>)</td></tr>
-<tr class="separator:a196500cd88093dbc652aa0e32ff4bf5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a244747fd1daa84d76c86b36b0eb691f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVisualMachine.html#a244747fd1daa84d76c86b36b0eb691f7">ReadDatagram</a> (<a class="el" href="classInnerData.html">InnerData</a> &amp;innerData, int type=0)</td></tr>
+<tr class="separator:a244747fd1daa84d76c86b36b0eb691f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a255fe9708a03723e6a2f8e65ccd6f88f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVisualMachine.html#a255fe9708a03723e6a2f8e65ccd6f88f">GetState</a> ()</td></tr>
 <tr class="separator:a255fe9708a03723e6a2f8e65ccd6f88f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d679be75e5f2006a565700ae2e98ee3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="spectrograph_8h.html#a320dab1a47d01bab393d87f84bc4d35c">DeviceInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVisualMachine.html#a7d679be75e5f2006a565700ae2e98ee3">GetDeviceInfo</a> ()</td></tr>
@@ -270,6 +270,9 @@ Private 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<h3>启动函数</h3>
+<p>检查当前设备状态，如果为正常关机状态则启动机器 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classVisualMachine.html#aa8ad515fd4a1b5faec54c5ea31597df3">VisualMachine::Boot</a> </dd></dl>
 
 <p>实现了 <a class="el" href="classSpectrographDevice.html#ab5528ab752a50c308239afa8c3134c09">SpectrographDevice</a>.</p>
 
@@ -322,6 +325,13 @@ Private 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<h3>得到当前设备状态</h3>
+<p>目前光谱仪状态只有两种：<br/>
+</p>
+<ul>
+<li>开启状态-ON</li>
+<li>关闭状态-OFF </li>
+</ul>
 
 <p>实现了 <a class="el" href="classSpectrographDevice.html#afa0decb2038d66dfaec4af95976aec7f">SpectrographDevice</a>.</p>
 
@@ -329,7 +339,7 @@ Private 属性</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a196500cd88093dbc652aa0e32ff4bf5f"></a>
+<a class="anchor" id="a244747fd1daa84d76c86b36b0eb691f7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -346,7 +356,7 @@ Private 属性</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>type</em> = <code><a class="el" href="spectrograph_8h.html#a0b4ccf00b035279e19200a1bceb91c18">STREAM_MLS</a></code>&#160;</td>
+          <td class="paramname"><em>type</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -361,7 +371,7 @@ Private 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>实现了 <a class="el" href="classSpectrographDevice.html#a14cc3abd9063d4ecd958926f52588f56">SpectrographDevice</a>.</p>
+<p>实现了 <a class="el" href="classSpectrographDevice.html#ab7fe47294933cf8d123298fdfc3ef15c">SpectrographDevice</a>.</p>
 
 </div>
 </div>
@@ -385,6 +395,9 @@ Private 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<h3>重启函数</h3>
+<p>检查当前设备状态并重新启动，解决当前设备遇到的问题 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classVisualMachine.html#a8ab8a009f58e36fe647710ab3b608990">VisualMachine::Reboot</a> </dd></dl>
 
 <p>实现了 <a class="el" href="classSpectrographDevice.html#adfd8284edb2d9714725ade8d2ca50abc">SpectrographDevice</a>.</p>
 
@@ -410,6 +423,9 @@ Private 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<h3>关机函数</h3>
+<p>检查当前设备状态，如果为正常运行状态则关闭机器 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classVisualMachine.html#afe57f3cc33a48a5ba490327bba1ec835">VisualMachine::Shutdown</a> </dd></dl>
 
 <p>实现了 <a class="el" href="classSpectrographDevice.html#a386f42e70bc04c9c0c2877c3fe21afbb">SpectrographDevice</a>.</p>
 
@@ -526,7 +542,7 @@ Private 属性</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2016年 五月 30日 星期一 12:54:17 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2016年 五月 30日 星期一 13:43:43 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

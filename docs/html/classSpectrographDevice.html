@@ -119,15 +119,19 @@ Public 成员函数</h2></td></tr>
 <tr class="separator:afa0decb2038d66dfaec4af95976aec7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af155d8cf375b7ace72f3f664a2c1c334"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="spectrograph_8h.html#a320dab1a47d01bab393d87f84bc4d35c">DeviceInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpectrographDevice.html#af155d8cf375b7ace72f3f664a2c1c334">GetDeviceInfo</a> ()=0</td></tr>
 <tr class="separator:af155d8cf375b7ace72f3f664a2c1c334"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14cc3abd9063d4ecd958926f52588f56"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpectrographDevice.html#a14cc3abd9063d4ecd958926f52588f56">ReadDatagram</a> (<a class="el" href="classInnerData.html">InnerData</a> &amp;innerData, int type=<a class="el" href="spectrograph_8h.html#a0b4ccf00b035279e19200a1bceb91c18">STREAM_MLS</a>)=0</td></tr>
-<tr class="separator:a14cc3abd9063d4ecd958926f52588f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7fe47294933cf8d123298fdfc3ef15c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpectrographDevice.html#ab7fe47294933cf8d123298fdfc3ef15c">ReadDatagram</a> (<a class="el" href="classInnerData.html">InnerData</a> &amp;innerData, int type=0)=0</td></tr>
+<tr class="separator:ab7fe47294933cf8d123298fdfc3ef15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public 属性</h2></td></tr>
 <tr class="memitem:a248f634ce92f5170f12d6fb3192e4445"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpectrographDevice.html#a248f634ce92f5170f12d6fb3192e4445">device_type_id</a></td></tr>
 <tr class="separator:a248f634ce92f5170f12d6fb3192e4445"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">构造及析构函数说明</h2>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><h3>光谱仪类型</h3>
+<p>所有类型的光谱仪的抽象父类，拥有所有光谱仪的公共属性和功 能，光谱仪类型的所有子类都存在状态变量用于记录光谱仪的当 前状态，如运行、休眠、等。<br/>
+ 设计该类型的初衷是让程序既支持以文件方式输入也支持直接从 光谱仪获取数据。为了使架构统一，对输入方式用“设备”的概念 进行封装，其中来自文件的原始输入为“虚拟机”，来自光谱仪的 输入为“实机”。 </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
 <a class="anchor" id="a0888055328209b8247e8b5221fbd733f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -187,6 +191,9 @@ Public 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<h3>启动函数</h3>
+<p>检查当前设备状态，如果为正常关机状态则启动机器 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classVisualMachine.html#aa8ad515fd4a1b5faec54c5ea31597df3">VisualMachine::Boot</a> </dd></dl>
 
 <p>在 <a class="el" href="classVisualMachine.html#aa8ad515fd4a1b5faec54c5ea31597df3">VisualMachine</a> 内被实现.</p>
 
@@ -237,12 +244,19 @@ Public 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<h3>得到当前设备状态</h3>
+<p>目前光谱仪状态只有两种：<br/>
+</p>
+<ul>
+<li>开启状态-ON</li>
+<li>关闭状态-OFF </li>
+</ul>
 
 <p>在 <a class="el" href="classVisualMachine.html#a255fe9708a03723e6a2f8e65ccd6f88f">VisualMachine</a> 内被实现.</p>
 
 </div>
 </div>
-<a class="anchor" id="a14cc3abd9063d4ecd958926f52588f56"></a>
+<a class="anchor" id="ab7fe47294933cf8d123298fdfc3ef15c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -259,7 +273,7 @@ Public 属性</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>type</em> = <code><a class="el" href="spectrograph_8h.html#a0b4ccf00b035279e19200a1bceb91c18">STREAM_MLS</a></code>&#160;</td>
+          <td class="paramname"><em>type</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -274,7 +288,7 @@ Public 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>在 <a class="el" href="classVisualMachine.html#a196500cd88093dbc652aa0e32ff4bf5f">VisualMachine</a> 内被实现.</p>
+<p>在 <a class="el" href="classVisualMachine.html#a244747fd1daa84d76c86b36b0eb691f7">VisualMachine</a> 内被实现.</p>
 
 </div>
 </div>
@@ -298,6 +312,9 @@ Public 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<h3>重启函数</h3>
+<p>检查当前设备状态并重新启动，解决当前设备遇到的问题 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classVisualMachine.html#a8ab8a009f58e36fe647710ab3b608990">VisualMachine::Reboot</a> </dd></dl>
 
 <p>在 <a class="el" href="classVisualMachine.html#a8ab8a009f58e36fe647710ab3b608990">VisualMachine</a> 内被实现.</p>
 
@@ -323,6 +340,9 @@ Public 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<h3>关机函数</h3>
+<p>检查当前设备状态，如果为正常运行状态则关闭机器 </p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classVisualMachine.html#afe57f3cc33a48a5ba490327bba1ec835">VisualMachine::Shutdown</a> </dd></dl>
 
 <p>在 <a class="el" href="classVisualMachine.html#afe57f3cc33a48a5ba490327bba1ec835">VisualMachine</a> 内被实现.</p>
 
@@ -347,7 +367,7 @@ Public 属性</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2016年 五月 30日 星期一 12:54:17 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2016年 五月 30日 星期一 13:43:43 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

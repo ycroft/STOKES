@@ -7,7 +7,7 @@ var searchData=
   ['radio_5fswitcher_5furls',['radio_switcher_URLS',['../classThreadsPanel.html#a255b5d1c35082164c22c5b556caae949',1,'ThreadsPanel']]],
   ['radio_5fwrite_5fdisable',['radio_write_disable',['../classThreadsPanel.html#a26a9c5ff5f6bab7692d11e9f2be706e7',1,'ThreadsPanel']]],
   ['radio_5fwrite_5fenable',['radio_write_enable',['../classThreadsPanel.html#a9e7918aef81c36308b445a9870fdf512',1,'ThreadsPanel']]],
-  ['readdatagram',['ReadDatagram',['../classSpectrographDevice.html#a14cc3abd9063d4ecd958926f52588f56',1,'SpectrographDevice::ReadDatagram()'],['../classVisualMachine.html#a196500cd88093dbc652aa0e32ff4bf5f',1,'VisualMachine::ReadDatagram()']]],
+  ['readdatagram',['ReadDatagram',['../classSpectrographDevice.html#ab7fe47294933cf8d123298fdfc3ef15c',1,'SpectrographDevice::ReadDatagram()'],['../classVisualMachine.html#a244747fd1daa84d76c86b36b0eb691f7',1,'VisualMachine::ReadDatagram()']]],
   ['real',['real',['../classComplex.html#aef034069e4bf3741564757568cdec919',1,'Complex::real()'],['../classComplex.html#a7543a9d64127919bd2b97f280b6541b6',1,'Complex::real(double real)']]],
   ['reboot',['Reboot',['../classSpectrographDevice.html#adfd8284edb2d9714725ade8d2ca50abc',1,'SpectrographDevice::Reboot()'],['../classVisualMachine.html#a8ab8a009f58e36fe647710ab3b608990',1,'VisualMachine::Reboot()']]],
   ['reciprocal',['reciprocal',['../namespacemath.html#a5c443cd695f587a84a88d99cf507108c',1,'math']]],
