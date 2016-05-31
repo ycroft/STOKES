@@ -77,6 +77,25 @@ typedef struct states
 class ResourceManager
 {
 public:
+    /**
+     * ###数据对象名称集合
+     * * * *
+     * 名称解释
+     * + MRLS：Modulated Reference Light Spectrum 被调制的参考光谱
+     * + URLS：Untreated Reference Light Spectrum 未被调制的参考光谱
+     * + MLS：Measured Light Spectrum 实测光谱
+     * 以下AF指经过FFT变换后的自相关函数（Autocorrelation Function）,CH指通道（Channel）
+     * + RLS_AF 调制参考光谱的自相关函数
+     * + RLS_AF_CH_? 调制参考光谱自相关函数拆分后的第？通道
+     * + RLS_CH_? 复原自相关函数得到调制参考光谱的第？通道
+     * + MF_? Modulation Factor 调制系数、载波，第？通道
+     * + MLS_AF 实测光谱的自相关函数
+     * + MLS_AF_CH_? 实测光谱自相关函数拆分后的第？通道
+     * + MF_PHI_? 用于矫正载波的幅角
+     * + SV_? Stokes Vector 斯托克斯矢量（1～4）
+     * + DOP 偏振度幅
+     * + DATA_NUM 末尾记录枚举型长度
+     */
     enum DataName{
         MRLS,URLS,MLS,RLS_AF,RLS_AF_CH_0,RLS_AF_CH_1,RLS_AF_CH_2,
         RLS_AF_CH_3,RLS_CH_0,RLS_CH_1,RLS_CH_2,RLS_CH_3,MF_0,MF_1,
