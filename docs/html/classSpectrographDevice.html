@@ -193,7 +193,6 @@ Public 属性</h2></td></tr>
 </div><div class="memdoc">
 <h3>启动函数</h3>
 <p>检查当前设备状态，如果为正常关机状态则启动机器 </p>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="classVisualMachine.html#aa8ad515fd4a1b5faec54c5ea31597df3">VisualMachine::Boot</a> </dd></dl>
 
 <p>在 <a class="el" href="classVisualMachine.html#aa8ad515fd4a1b5faec54c5ea31597df3">VisualMachine</a> 内被实现.</p>
 
@@ -219,6 +218,8 @@ Public 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<h3>得到设备信息</h3>
+<p>设备信息由结构体deviceinfo定义 </p>
 
 <p>在 <a class="el" href="classVisualMachine.html#a7d679be75e5f2006a565700ae2e98ee3">VisualMachine</a> 内被实现.</p>
 
@@ -287,6 +288,8 @@ Public 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<h3>读取光谱</h3>
+<p>所有的光谱仪设备，无论是实机还是虚机，在“仪器”正常工 作时都具备获取光谱的功能，每个子类光谱仪根据其特点会 有不同的实现。 </p>
 
 <p>在 <a class="el" href="classVisualMachine.html#a244747fd1daa84d76c86b36b0eb691f7">VisualMachine</a> 内被实现.</p>
 
@@ -314,7 +317,6 @@ Public 属性</h2></td></tr>
 </div><div class="memdoc">
 <h3>重启函数</h3>
 <p>检查当前设备状态并重新启动，解决当前设备遇到的问题 </p>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="classVisualMachine.html#a8ab8a009f58e36fe647710ab3b608990">VisualMachine::Reboot</a> </dd></dl>
 
 <p>在 <a class="el" href="classVisualMachine.html#a8ab8a009f58e36fe647710ab3b608990">VisualMachine</a> 内被实现.</p>
 
@@ -342,7 +344,6 @@ Public 属性</h2></td></tr>
 </div><div class="memdoc">
 <h3>关机函数</h3>
 <p>检查当前设备状态，如果为正常运行状态则关闭机器 </p>
-<dl class="section see"><dt>参见</dt><dd><a class="el" href="classVisualMachine.html#afe57f3cc33a48a5ba490327bba1ec835">VisualMachine::Shutdown</a> </dd></dl>
 
 <p>在 <a class="el" href="classVisualMachine.html#afe57f3cc33a48a5ba490327bba1ec835">VisualMachine</a> 内被实现.</p>
 
@@ -358,6 +359,8 @@ Public 属性</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<h3>设备类型ID</h3>
+<p>用于在只持有父对象指针时判断当前对象的具体类型。 </p>
 
 </div>
 </div>
@@ -367,7 +370,7 @@ Public 属性</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2016年 五月 30日 星期一 13:49:19 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2016年 五月 31日 星期二 16:29:53 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

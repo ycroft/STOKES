@@ -55,19 +55,16 @@ public:
     /**
      * ###启动函数
      * 检查当前设备状态，如果为正常关机状态则启动机器
-     * @see VisualMachine::Boot
      */
     virtual bool Boot() = 0;
     /**
      * ###关机函数
      * 检查当前设备状态，如果为正常运行状态则关闭机器
-     * @see VisualMachine::Shutdown
      */
     virtual bool Shutdown() = 0;
     /**
      * ###重启函数
      * 检查当前设备状态并重新启动，解决当前设备遇到的问题
-     * @see VisualMachine::Reboot
      */
     virtual bool Reboot() = 0;
     /**
@@ -77,8 +74,22 @@ public:
      * + 关闭状态-OFF
      */
     virtual int GetState() = 0;
+    /**
+     * ###得到设备信息
+     * 设备信息由结构体deviceinfo定义
+     */
     virtual DeviceInfo GetDeviceInfo() = 0;
+    /**
+     * ###读取光谱
+     * 所有的光谱仪设备，无论是实机还是虚机，在“仪器”正常工
+     * 作时都具备获取光谱的功能，每个子类光谱仪根据其特点会
+     * 有不同的实现。
+     */
     virtual bool ReadDatagram(InnerData& innerData,int type = STREAM_MLS) = 0;
+    /**
+     * ###设备类型ID
+     * 用于在只持有父对象指针时判断当前对象的具体类型。
+     */
     int device_type_id;
 };
 

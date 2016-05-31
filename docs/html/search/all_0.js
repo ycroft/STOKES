@@ -21,7 +21,7 @@ var searchData=
   ['_5f_5fselect_5fmrls',['__Select_MRLS',['../classThreadsPanel.html#addc3cd848e399aefbbb6fd3bd361a954',1,'ThreadsPanel']]],
   ['_5f_5fselect_5furls',['__Select_URLS',['../classThreadsPanel.html#aa7f88a946795903286800dad290d33df',1,'ThreadsPanel']]],
   ['_5f_5fselectcurve',['__SelectCurve',['../classPresetChooser.html#afb13ca26cfbc06f90ba22ffbcd023e9d',1,'PresetChooser']]],
-  ['_5f_5fsetupui',['__SetupUI',['../classApplication.html#a944c9575335b5a2f6ed5119e2e80c274',1,'Application::__SetupUI()'],['../classMainWindow.html#a8a621dc22745b1a4b889a29556ec55ca',1,'MainWindow::__SetupUI()']]],
+  ['_5f_5fsetupui',['__SetupUI',['../classApplication.html#a5886bdfe2f6b26e35164fb0ed30826d1',1,'Application::__SetupUI()'],['../classMainWindow.html#a8a621dc22745b1a4b889a29556ec55ca',1,'MainWindow::__SetupUI()']]],
   ['_5f_5fstartall',['__StartAll',['../classThreadsPanel.html#a27e0ec5f03828ba6edb1403b28894c53',1,'ThreadsPanel']]],
   ['_5f_5fstopall',['__StopAll',['../classThreadsPanel.html#ac0eb2d2baf5ffc416ff94c306dafabd3',1,'ThreadsPanel']]],
   ['_5f_5fthread_5fcalc_5fadditional',['__Thread_Calc_Additional',['../classResourceManager.html#ae01a550e603ae094fd6efa4c40e14a01',1,'ResourceManager']]],

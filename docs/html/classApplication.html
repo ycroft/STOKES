@@ -124,9 +124,8 @@ Private 槽</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private 成员函数</h2></td></tr>
-<tr class="memitem:a944c9575335b5a2f6ed5119e2e80c274"><td class="memItemLeft" align="right" valign="top">bool m_curves[<a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605a2fb32c4f3fc113bb30a46073045f8255">ResourceManager::DATA_NUM</a>] <br class="typebreak"/>
-； void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#a944c9575335b5a2f6ed5119e2e80c274">__SetupUI</a> ()</td></tr>
-<tr class="separator:a944c9575335b5a2f6ed5119e2e80c274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5886bdfe2f6b26e35164fb0ed30826d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#a5886bdfe2f6b26e35164fb0ed30826d1">__SetupUI</a> ()</td></tr>
+<tr class="separator:a5886bdfe2f6b26e35164fb0ed30826d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private 属性</h2></td></tr>
@@ -144,6 +143,8 @@ Private 属性</h2></td></tr>
 <tr class="separator:a37d60d5ecd5d0989449ecb5ebf8cdf96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9eea8b72670acb9f002178e0fd5f418c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classAnalysePanel.html">AnalysePanel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#a9eea8b72670acb9f002178e0fd5f418c">m_analyse_panel</a></td></tr>
 <tr class="separator:a9eea8b72670acb9f002178e0fd5f418c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2773369d2378a862e70d8ddb10a2575a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classApplication.html#a2773369d2378a862e70d8ddb10a2575a">m_curves</a> [<a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605a2fb32c4f3fc113bb30a46073045f8255">ResourceManager::DATA_NUM</a>]</td></tr>
+<tr class="separator:a2773369d2378a862e70d8ddb10a2575a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>主窗口<br/>
@@ -294,7 +295,7 @@ Private 属性</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a944c9575335b5a2f6ed5119e2e80c274"></a>
+<a class="anchor" id="a5886bdfe2f6b26e35164fb0ed30826d1"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -302,7 +303,7 @@ Private 属性</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool m_curves [<a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605a2fb32c4f3fc113bb30a46073045f8255">ResourceManager::DATA_NUM</a>] ； void Application::__SetupUI </td>
+          <td class="memname">void Application::__SetupUI </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -314,12 +315,7 @@ Private 属性</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<h3>保存绘图状态<br/>
-</h3>
-<p>这个数组保存所有可以用于绘图的函数,<br/>
- 已经被绘图的记作true，未被绘图的记作false<br/>
- 这是由于绘图面板可以同时绘制多幅函数图像导致的<br/>
- 初始化UI </p>
+<p>初始化UI </p>
 
 </div>
 </div>
@@ -344,6 +340,32 @@ Private 属性</h2></td></tr>
 <h3>分析信息面板<br/>
 </h3>
 <p>用于显示各种分析结果 </p>
+
+</div>
+</div>
+<a class="anchor" id="a2773369d2378a862e70d8ddb10a2575a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Application::m_curves[<a class="el" href="classResourceManager.html#a83364b9a35eb93052c0cd83f2bd3f605a2fb32c4f3fc113bb30a46073045f8255">ResourceManager::DATA_NUM</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<h3>保存绘图状态<br/>
+</h3>
+<p>这个数组保存所有可以用于绘图的函数,<br/>
+ 已经被绘图的记作true，未被绘图的记作false<br/>
+ 这是由于绘图面板可以同时绘制多幅函数图像导致的<br/>
+ </p>
 
 </div>
 </div>
@@ -491,7 +513,7 @@ Private 属性</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-生成于 2016年 五月 30日 星期一 13:49:19 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2016年 五月 31日 星期二 16:29:53 , 为 STOKES使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
