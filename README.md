@@ -30,4 +30,5 @@
 ![60dop](https://github.com/ycroft/STOKES/blob/master/resources/imgs/60_dop.jpg "60 度")
 ###作者
 &#160; &#160; &#160; &#160;[Yuhao Yin](http://www.ycroft.net)
+&#160; &#160; &#160; &#160;[Fei Lin]
 
