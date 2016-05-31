@@ -7,7 +7,7 @@ var searchData=
   ['m_5faction_5fwindows_5fthreads',['m_action_windows_threads',['../classMainWindow.html#a2467b4c7e596c61586707f026ccd86c9',1,'MainWindow']]],
   ['m_5fanalyse_5fpanel',['m_analyse_panel',['../classApplication.html#a9eea8b72670acb9f002178e0fd5f418c',1,'Application::m_analyse_panel()'],['../classMainWindow.html#a732b3ede4806319132c618c22cc30861',1,'MainWindow::m_analyse_panel()']]],
   ['m_5fconfig',['m_config',['../classResourceManager.html#a81a6008306bbe7315e0d1f7b9f10a23a',1,'ResourceManager']]],
-  ['m_5fcurves',['m_curves',['../classPlot.html#a0c8135a04711e5922cd2934d4a728efe',1,'Plot']]],
+  ['m_5fcurves',['m_curves',['../classApplication.html#a2773369d2378a862e70d8ddb10a2575a',1,'Application::m_curves()'],['../classPlot.html#a0c8135a04711e5922cd2934d4a728efe',1,'Plot::m_curves()']]],
   ['m_5fdevice',['m_device',['../classResourceManager.html#aebc6c7acda687dd66bf9629406fb8135',1,'ResourceManager::m_device()'],['../classApplication.html#a6d124eb3c0024913826003a9ea2bd87b',1,'Application::m_device()'],['../classMainWindow.html#a8cb4a2221a262fe14bdd5df121d1a164',1,'MainWindow::m_device()'],['../classPanel.html#add4ae13edea2ab748adf425e71ccd39b',1,'Panel::m_device()']]],
   ['m_5fdop',['m_DOP',['../classResourceManager.html#a6fac2d75e670e5caa58598a88b9d5fed',1,'ResourceManager']]],
   ['m_5fgraphics_5fpanel',['m_graphics_panel',['../classApplication.html#abce49f9c334a3ed4b96a005528f4edac',1,'Application::m_graphics_panel()'],['../classMainWindow.html#a719037915de04a13dd1eaf13c1dc78be',1,'MainWindow::m_graphics_panel()']]],
