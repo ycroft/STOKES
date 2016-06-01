@@ -65,7 +65,3 @@ vector<Complex>& InnerData::GetControlY()
     return y;
 }
 
-int InnerData::length()
-{
-    return x.size();
-}
